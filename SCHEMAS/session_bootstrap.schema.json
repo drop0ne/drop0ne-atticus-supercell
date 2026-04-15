@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATTICUS Session Bootstrap Packet",
+  "type": "object",
+  "required": [
+    "repo",
+    "generated_at",
+    "current_state",
+    "recommended_next_action"
+  ],
+  "properties": {
+    "repo": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "current_state": { "type": "object" },
+    "relevant_cells": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "recommended_next_action": { "type": "string" }
+  },
+  "additionalProperties": true
+}
