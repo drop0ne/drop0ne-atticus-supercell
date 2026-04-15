@@ -1,0 +1,14 @@
+{
+  "repo": "drop0ne/drop0ne-atticus-supercell",
+  "status": "bootstrap_draft",
+  "role": "canonical_cross_model_memory_root",
+  "mirrors": [
+    "drop0ne/amas-spec",
+    "drop0ne/atticus-mpo"
+  ],
+  "projects": [
+    "atticus",
+    "atticus-mpo"
+  ],
+  "notes": "Initial bootstrap ledger. Expand with receipts, manifests, and sync timestamps."
+}
