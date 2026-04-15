@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATTICUS Supercell Memory Cell",
+  "type": "object",
+  "required": [
+    "cell_id",
+    "title",
+    "content",
+    "context_summary",
+    "context_scope",
+    "context_tags",
+    "created_at",
+    "provenance",
+    "context_fingerprint"
+  ],
+  "properties": {
+    "cell_id": { "type": "string" },
+    "domain": { "type": ["string", "null"] },
+    "project": { "type": ["string", "null"] },
+    "title": { "type": "string" },
+    "content": { "type": "string" },
+    "context_summary": { "type": "string" },
+    "context_scope": { "type": "string" },
+    "context_tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source_repo": { "type": ["string", "null"] },
+    "source_ref": { "type": ["string", "null"] },
+    "source_branch": { "type": ["string", "null"] },
+    "baseline_app_version": { "type": ["string", "null"] },
+    "baseline_framework_version": { "type": ["string", "null"] },
+    "parent_cell_id": { "type": ["string", "null"] },
+    "created_at": { "type": "string" },
+    "updated_at": { "type": ["string", "null"] },
+    "provenance": { "type": "object" },
+    "context_fingerprint": { "type": "string" },
+    "receipt_hash": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}
