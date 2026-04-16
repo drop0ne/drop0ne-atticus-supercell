@@ -1,0 +1,31 @@
+{
+  "cell_id": "MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_MERGED_v1",
+  "domain": "atticus-mpo",
+  "project": "atticus-mpo",
+  "title": "ATTICUS_MPO context-cell upgrade merged baseline",
+  "content": "PR #99 merged the first ATTICUS_MPO memory-engine context-cell upgrade into release-candidate. Stored memory cells now carry compact context-bearing fields, schema v9 persists those fields, and prompt-context injection now emits a bounded structured block containing scope, baseline, tags, summary, and finding.",
+  "context_summary": "Durable merged milestone for the first MPO context-carrying memory-engine upgrade. This is now part of the active MPO baseline and should be treated as a continuity anchor for future sessions.",
+  "context_scope": "project",
+  "context_tags": [
+    "atticus-mpo",
+    "merged",
+    "memory-engine",
+    "context-cells",
+    "schema-v9"
+  ],
+  "source_repo": "drop0ne/atticus-mpo",
+  "source_ref": "release-candidate",
+  "source_branch": "release-candidate",
+  "baseline_app_version": "v5.0.1",
+  "baseline_framework_version": "ATTICUS v6.4.1-HCII",
+  "parent_cell_id": "MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_v1",
+  "created_at": "2026-04-16",
+  "updated_at": null,
+  "provenance": {
+    "origin": "merged_pr_mirror",
+    "source_pr": 99,
+    "source_merge_commit": "78cd308686f7499bc0daceb148cfc6260ab21aeb"
+  },
+  "context_fingerprint": "mpo-memory-engine-context-upgrade-merged-v1",
+  "receipt_hash": null
+}
