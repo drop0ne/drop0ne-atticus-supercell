@@ -1,0 +1,34 @@
+{
+  "cell_id": "MPO_BASELINE_STATE_v1",
+  "domain": "atticus-mpo",
+  "project": "atticus-mpo",
+  "title": "ATTICUS_MPO baseline state",
+  "content": "ATTICUS_MPO currently uses release-candidate as the default branch. The work log records baseline v5.0.1 and frames the post-recovery implementation program as the governing plan. The current stored memory cell shape remains thin, and context injection is still shallow and bounded.",
+  "context_summary": "Durable baseline snapshot for MPO state before the memory-engine context upgrade. Captures branch, baseline, work-log role, and the known weakness in current memory-cell/context behavior.",
+  "context_scope": "project",
+  "context_tags": [
+    "atticus-mpo",
+    "baseline",
+    "release-candidate",
+    "v5.0.1",
+    "memory-engine"
+  ],
+  "source_repo": "drop0ne/atticus-mpo",
+  "source_ref": "release-candidate",
+  "source_branch": "release-candidate",
+  "baseline_app_version": "v5.0.1",
+  "baseline_framework_version": "ATTICUS v6.4.1-HCII",
+  "parent_cell_id": "ATTICUS_GLOBAL_BOOTSTRAP_v1",
+  "created_at": "2026-04-15",
+  "updated_at": null,
+  "provenance": {
+    "origin": "supercell_mirror",
+    "sources": [
+      "WORK_LOG.md",
+      "core/types.py",
+      "services/context_injection.py"
+    ]
+  },
+  "context_fingerprint": "mpo-baseline-state-v1",
+  "receipt_hash": null
+}
