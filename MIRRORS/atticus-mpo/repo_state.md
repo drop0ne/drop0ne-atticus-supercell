@@ -11,10 +11,18 @@ Source branch: `release-candidate`
 - Recovery work is recorded as complete.
 - The post-recovery implementation program is described as the current governing plan.
 
-## Current memory-engine note
+## Current memory-engine state
 
-The current code surface still uses a thin stored memory cell shape and shallow prompt injection formatting.
-This is one of the next important upgrade areas for MPO.
+- PR #99 is merged into `release-candidate`.
+- The first memory-engine context-cell upgrade is now part of the active MPO baseline.
+- Stored memory cells now persist compact context-bearing fields.
+- Context injection now formats scope, baseline, tags, summary, and finding in a bounded memory block.
+- Ranking is no longer pure recency.
+
+## Follow-up direction
+
+- Add stronger query-aware ranking once higher-level session/task hints are available.
+- Surface context-bearing stored memory more explicitly in higher-level workflows.
 
 ## Mirror rule
 
