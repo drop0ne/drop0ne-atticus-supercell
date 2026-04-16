@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-04-16",
+  "cells": [
+    {
+      "cell_id": "ATTICUS_GLOBAL_BOOTSTRAP_v1",
+      "path": "MEMORY/cells/atticus/ATTICUS_GLOBAL_BOOTSTRAP_v1.json",
+      "domain": "atticus",
+      "scope": "global"
+    },
+    {
+      "cell_id": "MPO_BASELINE_STATE_v1",
+      "path": "MEMORY/cells/mpo/MPO_BASELINE_STATE_v1.json",
+      "domain": "atticus-mpo",
+      "scope": "project"
+    },
+    {
+      "cell_id": "MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_v1",
+      "path": "MEMORY/cells/mpo/MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_v1.json",
+      "domain": "atticus-mpo",
+      "scope": "project"
+    }
+  ],
+  "notes": "Dated manifest used until the canonical index update path is normalized."
+}
