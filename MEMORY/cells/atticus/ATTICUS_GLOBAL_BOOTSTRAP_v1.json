@@ -1,0 +1,33 @@
+{
+  "cell_id": "ATTICUS_GLOBAL_BOOTSTRAP_v1",
+  "domain": "atticus",
+  "project": "global",
+  "title": "ATTICUS global bootstrap state",
+  "content": "ATTICUS now has a dedicated supercell repo intended to act as the canonical cross-model long-term memory root. It mirrors selected state from amas-spec and atticus-mpo, supports session bootstrap packet generation, and is intended to carry compact context-bearing memory cells rather than detached summaries.",
+  "context_summary": "Initial bootstrap memory cell for ATTICUS cross-model continuity. Captures the role of the supercell repo, current mirrored sources, and the immediate next implementation direction.",
+  "context_scope": "global",
+  "context_tags": [
+    "atticus",
+    "supercell",
+    "bootstrap",
+    "cross-model-memory",
+    "session-resume"
+  ],
+  "source_repo": "drop0ne/drop0ne-atticus-supercell",
+  "source_ref": "main",
+  "source_branch": "main",
+  "baseline_app_version": null,
+  "baseline_framework_version": "ATTICUS active umbrella context",
+  "parent_cell_id": null,
+  "created_at": "2026-04-15",
+  "updated_at": null,
+  "provenance": {
+    "origin": "bootstrap_session",
+    "mirrors": [
+      "drop0ne/amas-spec",
+      "drop0ne/atticus-mpo"
+    ]
+  },
+  "context_fingerprint": "atticus-global-bootstrap-v1",
+  "receipt_hash": null
+}
