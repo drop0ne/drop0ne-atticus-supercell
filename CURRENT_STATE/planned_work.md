@@ -1,10 +1,17 @@
 # Planned Work
 
+## Recently completed
+- First ATTICUS_MPO memory-engine upgrade merged in PR #99.
+- Stored memory cells now carry compact context.
+- Context injection now emits bounded structured memory blocks.
+- SQLite schema v9 introduced compact context-bearing stored-memory fields.
+
 ## Active items
-- Build memory-engine upgrades for ATTICUS_MPO.
-- Make memory cells carry compact context sufficient for safer reuse and rehydration.
-- Mirror key doctrine and state from `amas-spec` and `atticus-mpo`.
+- Mirror merged MPO memory-engine state into durable supercell memory cells.
+- Improve retrieval quality beyond current scope/tag/recency ranking.
+- Add stronger query-aware or task-aware ranking hints to memory injection.
 - Standardize session bootstrap packet generation for ChatGPT, Gemini, Claude, and ATTICUS_MPO.
+- Continue mirroring key doctrine and project state from `amas-spec` and `atticus-mpo`.
 
 ## Notes
 This file is the normalized planning surface, not the source-code canon.
