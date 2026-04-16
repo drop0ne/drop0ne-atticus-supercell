@@ -1,0 +1,32 @@
+{
+  "cell_id": "MPO_BRANCH_HISTORY_BASELINE_v1",
+  "domain": "atticus-mpo",
+  "project": "atticus-mpo",
+  "title": "ATTICUS_MPO branch-history and baseline lineage",
+  "content": "ATTICUS_MPO branch and baseline lineage is anchored by release-candidate as the active clean baseline, with key promotions and sync-backs recorded in WORK_LOG.md. Recovery phases 1a through 7 were merged into release-candidate across PRs #78, #82, #83, #84, #85, #86, and #87, then promoted to release/stable in PR #88 and synced back to release-candidate in PR #89.",
+  "context_summary": "Durable branch-history cell for MPO. Captures the baseline promotion chain and the fact that release-candidate is the governing active branch for current work.",
+  "context_scope": "project",
+  "context_tags": [
+    "atticus-mpo",
+    "branch-history",
+    "release-candidate",
+    "baseline-lineage",
+    "promotion-history"
+  ],
+  "source_repo": "drop0ne/atticus-mpo",
+  "source_ref": "release-candidate",
+  "source_branch": "release-candidate",
+  "baseline_app_version": "v5.0.1",
+  "baseline_framework_version": "ATTICUS v6.4.1-HCII",
+  "parent_cell_id": "MPO_BASELINE_STATE_v1",
+  "created_at": "2026-04-16",
+  "updated_at": null,
+  "provenance": {
+    "origin": "supercell_mirror",
+    "source_docs": [
+      "WORK_LOG.md"
+    ]
+  },
+  "context_fingerprint": "mpo-branch-history-baseline-v1",
+  "receipt_hash": null
+}
