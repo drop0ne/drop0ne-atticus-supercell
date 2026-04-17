@@ -1,0 +1,59 @@
+{
+  "template_version": "v1",
+  "project_name": "ATTICUS framework",
+  "source_repo": "drop0ne/drop0ne-atticus-supercell",
+  "source_branch": "main",
+  "project_supercell_repo": "drop0ne/drop0ne-atticus-supercell",
+  "authority": {
+    "source_repo_is_canonical_for": [
+      "umbrella_state",
+      "cross_project_memory_model"
+    ],
+    "project_supercell_is_canonical_for": [
+      "framework_local_memory",
+      "normalized_framework_state",
+      "framework_resume_packets"
+    ],
+    "global_atticus_supercell_role": "umbrella_cross_project_continuity_root"
+  },
+  "required_files": [
+    "README.md",
+    "CURRENT_STATE/atticus_state.md",
+    "MEMORY/cells/",
+    "SESSION_PACKETS/generated/"
+  ],
+  "baseline": {
+    "active_branch": "main",
+    "baseline_version": "ATTICUS umbrella context",
+    "active_packet": "n/a",
+    "notes": "ATTICUS framework project-local instantiation created via the checklist + starter manifest workflow."
+  },
+  "starter_cells": [
+    {
+      "cell_type": "project_baseline",
+      "required_fields": [
+        "cell_id",
+        "title",
+        "content",
+        "context_summary",
+        "context_scope",
+        "context_tags",
+        "source_repo",
+        "source_ref",
+        "source_branch",
+        "baseline_app_version",
+        "baseline_framework_version",
+        "parent_cell_id",
+        "created_at",
+        "provenance",
+        "context_fingerprint"
+      ]
+    }
+  ],
+  "resume_packet_rule": "Keep restart packets compact, grounded in current ATTICUS framework state, and linked to durable milestone cells.",
+  "exit_criteria": [
+    "framework work can be resumed from the project-local supercell without full original chat replay",
+    "authority boundaries are explicit",
+    "project-local ATTICUS framework supercell remains compatible with the global ATTICUS model"
+  ]
+}
