@@ -14,14 +14,16 @@ Source branch: `release-candidate`
 ## Current memory-engine state
 
 - PR #99 is merged into `release-candidate`.
+- PR #100 is merged into `release-candidate`.
 - The first memory-engine context-cell upgrade is now part of the active MPO baseline.
-- Stored memory cells now persist compact context-bearing fields.
-- Context injection now formats scope, baseline, tags, summary, and finding in a bounded memory block.
-- Ranking is no longer pure recency.
+- Stored memory cells persist compact context-bearing fields.
+- Context injection formats scope, baseline, tags, summary, and finding in a bounded memory block.
+- Retrieval ranking now accepts optional query-aware and task-aware hints.
+- The first call-surface adoption is in `AgentCoordinator`, which now passes parent-session objective and active-pack hints when available.
 
 ## Follow-up direction
 
-- Add stronger query-aware ranking once higher-level session/task hints are available.
+- Evaluate whether a stronger semantic or query-matching layer is needed beyond the current hint-based ranking system.
 - Surface context-bearing stored memory more explicitly in higher-level workflows.
 
 ## Mirror rule
