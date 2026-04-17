@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATTICUS Session State Bundle",
+  "type": "object",
+  "required": [
+    "bundle_version",
+    "generator_run_id",
+    "target_scope",
+    "project_id",
+    "mode",
+    "selected_resume_packets",
+    "selected_cells",
+    "selected_state_surfaces",
+    "recommended_next_action",
+    "notes"
+  ],
+  "properties": {
+    "bundle_version": { "type": "string" },
+    "generator_run_id": { "type": "string" },
+    "target_scope": { "type": "string" },
+    "project_id": { "type": "string" },
+    "mode": { "type": "string" },
+    "selected_resume_packets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["packet_id", "path"],
+        "properties": {
+          "packet_id": { "type": "string" },
+          "path": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "selected_cells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["cell_id", "path"],
+        "properties": {
+          "cell_id": { "type": "string" },
+          "path": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "selected_state_surfaces": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "recommended_next_action": { "type": "string" },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}
