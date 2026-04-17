@@ -9,15 +9,17 @@ Status: normalized current state
 
 ## Current known state
 - PR #99 is merged into `release-candidate`.
+- PR #100 is also merged into `release-candidate`.
 - The first memory-engine context-cell upgrade is now part of the active MPO baseline.
-- `StoredMemoryCell` now carries compact context rather than only detached findings.
-- Stored-memory persistence now includes schema v9 support for context-bearing fields.
+- `StoredMemoryCell` carries compact context rather than only detached findings.
+- Stored-memory persistence includes schema v9 support for context-bearing fields.
 - Prompt-context injection now includes scope, baseline, tags, summary, and finding in a bounded block.
-- Ranking is no longer pure recency.
+- Retrieval ranking now accepts optional query-aware and task-aware hints.
+- `AgentCoordinator` now passes parent-session objective and active-pack hints when available.
 
 ## Active next-step focus
-- Mirror this merged state into the supercell memory layer.
-- Build the next retrieval-quality pass for query-aware ranking and stronger task/session relevance.
+- Mirror the merged retrieval-ranking state into the supercell memory layer.
+- Build the next retrieval-quality pass only if stronger semantic or query-matching behavior is needed beyond the current hint-based system.
 - Expose context-bearing stored-memory surfaces more explicitly in higher-level workflows.
 
 ## Notes
