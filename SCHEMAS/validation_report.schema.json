@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATTICUS Supercell Validation Report",
+  "type": "object",
+  "required": [
+    "report_version",
+    "validation_run_id",
+    "scope",
+    "overall_status",
+    "checks"
+  ],
+  "properties": {
+    "report_version": { "type": "string" },
+    "validation_run_id": { "type": "string" },
+    "scope": { "type": "string" },
+    "overall_status": { "type": "string", "enum": ["pass", "warn", "fail"] },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["domain", "status", "summary"],
+        "properties": {
+          "domain": { "type": "string" },
+          "status": { "type": "string", "enum": ["pass", "warn", "fail"] },
+          "summary": { "type": "string" },
+          "details": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "recommended_remediation": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}
