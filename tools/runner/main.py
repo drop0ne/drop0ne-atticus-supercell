@@ -10,10 +10,11 @@ from typing import Any
 from phases.generate import plan_generate_phase
 from phases.refresh import plan_refresh_phase
 from phases.validate import plan_validate_phase
+from schema_validate import validate_payload_against_schema
 
 
-EXECUTION_RECORD_VERSION = "v2"
-RUNNER_VERSION = "v1"
+EXECUTION_RECORD_VERSION = "v3"
+RUNNER_VERSION = "v2"
 
 
 @dataclass(frozen=True)
@@ -24,6 +25,14 @@ class RunnerPaths:
     session_state_generator_input: Path
     validation_report: Path
     output_record: Path
+
+
+@dataclass(frozen=True)
+class SchemaTarget:
+    role: str
+    schema_pointer: str
+    payload_path: Path
+    payload: dict[str, Any]
 
 
 def _load_json(path: Path) -> dict[str, Any]:
@@ -144,6 +153,67 @@ def _format_utc(ts: datetime) -> str:
     return ts.replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
+def _schema_check_for_payload(
+    repo_root: Path,
+    current_refresh_doc: dict[str, Any],
+    target: SchemaTarget,
+) -> dict[str, str]:
+    current_pointers = current_refresh_doc.get("current_pointers", {})
+    schema_rel = current_pointers.get(target.schema_pointer)
+    payload_rel = str(target.payload_path.relative_to(repo_root))
+
+    if not schema_rel:
+        return {
+            "role": target.role,
+            "payload_path": payload_rel,
+            "schema_path": "",
+            "status": "fail",
+            "detail": f"Missing schema pointer for role={target.role}: {target.schema_pointer}",
+        }
+
+    schema_path = repo_root / schema_rel
+    if not schema_path.exists():
+        return {
+            "role": target.role,
+            "payload_path": payload_rel,
+            "schema_path": schema_rel,
+            "status": "fail",
+            "detail": f"Missing schema target for role={target.role}: {schema_rel}",
+        }
+
+    try:
+        schema_doc = _load_json(schema_path)
+    except json.JSONDecodeError as exc:
+        return {
+            "role": target.role,
+            "payload_path": payload_rel,
+            "schema_path": schema_rel,
+            "status": "fail",
+            "detail": f"Invalid schema JSON for role={target.role}: {schema_rel} ({exc})",
+        }
+
+    errors = validate_payload_against_schema(schema_doc, target.payload)
+    if errors:
+        preview = "; ".join(errors[:3])
+        if len(errors) > 3:
+            preview += f"; ... ({len(errors)} total error(s))"
+        return {
+            "role": target.role,
+            "payload_path": payload_rel,
+            "schema_path": schema_rel,
+            "status": "fail",
+            "detail": f"Schema validation failed for role={target.role}: {preview}",
+        }
+
+    return {
+        "role": target.role,
+        "payload_path": payload_rel,
+        "schema_path": schema_rel,
+        "status": "pass",
+        "detail": f"Schema validation passed for role={target.role} against {schema_rel}.",
+    }
+
+
 def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
     run_started_at = datetime.now(UTC)
     emitted_at = _format_utc(run_started_at)
@@ -185,11 +255,84 @@ def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
         validation_check,
     ]
 
+    schema_checks = [
+        _schema_check_for_payload(
+            paths.repo_root,
+            current_refresh_doc,
+            SchemaTarget(
+                role="refresh_runner_input",
+                schema_pointer="refresh_manifest_schema",
+                payload_path=paths.refresh_runner_input,
+                payload=refresh_runner_input_doc,
+            ),
+        ),
+        _schema_check_for_payload(
+            paths.repo_root,
+            current_refresh_doc,
+            SchemaTarget(
+                role="session_state_generator_input",
+                schema_pointer="session_state_generator_input_schema",
+                payload_path=paths.session_state_generator_input,
+                payload=generator_input_doc,
+            ),
+        ),
+        _schema_check_for_payload(
+            paths.repo_root,
+            current_refresh_doc,
+            SchemaTarget(
+                role="validation_report",
+                schema_pointer="validation_report_schema",
+                payload_path=paths.validation_report,
+                payload=validation_report_doc,
+            ),
+        ),
+    ]
+
+    preliminary_record = {
+        "record_version": EXECUTION_RECORD_VERSION,
+        "runner_version": RUNNER_VERSION,
+        "runner_run_id": f"runner-{run_started_at.strftime('%Y%m%dT%H%M%SZ')}",
+        "emitted_at": emitted_at,
+        "current_refresh_id": current_refresh_doc.get("current_refresh_id", "unknown"),
+        "repo_root": str(paths.repo_root),
+        "output_path": str(paths.output_record.relative_to(paths.repo_root)),
+        "resolved_inputs": [
+            {"role": "current_refresh", "path": current_refresh_rel},
+            {"role": "refresh_runner_input", "path": str(paths.refresh_runner_input.relative_to(paths.repo_root))},
+            {"role": "session_state_generator_input", "path": str(paths.session_state_generator_input.relative_to(paths.repo_root))},
+            {"role": "validation_report", "path": str(paths.validation_report.relative_to(paths.repo_root))},
+        ],
+        "input_checks": input_checks,
+        "schema_checks": schema_checks,
+        "resolved_current_pointers": resolved_current_pointers,
+        "pointer_checks": pointer_checks,
+        "planned_phases": [phase["phase"] for phase in phase_records],
+        "phase_results": phase_records,
+        "status": "planned",
+        "notes": [
+            "Generated by the concrete ATTICUS supercell runner scaffold.",
+            "This implementation is intentionally non-mutating and performs basic live file-existence checks.",
+        ],
+    }
+
+    execution_schema_check = _schema_check_for_payload(
+        paths.repo_root,
+        current_refresh_doc,
+        SchemaTarget(
+            role="execution_record_output",
+            schema_pointer="automation_runner_execution_record_schema",
+            payload_path=paths.output_record,
+            payload=preliminary_record,
+        ),
+    )
+    schema_checks = [*schema_checks, execution_schema_check]
+
     failing_input_checks = [check for check in input_checks if check["status"] == "fail"]
+    failing_schema_checks = [check for check in schema_checks if check["status"] == "fail"]
     failing_pointer_checks = [check for check in pointer_checks if check["status"] == "fail"]
 
     status = "pass"
-    if failing_input_checks or failing_pointer_checks:
+    if failing_input_checks or failing_schema_checks or failing_pointer_checks:
         status = "fail"
     elif any(p["status"] == "fail" for p in phase_records):
         status = "fail"
@@ -211,6 +354,7 @@ def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
             {"role": "validation_report", "path": str(paths.validation_report.relative_to(paths.repo_root))},
         ],
         "input_checks": input_checks,
+        "schema_checks": schema_checks,
         "resolved_current_pointers": resolved_current_pointers,
         "pointer_checks": pointer_checks,
         "planned_phases": [phase["phase"] for phase in phase_records],
@@ -218,8 +362,9 @@ def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
         "status": status,
         "notes": [
             "Generated by the concrete ATTICUS supercell runner scaffold.",
-            "This implementation is intentionally non-mutating and performs basic live file-existence checks.",
+            "This implementation is intentionally non-mutating and now performs built-in JSON Schema checks for current runner inputs and the emitted execution record.",
             *[check["detail"] for check in failing_input_checks],
+            *[check["detail"] for check in failing_schema_checks],
             *[check["detail"] for check in failing_pointer_checks],
             *[phase["summary"] for phase in phase_records],
         ],
