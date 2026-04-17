@@ -1,0 +1,58 @@
+{
+  "record_version": "v1",
+  "runner_run_id": "runner-seeded-live-read-20260417T000000Z",
+  "current_refresh_id": "refresh-runner-live-read-layer-2026-04-17",
+  "resolved_inputs": [
+    {
+      "role": "current_refresh",
+      "path": "CURRENT_REFRESH.json"
+    },
+    {
+      "role": "refresh_runner_input",
+      "path": "docs/REFRESH_RUNNER_INPUT.current.json"
+    },
+    {
+      "role": "session_state_generator_input",
+      "path": "docs/SESSION_STATE_GENERATOR_INPUT.current.json"
+    },
+    {
+      "role": "validation_report",
+      "path": "docs/VALIDATION_REPORT.current.json"
+    }
+  ],
+  "resolved_current_pointers": [
+    {
+      "pointer": "refresh_manifest_schema",
+      "path": "SCHEMAS/refresh_manifest.schema.json"
+    },
+    {
+      "pointer": "session_state_generator_input_schema",
+      "path": "SCHEMAS/session_state_generator_input.schema.json"
+    },
+    {
+      "pointer": "session_state_bundle_schema",
+      "path": "SCHEMAS/session_state_bundle.schema.json"
+    },
+    {
+      "pointer": "validation_report_schema",
+      "path": "SCHEMAS/validation_report.schema.json"
+    },
+    {
+      "pointer": "automation_runner_execution_record_schema",
+      "path": "SCHEMAS/automation_runner_execution_record.schema.json"
+    }
+  ],
+  "planned_phases": [
+    "resolve_current_refresh",
+    "load_refresh_runner_input",
+    "load_session_state_generator_input",
+    "load_validation_report",
+    "emit_runner_execution_record"
+  ],
+  "status": "planned",
+  "notes": [
+    "This is a seeded generated execution-record artifact aligned to the live-read runner layer.",
+    "It mirrors the intended output path of tools/runner/main.py but was seeded into the repo as a baseline artifact, not emitted by a runtime execution in this step.",
+    "Future runner executions should overwrite this file with a true runtime-generated record."
+  ]
+}
