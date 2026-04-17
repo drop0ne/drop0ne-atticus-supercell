@@ -1,7 +1,11 @@
 {
-  "record_version": "v1",
-  "runner_run_id": "runner-seeded-audit-detail-20260417T000000Z",
-  "current_refresh_id": "refresh-runner-audit-detail-layer-2026-04-17",
+  "record_version": "v2",
+  "runner_version": "v1",
+  "runner_run_id": "runner-seeded-runtime-receipt-20260417T000000Z",
+  "emitted_at": "2026-04-17T00:00:00Z",
+  "current_refresh_id": "refresh-runner-runtime-receipt-layer-2026-04-17",
+  "repo_root": "/repo/drop0ne-atticus-supercell",
+  "output_path": "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json",
   "resolved_inputs": [
     {
       "role": "current_refresh",
@@ -124,8 +128,8 @@
   ],
   "status": "pass",
   "notes": [
-    "This is a seeded generated execution-record artifact aligned to the runner-audit-detail layer.",
-    "It mirrors the expected output shape after the scaffold now emits structured input_checks and pointer_checks along with phase results.",
+    "This is a seeded generated execution-record artifact aligned to the runner-runtime-receipt layer.",
+    "It mirrors the expected output shape after the scaffold now emits runtime-emission receipt fields together with structured input_checks, pointer_checks, and phase results.",
     "Future runner executions should overwrite this file with a true runtime-generated record."
   ]
 }
