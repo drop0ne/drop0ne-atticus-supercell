@@ -1,12 +1,12 @@
 {
   "refresh_version": "v1",
-  "current_refresh_id": "refresh-runner-runtime-receipt-layer-2026-04-17",
+  "current_refresh_id": "refresh-runner-schema-validation-layer-2026-04-17",
   "generated_at": "2026-04-17",
   "scope": "atticus-umbrella",
   "source_repo": "drop0ne/drop0ne-atticus-supercell",
   "source_branch": "main",
   "current_pointers": {
-    "latest_refresh_log_entry": "docs/STATE_REFRESH_LOG.json#refresh-runner-runtime-receipt-layer-2026-04-17",
+    "latest_refresh_log_entry": "docs/STATE_REFRESH_LOG.json#refresh-runner-schema-validation-layer-2026-04-17",
     "state_refresh_protocol": "docs/STATE_REFRESH_PROTOCOL.md",
     "refresh_receipt_template": "docs/STATE_REFRESH_RECEIPT_TEMPLATE.md",
     "refresh_manifest_schema": "SCHEMAS/refresh_manifest.schema.json",
@@ -20,6 +20,7 @@
     "automation_runner_execution_record_generated": "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json",
     "automation_runner_runtime_readme": "tools/runner/README.md",
     "automation_runner_main": "tools/runner/main.py",
+    "automation_runner_schema_validate": "tools/runner/schema_validate.py",
     "automation_runner_phase_refresh": "tools/runner/phases/refresh.py",
     "automation_runner_phase_generate": "tools/runner/phases/generate.py",
     "automation_runner_phase_validate": "tools/runner/phases/validate.py",
@@ -57,5 +58,5 @@
     "atticus_framework_project_baseline": "PROJECTS/atticus/MEMORY/cells/ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1.json",
     "supercell_ops_project_baseline": "PROJECTS/supercell_ops/MEMORY/cells/SUPERCELL_OPS_PROJECT_BASELINE_v1.json"
   },
-  "notes": "Authoritative current-state pointer for the ATTICUS supercell. Use this as the first machine-readable entry point before traversing concrete runner implementation files, generated execution records, current execution records, automation-runner configs, lifecycle status, validation artifacts, generator outputs, generator inputs, runner manifests, indexes, ledgers, resume packets, or durable memory cells. The execution-record layer now includes runtime-emission receipt fields (emitted_at, runner_version, repo_root, output_path) in addition to structured input_checks and pointer_checks."
+  "notes": "Authoritative current-state pointer for the ATTICUS supercell. Use this as the first machine-readable entry point before traversing concrete runner implementation files, generated execution records, current execution records, automation-runner configs, lifecycle status, validation artifacts, generator outputs, generator inputs, runner manifests, indexes, ledgers, resume packets, or durable memory cells. The execution-record layer now includes schema_checks for refresh/generator/validation inputs and the emitted execution record, alongside runtime-emission receipt fields, structured input_checks, and pointer_checks."
 }
