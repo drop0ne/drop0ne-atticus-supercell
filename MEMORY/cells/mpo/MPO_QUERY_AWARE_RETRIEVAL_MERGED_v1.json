@@ -1,0 +1,31 @@
+{
+  "cell_id": "MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1",
+  "domain": "atticus-mpo",
+  "project": "atticus-mpo",
+  "title": "ATTICUS_MPO query-aware retrieval upgrade merged baseline",
+  "content": "PR #100 merged the next ATTICUS_MPO retrieval-quality pass into release-candidate. Context injection now accepts optional query-aware and task-aware hints, ranking considers query/objective overlap, preferred scope, active-pack match, baseline match, and prior scope/tag/recency fallback, and the first call-surface adoption is in AgentCoordinator.",
+  "context_summary": "Durable merged milestone for the first query-aware retrieval-quality upgrade after the context-cell merge. This is now part of the active MPO memory-engine baseline.",
+  "context_scope": "project",
+  "context_tags": [
+    "atticus-mpo",
+    "merged",
+    "retrieval-quality",
+    "query-aware",
+    "memory-engine"
+  ],
+  "source_repo": "drop0ne/atticus-mpo",
+  "source_ref": "release-candidate",
+  "source_branch": "release-candidate",
+  "baseline_app_version": "v5.0.1",
+  "baseline_framework_version": "ATTICUS v6.4.1-HCII",
+  "parent_cell_id": "MPO_RETRIEVAL_RANKING_FOLLOWUP_v1",
+  "created_at": "2026-04-17",
+  "updated_at": null,
+  "provenance": {
+    "origin": "merged_pr_mirror",
+    "source_pr": 100,
+    "source_merge_commit": "c9a6db360fe575328d64c4cb1314182e3a88ceb6"
+  },
+  "context_fingerprint": "mpo-query-aware-retrieval-merged-v1",
+  "receipt_hash": null
+}
