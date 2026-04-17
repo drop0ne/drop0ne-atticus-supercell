@@ -7,7 +7,9 @@
     "runner_run_id",
     "current_refresh_id",
     "resolved_inputs",
+    "input_checks",
     "resolved_current_pointers",
+    "pointer_checks",
     "planned_phases",
     "phase_results",
     "status",
@@ -29,6 +31,20 @@
         "additionalProperties": false
       }
     },
+    "input_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "path", "status", "detail"],
+        "properties": {
+          "role": { "type": "string" },
+          "path": { "type": "string" },
+          "status": { "type": "string", "enum": ["pass", "warn", "fail"] },
+          "detail": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
     "resolved_current_pointers": {
       "type": "array",
       "items": {
@@ -37,6 +53,20 @@
         "properties": {
           "pointer": { "type": "string" },
           "path": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "pointer_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pointer", "path", "status", "detail"],
+        "properties": {
+          "pointer": { "type": "string" },
+          "path": { "type": "string" },
+          "status": { "type": "string", "enum": ["pass", "warn", "fail"] },
+          "detail": { "type": "string" }
         },
         "additionalProperties": false
       }
