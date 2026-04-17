@@ -27,16 +27,30 @@ def _load_json(path: Path) -> dict[str, Any]:
         return json.load(f)
 
 
-def _load_json_or_empty(path: Path, role: str, repo_root: Path) -> tuple[dict[str, Any], list[str]]:
+def _load_json_or_empty(path: Path, role: str, repo_root: Path) -> tuple[dict[str, Any], dict[str, str]]:
+    rel = str(path.relative_to(repo_root))
     if not path.exists():
-        rel = str(path.relative_to(repo_root))
-        return {}, [f"Missing required input for role={role}: {rel}"]
+        return {}, {
+            "role": role,
+            "path": rel,
+            "status": "fail",
+            "detail": f"Missing required input for role={role}: {rel}",
+        }
 
     try:
-        return _load_json(path), []
+        return _load_json(path), {
+            "role": role,
+            "path": rel,
+            "status": "pass",
+            "detail": f"Loaded JSON input for role={role} from {rel}.",
+        }
     except json.JSONDecodeError as exc:
-        rel = str(path.relative_to(repo_root))
-        return {}, [f"Invalid JSON for role={role}: {rel} ({exc})"]
+        return {}, {
+            "role": role,
+            "path": rel,
+            "status": "fail",
+            "detail": f"Invalid JSON for role={role}: {rel} ({exc})",
+        }
 
 
 def _write_json(path: Path, payload: dict[str, Any]) -> None:
@@ -78,7 +92,7 @@ def _resolve_paths(repo_root: Path, output: str | None) -> RunnerPaths:
     )
 
 
-def _resolve_pointer_status(repo_root: Path, current_refresh_doc: dict[str, Any]) -> tuple[list[dict[str, str]], list[str]]:
+def _resolve_pointer_status(repo_root: Path, current_refresh_doc: dict[str, Any]) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
     current_pointers = current_refresh_doc.get("current_pointers", {})
     resolved_pointer_keys = [
         "refresh_manifest_schema",
@@ -89,52 +103,83 @@ def _resolve_pointer_status(repo_root: Path, current_refresh_doc: dict[str, Any]
     ]
 
     resolved: list[dict[str, str]] = []
-    notes: list[str] = []
+    checks: list[dict[str, str]] = []
 
     for key in resolved_pointer_keys:
         if key not in current_pointers:
-            notes.append(f"Missing current pointer: {key}")
+            checks.append({
+                "pointer": key,
+                "path": "",
+                "status": "fail",
+                "detail": f"Missing current pointer: {key}",
+            })
             continue
 
         rel_path = current_pointers[key]
         resolved.append({"pointer": key, "path": rel_path})
         target = repo_root / rel_path
         if not target.exists():
-            notes.append(f"Missing pointer target for {key}: {rel_path}")
+            checks.append({
+                "pointer": key,
+                "path": rel_path,
+                "status": "fail",
+                "detail": f"Missing pointer target for {key}: {rel_path}",
+            })
+        else:
+            checks.append({
+                "pointer": key,
+                "path": rel_path,
+                "status": "pass",
+                "detail": f"Pointer target exists for {key}: {rel_path}",
+            })
 
-    return resolved, notes
+    return resolved, checks
 
 
 def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
     current_refresh_doc = _load_json(paths.current_refresh)
+    current_refresh_rel = str(paths.current_refresh.relative_to(paths.repo_root))
 
-    refresh_runner_input_doc, refresh_notes = _load_json_or_empty(
+    refresh_runner_input_doc, refresh_check = _load_json_or_empty(
         paths.refresh_runner_input,
         "refresh_runner_input",
         paths.repo_root,
     )
-    generator_input_doc, generator_notes = _load_json_or_empty(
+    generator_input_doc, generator_check = _load_json_or_empty(
         paths.session_state_generator_input,
         "session_state_generator_input",
         paths.repo_root,
     )
-    validation_report_doc, validation_notes = _load_json_or_empty(
+    validation_report_doc, validation_check = _load_json_or_empty(
         paths.validation_report,
         "validation_report",
         paths.repo_root,
     )
 
-    resolved_current_pointers, pointer_notes = _resolve_pointer_status(paths.repo_root, current_refresh_doc)
+    resolved_current_pointers, pointer_checks = _resolve_pointer_status(paths.repo_root, current_refresh_doc)
 
     refresh_phase = plan_refresh_phase(paths, current_refresh_doc, refresh_runner_input_doc)
     generate_phase = plan_generate_phase(paths, current_refresh_doc, generator_input_doc)
     validate_phase = plan_validate_phase(paths, current_refresh_doc, validation_report_doc)
 
     phase_records = [refresh_phase, generate_phase, validate_phase]
-    error_notes = [*refresh_notes, *generator_notes, *validation_notes, *pointer_notes]
+    input_checks = [
+        {
+            "role": "current_refresh",
+            "path": current_refresh_rel,
+            "status": "pass",
+            "detail": f"Loaded current refresh pointer from {current_refresh_rel}.",
+        },
+        refresh_check,
+        generator_check,
+        validation_check,
+    ]
+
+    failing_input_checks = [check for check in input_checks if check["status"] == "fail"]
+    failing_pointer_checks = [check for check in pointer_checks if check["status"] == "fail"]
 
     status = "pass"
-    if error_notes:
+    if failing_input_checks or failing_pointer_checks:
         status = "fail"
     elif any(p["status"] == "fail" for p in phase_records):
         status = "fail"
@@ -146,19 +191,22 @@ def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
         "runner_run_id": f"runner-{datetime.now(UTC).strftime('%Y%m%dT%H%M%SZ')}",
         "current_refresh_id": current_refresh_doc.get("current_refresh_id", "unknown"),
         "resolved_inputs": [
-            {"role": "current_refresh", "path": str(paths.current_refresh.relative_to(paths.repo_root))},
+            {"role": "current_refresh", "path": current_refresh_rel},
             {"role": "refresh_runner_input", "path": str(paths.refresh_runner_input.relative_to(paths.repo_root))},
             {"role": "session_state_generator_input", "path": str(paths.session_state_generator_input.relative_to(paths.repo_root))},
             {"role": "validation_report", "path": str(paths.validation_report.relative_to(paths.repo_root))},
         ],
+        "input_checks": input_checks,
         "resolved_current_pointers": resolved_current_pointers,
+        "pointer_checks": pointer_checks,
         "planned_phases": [phase["phase"] for phase in phase_records],
         "phase_results": phase_records,
         "status": status,
         "notes": [
             "Generated by the concrete ATTICUS supercell runner scaffold.",
             "This implementation is intentionally non-mutating and performs basic live file-existence checks.",
-            *error_notes,
+            *[check["detail"] for check in failing_input_checks],
+            *[check["detail"] for check in failing_pointer_checks],
             *[phase["summary"] for phase in phase_records],
         ],
     }
