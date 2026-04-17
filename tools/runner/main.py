@@ -12,6 +12,10 @@ from phases.refresh import plan_refresh_phase
 from phases.validate import plan_validate_phase
 
 
+EXECUTION_RECORD_VERSION = "v2"
+RUNNER_VERSION = "v1"
+
+
 @dataclass(frozen=True)
 class RunnerPaths:
     repo_root: Path
@@ -136,7 +140,13 @@ def _resolve_pointer_status(repo_root: Path, current_refresh_doc: dict[str, Any]
     return resolved, checks
 
 
+def _format_utc(ts: datetime) -> str:
+    return ts.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
 def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
+    run_started_at = datetime.now(UTC)
+    emitted_at = _format_utc(run_started_at)
     current_refresh_doc = _load_json(paths.current_refresh)
     current_refresh_rel = str(paths.current_refresh.relative_to(paths.repo_root))
 
@@ -187,9 +197,13 @@ def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
         status = "warn"
 
     record = {
-        "record_version": "v1",
-        "runner_run_id": f"runner-{datetime.now(UTC).strftime('%Y%m%dT%H%M%SZ')}",
+        "record_version": EXECUTION_RECORD_VERSION,
+        "runner_version": RUNNER_VERSION,
+        "runner_run_id": f"runner-{run_started_at.strftime('%Y%m%dT%H%M%SZ')}",
+        "emitted_at": emitted_at,
         "current_refresh_id": current_refresh_doc.get("current_refresh_id", "unknown"),
+        "repo_root": str(paths.repo_root),
+        "output_path": str(paths.output_record.relative_to(paths.repo_root)),
         "resolved_inputs": [
             {"role": "current_refresh", "path": current_refresh_rel},
             {"role": "refresh_runner_input", "path": str(paths.refresh_runner_input.relative_to(paths.repo_root))},
