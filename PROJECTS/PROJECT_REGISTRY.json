@@ -1,0 +1,139 @@
+{
+  "registry_version": "v1",
+  "purpose": "machine-readable registry linking each project-local supercell to its lifecycle entry, latest resume packet, latest baseline cell, source repo, and authority boundary",
+  "generated_at": "2026-04-17",
+  "projects": [
+    {
+      "project_id": "amas",
+      "project_name": "AMAS",
+      "type": "doctrine-local project supercell",
+      "source_repo": "drop0ne/amas-spec",
+      "source_branch": "main",
+      "project_root": "PROJECTS/amas/",
+      "lifecycle_entry_ref": "PROJECTS/LIFECYCLE_LEDGER.json#amas",
+      "latest_resume_packet": {
+        "packet_id": "amas-project-latest",
+        "path": "PROJECTS/amas/SESSION_PACKETS/generated/amas_project_resume_2026-04-17.md"
+      },
+      "latest_baseline_cell": {
+        "cell_id": "AMAS_PROJECT_BASELINE_v1",
+        "path": "PROJECTS/amas/MEMORY/cells/AMAS_PROJECT_BASELINE_v1.json"
+      },
+      "authority_boundary": {
+        "source_repo_canonical_for": [
+          "code",
+          "project_local_primary_docs",
+          "doctrine"
+        ],
+        "project_supercell_canonical_for": [
+          "long_term_memory",
+          "normalized_state",
+          "resume_packets"
+        ],
+        "global_atticus_supercell_role": "umbrella_cross_project_continuity_root"
+      },
+      "status": "current"
+    },
+    {
+      "project_id": "atticus-mpo",
+      "project_name": "ATTICUS_MPO",
+      "type": "implementation-local project supercell",
+      "source_repo": "drop0ne/atticus-mpo",
+      "source_branch": "release-candidate",
+      "project_root": "PROJECTS/mpo/",
+      "lifecycle_entry_ref": "PROJECTS/LIFECYCLE_LEDGER.json#atticus-mpo",
+      "latest_resume_packet": {
+        "packet_id": "mpo-project-latest",
+        "path": "PROJECTS/mpo/SESSION_PACKETS/generated/mpo_project_resume_2026-04-17.md"
+      },
+      "latest_baseline_cell": {
+        "cell_id": "MPO_PROJECT_BASELINE_v1",
+        "path": "PROJECTS/mpo/MEMORY/cells/MPO_PROJECT_BASELINE_v1.json"
+      },
+      "authority_boundary": {
+        "source_repo_canonical_for": [
+          "code",
+          "project_local_primary_docs",
+          "implementation_state"
+        ],
+        "project_supercell_canonical_for": [
+          "long_term_memory",
+          "normalized_state",
+          "resume_packets"
+        ],
+        "global_atticus_supercell_role": "umbrella_cross_project_continuity_root"
+      },
+      "status": "current"
+    },
+    {
+      "project_id": "atticus-framework",
+      "project_name": "ATTICUS framework",
+      "type": "framework-local project supercell",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "project_root": "PROJECTS/atticus/",
+      "lifecycle_entry_ref": "PROJECTS/LIFECYCLE_LEDGER.json#atticus-framework",
+      "latest_resume_packet": {
+        "packet_id": "atticus-framework-project-latest",
+        "path": "PROJECTS/atticus/SESSION_PACKETS/generated/atticus_framework_project_resume_2026-04-17.md"
+      },
+      "latest_baseline_cell": {
+        "cell_id": "ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1",
+        "path": "PROJECTS/atticus/MEMORY/cells/ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1.json"
+      },
+      "authority_boundary": {
+        "source_repo_canonical_for": [
+          "umbrella_state",
+          "cross_project_memory_model"
+        ],
+        "project_supercell_canonical_for": [
+          "framework_local_memory",
+          "normalized_framework_state",
+          "framework_resume_packets"
+        ],
+        "global_atticus_supercell_role": "umbrella_cross_project_continuity_root"
+      },
+      "status": "current"
+    },
+    {
+      "project_id": "supercell-ops",
+      "project_name": "supercell_ops",
+      "type": "supercell-operations project supercell",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "project_root": "PROJECTS/supercell_ops/",
+      "lifecycle_entry_ref": "PROJECTS/LIFECYCLE_LEDGER.json#supercell-ops",
+      "latest_resume_packet": {
+        "packet_id": "supercell-ops-project-latest",
+        "path": "PROJECTS/supercell_ops/SESSION_PACKETS/generated/supercell_ops_resume_2026-04-17.md"
+      },
+      "latest_baseline_cell": {
+        "cell_id": "SUPERCELL_OPS_PROJECT_BASELINE_v1",
+        "path": "PROJECTS/supercell_ops/MEMORY/cells/SUPERCELL_OPS_PROJECT_BASELINE_v1.json"
+      },
+      "authority_boundary": {
+        "source_repo_canonical_for": [
+          "umbrella_supercell_structure",
+          "template_packs",
+          "global_cross_model_memory_surfaces"
+        ],
+        "project_supercell_canonical_for": [
+          "supercell_ops_long_term_memory",
+          "normalized_ops_state",
+          "resume_packets"
+        ],
+        "global_atticus_supercell_role": "umbrella_cross_project_continuity_root"
+      },
+      "status": "current"
+    }
+  ],
+  "operating_rule": {
+    "update_when": [
+      "a new project-local supercell is instantiated",
+      "a project changes its latest resume packet",
+      "a project changes its primary baseline cell",
+      "a project authority boundary materially changes",
+      "a project is retired or superseded"
+    ]
+  }
+}
