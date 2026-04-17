@@ -9,6 +9,7 @@
     "resolved_inputs",
     "resolved_current_pointers",
     "planned_phases",
+    "phase_results",
     "status",
     "notes"
   ],
@@ -43,6 +44,19 @@
     "planned_phases": {
       "type": "array",
       "items": { "type": "string" }
+    },
+    "phase_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["phase", "status", "summary"],
+        "properties": {
+          "phase": { "type": "string" },
+          "status": { "type": "string", "enum": ["pass", "warn", "fail"] },
+          "summary": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
     },
     "status": {
       "type": "string",
