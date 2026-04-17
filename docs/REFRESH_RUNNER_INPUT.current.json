@@ -1,0 +1,76 @@
+{
+  "manifest_version": "v1",
+  "refresh_id": "refresh-runner-input-layer-2026-04-17",
+  "trigger_event": "Automation-ready refresh manifest/input layer added for ATTICUS supercell maintenance",
+  "refresh_scope": "atticus-umbrella",
+  "source_repo": "drop0ne/drop0ne-atticus-supercell",
+  "source_branch": "main",
+  "merged_pr": null,
+  "merged_commit": null,
+  "active_packet": "ATTICUS//REFRESH_RUNNER_PACKET_v1",
+  "affected_projects": [
+    "atticus",
+    "amas",
+    "atticus-mpo",
+    "atticus-framework",
+    "supercell-ops"
+  ],
+  "expected_current_resume_packets": [
+    {
+      "project": "atticus-global",
+      "path": "SESSION_PACKETS/generated/atticus_resume_packet_2026-04-17_post_pr100.md"
+    },
+    {
+      "project": "atticus-working-baseline",
+      "path": "SESSION_PACKETS/generated/atticus_working_baseline_resume_2026-04-17.md"
+    },
+    {
+      "project": "amas",
+      "path": "PROJECTS/amas/SESSION_PACKETS/generated/amas_project_resume_2026-04-17.md"
+    },
+    {
+      "project": "atticus-mpo",
+      "path": "PROJECTS/mpo/SESSION_PACKETS/generated/mpo_project_resume_2026-04-17.md"
+    },
+    {
+      "project": "atticus-framework",
+      "path": "PROJECTS/atticus/SESSION_PACKETS/generated/atticus_framework_project_resume_2026-04-17.md"
+    },
+    {
+      "project": "supercell-ops",
+      "path": "PROJECTS/supercell_ops/SESSION_PACKETS/generated/supercell_ops_resume_2026-04-17.md"
+    }
+  ],
+  "expected_current_baseline_cells": [
+    {
+      "project": "atticus",
+      "cell_id": "ATTICUS_CURRENT_WORKING_BASELINE_v1",
+      "path": "MEMORY/cells/atticus/ATTICUS_CURRENT_WORKING_BASELINE_v1.json"
+    },
+    {
+      "project": "amas",
+      "cell_id": "AMAS_PROJECT_BASELINE_v1",
+      "path": "PROJECTS/amas/MEMORY/cells/AMAS_PROJECT_BASELINE_v1.json"
+    },
+    {
+      "project": "atticus-mpo",
+      "cell_id": "MPO_PROJECT_BASELINE_v1",
+      "path": "PROJECTS/mpo/MEMORY/cells/MPO_PROJECT_BASELINE_v1.json"
+    },
+    {
+      "project": "atticus-framework",
+      "cell_id": "ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1",
+      "path": "PROJECTS/atticus/MEMORY/cells/ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1.json"
+    },
+    {
+      "project": "supercell-ops",
+      "cell_id": "SUPERCELL_OPS_PROJECT_BASELINE_v1",
+      "path": "PROJECTS/supercell_ops/MEMORY/cells/SUPERCELL_OPS_PROJECT_BASELINE_v1.json"
+    }
+  ],
+  "follow_up_notes": [
+    "Use this file as the first automation-ready runner input example.",
+    "Future refresh executions should generate project- or event-specific manifests from this shape.",
+    "Keep CURRENT_REFRESH.json aligned with any superseding runner input or current pointer changes."
+  ]
+}
