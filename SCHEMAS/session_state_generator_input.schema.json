@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATTICUS Session State Generator Input",
+  "type": "object",
+  "required": [
+    "generator_version",
+    "generator_run_id",
+    "target_scope",
+    "project_id",
+    "mode",
+    "objective"
+  ],
+  "properties": {
+    "generator_version": { "type": "string" },
+    "generator_run_id": { "type": "string" },
+    "target_scope": { "type": "string" },
+    "project_id": { "type": "string" },
+    "mode": { "type": "string" },
+    "objective": { "type": "string" },
+    "active_packet": { "type": ["string", "null"] },
+    "preferred_resume_packet": { "type": ["string", "null"] },
+    "preferred_cells": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "include_global_baseline": { "type": "boolean" },
+    "include_project_baseline": { "type": "boolean" },
+    "include_latest_milestones": { "type": "boolean" },
+    "max_cells": { "type": "integer", "minimum": 1 },
+    "max_chars": { "type": "integer", "minimum": 1 }
+  },
+  "additionalProperties": false
+}
