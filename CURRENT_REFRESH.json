@@ -1,0 +1,36 @@
+{
+  "refresh_version": "v1",
+  "current_refresh_id": "refresh-operationalization-layer-2026-04-17",
+  "generated_at": "2026-04-17",
+  "scope": "atticus-umbrella",
+  "source_repo": "drop0ne/drop0ne-atticus-supercell",
+  "source_branch": "main",
+  "current_pointers": {
+    "latest_refresh_log_entry": "docs/STATE_REFRESH_LOG.json#refresh-operationalization-layer-2026-04-17",
+    "state_refresh_protocol": "docs/STATE_REFRESH_PROTOCOL.md",
+    "refresh_receipt_template": "docs/STATE_REFRESH_RECEIPT_TEMPLATE.md",
+    "project_registry": "PROJECTS/PROJECT_REGISTRY.json",
+    "lifecycle_ledger_markdown": "PROJECTS/LIFECYCLE_LEDGER.md",
+    "lifecycle_ledger_json": "PROJECTS/LIFECYCLE_LEDGER.json",
+    "resume_packet_index": "SESSION_PACKETS/RESUME_PACKET_INDEX.json",
+    "memory_cell_index": "MEMORY/MEMORY_CELL_INDEX.json"
+  },
+  "current_resume_surfaces": {
+    "atticus_global": "SESSION_PACKETS/generated/atticus_resume_packet_2026-04-17_post_pr100.md",
+    "atticus_working_baseline": "SESSION_PACKETS/generated/atticus_working_baseline_resume_2026-04-17.md",
+    "amas_project": "PROJECTS/amas/SESSION_PACKETS/generated/amas_project_resume_2026-04-17.md",
+    "mpo_project": "PROJECTS/mpo/SESSION_PACKETS/generated/mpo_project_resume_2026-04-17.md",
+    "atticus_framework_project": "PROJECTS/atticus/SESSION_PACKETS/generated/atticus_framework_project_resume_2026-04-17.md",
+    "supercell_ops_project": "PROJECTS/supercell_ops/SESSION_PACKETS/generated/supercell_ops_resume_2026-04-17.md"
+  },
+  "current_baseline_cells": {
+    "atticus_global_bootstrap": "MEMORY/cells/atticus/ATTICUS_GLOBAL_BOOTSTRAP_v1.json",
+    "amas_governance_baseline": "MEMORY/cells/atticus/AMAS_GOVERNANCE_BASELINE_v1.json",
+    "atticus_current_working_baseline": "MEMORY/cells/atticus/ATTICUS_CURRENT_WORKING_BASELINE_v1.json",
+    "mpo_project_baseline": "PROJECTS/mpo/MEMORY/cells/MPO_PROJECT_BASELINE_v1.json",
+    "amas_project_baseline": "PROJECTS/amas/MEMORY/cells/AMAS_PROJECT_BASELINE_v1.json",
+    "atticus_framework_project_baseline": "PROJECTS/atticus/MEMORY/cells/ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1.json",
+    "supercell_ops_project_baseline": "PROJECTS/supercell_ops/MEMORY/cells/SUPERCELL_OPS_PROJECT_BASELINE_v1.json"
+  },
+  "notes": "Authoritative current-state pointer for the ATTICUS supercell. Use this as the first machine-readable entry point before traversing indexes, ledgers, resume packets, or durable memory cells."
+}
