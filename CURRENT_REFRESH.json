@@ -1,12 +1,12 @@
 {
   "refresh_version": "v1",
-  "current_refresh_id": "refresh-runner-live-read-layer-2026-04-17",
+  "current_refresh_id": "refresh-runner-status-layer-2026-04-17",
   "generated_at": "2026-04-17",
   "scope": "atticus-umbrella",
   "source_repo": "drop0ne/drop0ne-atticus-supercell",
   "source_branch": "main",
   "current_pointers": {
-    "latest_refresh_log_entry": "docs/STATE_REFRESH_LOG.json#refresh-runner-live-read-layer-2026-04-17",
+    "latest_refresh_log_entry": "docs/STATE_REFRESH_LOG.json#refresh-runner-status-layer-2026-04-17",
     "state_refresh_protocol": "docs/STATE_REFRESH_PROTOCOL.md",
     "refresh_receipt_template": "docs/STATE_REFRESH_RECEIPT_TEMPLATE.md",
     "refresh_manifest_schema": "SCHEMAS/refresh_manifest.schema.json",
