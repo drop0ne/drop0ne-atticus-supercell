@@ -288,6 +288,30 @@
         "status": "complete",
         "notes": "The supercell now has a concrete runtime-shaped runner scaffold with a Python entrypoint, refresh/generate/validate phase hooks, and updated current pointers to the live implementation files."
       }
+    },
+    {
+      "receipt_id": "refresh-runner-live-read-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Runner entrypoint upgraded with live input existence checks and seeded generated execution-record output path",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "tools/runner/main.py",
+          "tools/runner/README.md",
+          "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.current.json",
+          "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "The runner scaffold now performs basic live required-input and key-pointer existence checks, the expected generated execution-record path is seeded in-repo as a baseline artifact, and the umbrella current-state pointer now targets the live-read runner layer."
+      }
     }
   ],
   "operating_rule": {
