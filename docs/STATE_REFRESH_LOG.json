@@ -388,6 +388,32 @@
         "status": "complete",
         "notes": "The runner execution record now includes emitted_at, runner_version, repo_root, and output_path, and the umbrella current-state pointer now targets the runner-runtime-receipt layer."
       }
+    },
+    {
+      "receipt_id": "refresh-runner-schema-validation-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Runner entrypoint upgraded to validate current inputs and emitted records against repo JSON Schemas with machine-auditable schema_checks",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "tools/runner/main.py",
+          "tools/runner/schema_validate.py",
+          "tools/runner/README.md",
+          "SCHEMAS/automation_runner_execution_record.schema.json",
+          "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.current.json",
+          "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "The runner now performs built-in JSON Schema validation for refresh/generator/validation inputs and the emitted execution record, persists schema_checks in the execution artifact, and the umbrella current-state pointer now targets the runner-schema-validation layer."
+      }
     }
   ],
   "operating_rule": {
