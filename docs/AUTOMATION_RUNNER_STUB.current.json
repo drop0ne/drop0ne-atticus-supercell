@@ -1,0 +1,20 @@
+{
+  "runner_version": "v1",
+  "runner_run_id": "automation-runner-stub-layer-2026-04-17",
+  "current_refresh_path": "CURRENT_REFRESH.json",
+  "refresh_runner_input_path": "docs/REFRESH_RUNNER_INPUT.current.json",
+  "session_state_generator_input_path": "docs/SESSION_STATE_GENERATOR_INPUT.current.json",
+  "validation_report_path": "docs/VALIDATION_REPORT.current.json",
+  "planned_phases": [
+    "resolve_current_refresh",
+    "load_refresh_runner_input",
+    "load_session_state_generator_input",
+    "load_validation_report",
+    "emit_runner_execution_record"
+  ],
+  "notes": [
+    "This is the first concrete automation runner stub config for the ATTICUS supercell.",
+    "It is execution-oriented but non-mutating.",
+    "A future script or GitHub Action should consume this config together with CURRENT_REFRESH.json."
+  ]
+}
