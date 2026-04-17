@@ -1,7 +1,7 @@
 {
   "record_version": "v1",
-  "runner_run_id": "runner-seeded-live-read-20260417T000000Z",
-  "current_refresh_id": "refresh-runner-live-read-layer-2026-04-17",
+  "runner_run_id": "runner-seeded-status-20260417T000000Z",
+  "current_refresh_id": "refresh-runner-status-layer-2026-04-17",
   "resolved_inputs": [
     {
       "role": "current_refresh",
@@ -43,16 +43,14 @@
     }
   ],
   "planned_phases": [
-    "resolve_current_refresh",
-    "load_refresh_runner_input",
-    "load_session_state_generator_input",
-    "load_validation_report",
-    "emit_runner_execution_record"
+    "refresh",
+    "generate",
+    "validate"
   ],
-  "status": "planned",
+  "status": "pass",
   "notes": [
-    "This is a seeded generated execution-record artifact aligned to the live-read runner layer.",
-    "It mirrors the intended output path of tools/runner/main.py but was seeded into the repo as a baseline artifact, not emitted by a runtime execution in this step.",
+    "This is a seeded generated execution-record artifact aligned to the runner-status layer.",
+    "It mirrors the expected output shape after the scaffold now emits pass when live checks are clean.",
     "Future runner executions should overwrite this file with a true runtime-generated record."
   ]
 }
