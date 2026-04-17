@@ -9,6 +9,7 @@ It is designed to:
 - read current machine-readable pointers
 - load current refresh/generator/validation inputs
 - call phase hooks for refresh, generation, and validation
+- perform basic live file-existence checks on required inputs and key schema pointers
 - emit a machine-readable execution record
 
 ## File layout
@@ -31,7 +32,7 @@ tools/runner/
 - `docs/SESSION_STATE_GENERATOR_INPUT.current.json`
 - `docs/VALIDATION_REPORT.current.json`
 
-## Expected default output
+## Expected default outputs
 
 - `docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json`
 
@@ -40,13 +41,15 @@ tools/runner/
 - execution-oriented
 - non-mutating
 - uses placeholder phase hooks
+- validates required input existence
+- validates key schema-pointer existence
 - emits a runner execution record JSON
 
 ## Future expansion
 
 Planned future upgrades:
 - real schema validation
-- real pointer existence checks
+- deeper pointer and artifact integrity checks
 - real refresh/generation/validation execution
 - GitHub Action integration
 - project-specific runner overrides
