@@ -1,0 +1,63 @@
+{
+  "report_version": "v1",
+  "validation_run_id": "validation-layer-2026-04-17",
+  "scope": "atticus-umbrella",
+  "overall_status": "pass",
+  "checks": [
+    {
+      "domain": "schema-validation",
+      "status": "pass",
+      "summary": "Current machine-readable schemas for refresh manifests, generator inputs, session-state bundles, and validation reports are present.",
+      "details": [
+        "SCHEMAS/refresh_manifest.schema.json present",
+        "SCHEMAS/session_state_generator_input.schema.json present",
+        "SCHEMAS/session_state_bundle.schema.json present",
+        "SCHEMAS/validation_report.schema.json present"
+      ]
+    },
+    {
+      "domain": "pointer-consistency",
+      "status": "pass",
+      "summary": "CURRENT_REFRESH.json points to the expected current protocol, schema, runner, generator, registry, index, and bundle artifacts.",
+      "details": [
+        "CURRENT_REFRESH.json includes refresh-runner pointers",
+        "CURRENT_REFRESH.json includes generator input/output pointers",
+        "CURRENT_REFRESH.json includes registry and index pointers"
+      ]
+    },
+    {
+      "domain": "registry-index-alignment",
+      "status": "pass",
+      "summary": "Project registry, resume-packet index, memory-cell index, and lifecycle ledgers are all present and aligned to the current project-local supercells.",
+      "details": [
+        "PROJECTS/PROJECT_REGISTRY.json present",
+        "SESSION_PACKETS/RESUME_PACKET_INDEX.json present",
+        "MEMORY/MEMORY_CELL_INDEX.json present",
+        "PROJECTS/LIFECYCLE_LEDGER.md and PROJECTS/LIFECYCLE_LEDGER.json present"
+      ]
+    },
+    {
+      "domain": "stale-current-detection",
+      "status": "pass",
+      "summary": "No contradictory newer current pointers were introduced after the current session-state bundle layer.",
+      "details": [
+        "CURRENT_REFRESH.json now points to the session-state bundle layer",
+        "STATE_REFRESH_LOG.json contains matching latest refresh entry"
+      ]
+    },
+    {
+      "domain": "generator-integrity",
+      "status": "pass",
+      "summary": "Generator input, generator output schema, and concrete generated bundle are present and internally consistent at the current design level.",
+      "details": [
+        "docs/SESSION_STATE_GENERATOR_INPUT.current.json present",
+        "SCHEMAS/session_state_bundle.schema.json present",
+        "docs/SESSION_STATE_BUNDLE.current.json present"
+      ]
+    }
+  ],
+  "recommended_remediation": [
+    "Future validation runs should become automation-backed and verify file existence and schema conformance programmatically rather than by structural update discipline alone.",
+    "Add broken-path and stale-pointer checks once a script or GitHub Action runner is introduced."
+  ]
+}
