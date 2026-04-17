@@ -1,0 +1,30 @@
+{
+  "cell_id": "MPO_PROJECT_BASELINE_v1",
+  "domain": "atticus-mpo",
+  "project": "atticus-mpo",
+  "title": "ATTICUS_MPO project-local baseline",
+  "content": "ATTICUS_MPO project-local state is anchored to the release-candidate branch of drop0ne/atticus-mpo and baseline v5.0.1. The current project-local memory-engine baseline includes PR #99, which introduced compact context-bearing stored memory cells and schema v9 support, and PR #100, which added optional query-aware retrieval hints with deterministic bounded fallback behavior.",
+  "context_summary": "Durable MPO project-local baseline cell used to test the first non-governance project-local supercell instantiation.",
+  "context_scope": "project",
+  "context_tags": [
+    "atticus-mpo",
+    "project-local",
+    "baseline",
+    "v5.0.1",
+    "memory-engine"
+  ],
+  "source_repo": "drop0ne/atticus-mpo",
+  "source_ref": "release-candidate",
+  "source_branch": "release-candidate",
+  "baseline_app_version": "v5.0.1",
+  "baseline_framework_version": "ATTICUS umbrella context",
+  "parent_cell_id": "ATTICUS_CURRENT_WORKING_BASELINE_v1",
+  "created_at": "2026-04-17",
+  "updated_at": null,
+  "provenance": {
+    "origin": "project_local_instantiation",
+    "source_prs": [99, 100]
+  },
+  "context_fingerprint": "mpo-project-baseline-v1",
+  "receipt_hash": null
+}
