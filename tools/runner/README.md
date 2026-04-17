@@ -36,6 +36,22 @@ tools/runner/
 
 - `docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json`
 
+## Local run recipe
+
+From the repo root:
+
+```bash
+cd tools/runner
+python3 main.py --repo-root ../.. --print-json
+```
+
+To write to a custom output path:
+
+```bash
+cd tools/runner
+python3 main.py --repo-root ../.. --output docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json --print-json
+```
+
 ## Current behavior
 
 - execution-oriented
@@ -43,7 +59,8 @@ tools/runner/
 - uses placeholder phase hooks
 - validates required input existence
 - validates key schema-pointer existence
-- emits a runner execution record JSON
+- emits `pass`, `warn`, or `fail` based on actual live path-check results and phase-hook outcomes
+- writes a runner execution record JSON
 
 ## Future expansion
 
