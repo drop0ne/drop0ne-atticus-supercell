@@ -1,0 +1,20 @@
+{
+  "generator_version": "v1",
+  "generator_run_id": "session-state-generator-layer-2026-04-17",
+  "target_scope": "atticus-working-baseline",
+  "project_id": "atticus",
+  "mode": "bounded_resume",
+  "objective": "Generate the default current ATTICUS working-baseline resume state from the supercell's current packets, baseline cells, and project registry.",
+  "active_packet": "SESSION_STATE_GENERATOR_SPEC",
+  "preferred_resume_packet": "SESSION_PACKETS/generated/atticus_working_baseline_resume_2026-04-17.md",
+  "preferred_cells": [
+    "ATTICUS_CURRENT_WORKING_BASELINE_v1",
+    "AMAS_GOVERNANCE_BASELINE_v1",
+    "MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1"
+  ],
+  "include_global_baseline": true,
+  "include_project_baseline": true,
+  "include_latest_milestones": true,
+  "max_cells": 6,
+  "max_chars": 12000
+}
