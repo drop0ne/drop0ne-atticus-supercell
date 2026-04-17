@@ -1,0 +1,54 @@
+{
+  "record_version": "v1",
+  "runner_run_id": "automation-runner-stub-layer-2026-04-17",
+  "current_refresh_id": "refresh-automation-runner-stub-layer-2026-04-17",
+  "resolved_inputs": [
+    {
+      "role": "current_refresh",
+      "path": "CURRENT_REFRESH.json"
+    },
+    {
+      "role": "refresh_runner_input",
+      "path": "docs/REFRESH_RUNNER_INPUT.current.json"
+    },
+    {
+      "role": "session_state_generator_input",
+      "path": "docs/SESSION_STATE_GENERATOR_INPUT.current.json"
+    },
+    {
+      "role": "validation_report",
+      "path": "docs/VALIDATION_REPORT.current.json"
+    }
+  ],
+  "resolved_current_pointers": [
+    {
+      "pointer": "refresh_manifest_schema",
+      "path": "SCHEMAS/refresh_manifest.schema.json"
+    },
+    {
+      "pointer": "session_state_generator_input_schema",
+      "path": "SCHEMAS/session_state_generator_input.schema.json"
+    },
+    {
+      "pointer": "session_state_bundle_schema",
+      "path": "SCHEMAS/session_state_bundle.schema.json"
+    },
+    {
+      "pointer": "validation_report_schema",
+      "path": "SCHEMAS/validation_report.schema.json"
+    }
+  ],
+  "planned_phases": [
+    "resolve_current_refresh",
+    "load_refresh_runner_input",
+    "load_session_state_generator_input",
+    "load_validation_report",
+    "emit_runner_execution_record"
+  ],
+  "status": "planned",
+  "notes": [
+    "This is the first concrete execution record emitted by the automation runner stub layer.",
+    "It is non-mutating and records resolved inputs and current pointers only.",
+    "A future executable runner should generate this record programmatically at run time."
+  ]
+}
