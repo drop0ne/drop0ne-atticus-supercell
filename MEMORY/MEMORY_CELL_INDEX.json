@@ -1,0 +1,125 @@
+{
+  "index_version": "v1",
+  "purpose": "machine-readable index of the latest durable baseline and milestone memory cells for the ATTICUS umbrella supercell and each instantiated project-local supercell",
+  "generated_at": "2026-04-17",
+  "entries": [
+    {
+      "cell_id": "ATTICUS_GLOBAL_BOOTSTRAP_v1",
+      "scope": "global",
+      "project": "atticus",
+      "role": "bootstrap",
+      "path": "MEMORY/cells/atticus/ATTICUS_GLOBAL_BOOTSTRAP_v1.json",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Initial umbrella bootstrap cell for ATTICUS cross-model continuity."
+    },
+    {
+      "cell_id": "AMAS_GOVERNANCE_BASELINE_v1",
+      "scope": "global",
+      "project": "amas",
+      "role": "governance-baseline",
+      "path": "MEMORY/cells/atticus/AMAS_GOVERNANCE_BASELINE_v1.json",
+      "source_repo": "drop0ne/amas-spec",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Current AMAS governance anchor for ATTICUS cross-model memory."
+    },
+    {
+      "cell_id": "ATTICUS_CURRENT_WORKING_BASELINE_v1",
+      "scope": "global",
+      "project": "atticus",
+      "role": "working-baseline",
+      "path": "MEMORY/cells/atticus/ATTICUS_CURRENT_WORKING_BASELINE_v1.json",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Current cross-repo working baseline spanning AMAS governance and MPO implementation state."
+    },
+    {
+      "cell_id": "MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_MERGED_v1",
+      "scope": "project",
+      "project": "atticus-mpo",
+      "role": "merged-milestone",
+      "path": "MEMORY/cells/mpo/MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_MERGED_v1.json",
+      "source_repo": "drop0ne/atticus-mpo",
+      "source_branch": "release-candidate",
+      "status": "current",
+      "notes": "Merged milestone for the first context-carrying MPO memory-cell upgrade (PR #99)."
+    },
+    {
+      "cell_id": "MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1",
+      "scope": "project",
+      "project": "atticus-mpo",
+      "role": "merged-milestone",
+      "path": "MEMORY/cells/mpo/MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1.json",
+      "source_repo": "drop0ne/atticus-mpo",
+      "source_branch": "release-candidate",
+      "status": "current",
+      "notes": "Merged milestone for the first query-aware MPO retrieval-quality upgrade (PR #100)."
+    },
+    {
+      "cell_id": "MPO_PACKET_CHAIN_PROGRESS_POST_PR100_v1",
+      "scope": "project",
+      "project": "atticus-mpo",
+      "role": "governance-progress",
+      "path": "MEMORY/cells/mpo/MPO_PACKET_CHAIN_PROGRESS_POST_PR100_v1.json",
+      "source_repo": "drop0ne/atticus-mpo",
+      "source_branch": "release-candidate",
+      "status": "current",
+      "notes": "Current normalized packet-chain progress state after merged MPO PRs #99 and #100."
+    },
+    {
+      "cell_id": "AMAS_PROJECT_BASELINE_v1",
+      "scope": "project-local",
+      "project": "amas",
+      "role": "project-baseline",
+      "path": "PROJECTS/amas/MEMORY/cells/AMAS_PROJECT_BASELINE_v1.json",
+      "source_repo": "drop0ne/amas-spec",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Project-local AMAS doctrine baseline."
+    },
+    {
+      "cell_id": "MPO_PROJECT_BASELINE_v1",
+      "scope": "project-local",
+      "project": "atticus-mpo",
+      "role": "project-baseline",
+      "path": "PROJECTS/mpo/MEMORY/cells/MPO_PROJECT_BASELINE_v1.json",
+      "source_repo": "drop0ne/atticus-mpo",
+      "source_branch": "release-candidate",
+      "status": "current",
+      "notes": "Project-local MPO implementation baseline."
+    },
+    {
+      "cell_id": "ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1",
+      "scope": "project-local",
+      "project": "atticus-framework",
+      "role": "project-baseline",
+      "path": "PROJECTS/atticus/MEMORY/cells/ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1.json",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Project-local ATTICUS framework baseline."
+    },
+    {
+      "cell_id": "SUPERCELL_OPS_PROJECT_BASELINE_v1",
+      "scope": "project-local",
+      "project": "supercell-ops",
+      "role": "project-baseline",
+      "path": "PROJECTS/supercell_ops/MEMORY/cells/SUPERCELL_OPS_PROJECT_BASELINE_v1.json",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Project-local baseline for supercell operations and instantiation workflow continuity."
+    }
+  ],
+  "operating_rule": {
+    "update_when": [
+      "a newer durable baseline or milestone cell supersedes an existing current cell",
+      "a new project-local supercell is instantiated",
+      "a project changes its primary baseline cell",
+      "a new umbrella working-baseline or governance-anchor cell becomes current"
+    ]
+  }
+}
