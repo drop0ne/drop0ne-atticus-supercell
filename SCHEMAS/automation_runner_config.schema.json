@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATTICUS Automation Runner Stub Config",
+  "type": "object",
+  "required": [
+    "runner_version",
+    "runner_run_id",
+    "current_refresh_path",
+    "refresh_runner_input_path",
+    "session_state_generator_input_path",
+    "validation_report_path",
+    "planned_phases"
+  ],
+  "properties": {
+    "runner_version": { "type": "string" },
+    "runner_run_id": { "type": "string" },
+    "current_refresh_path": { "type": "string" },
+    "refresh_runner_input_path": { "type": "string" },
+    "session_state_generator_input_path": { "type": "string" },
+    "validation_report_path": { "type": "string" },
+    "planned_phases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}
