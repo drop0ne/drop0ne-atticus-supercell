@@ -1,7 +1,11 @@
 {
-  "record_version": "v1",
-  "runner_run_id": "automation-runner-audit-detail-layer-2026-04-17",
-  "current_refresh_id": "refresh-runner-audit-detail-layer-2026-04-17",
+  "record_version": "v2",
+  "runner_version": "v1",
+  "runner_run_id": "automation-runner-runtime-receipt-layer-2026-04-17",
+  "emitted_at": "2026-04-17T00:00:00Z",
+  "current_refresh_id": "refresh-runner-runtime-receipt-layer-2026-04-17",
+  "repo_root": "/repo/drop0ne-atticus-supercell",
+  "output_path": "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.current.json",
   "resolved_inputs": [
     {
       "role": "current_refresh",
@@ -124,8 +128,8 @@
   ],
   "status": "pass",
   "notes": [
-    "This execution-record example is aligned to the runner-audit-detail layer.",
-    "The concrete scaffold now emits structured input_checks and pointer_checks in addition to phase-by-phase results.",
+    "This execution-record example is aligned to the runner-runtime-receipt layer.",
+    "The concrete scaffold now emits runtime-emission receipt fields (emitted_at, runner_version, repo_root, output_path) in addition to structured input_checks and pointer_checks.",
     "This artifact is maintained as a current example aligned to the expected runtime output shape."
   ]
 }
