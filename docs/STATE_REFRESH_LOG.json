@@ -194,6 +194,29 @@
         "status": "complete",
         "notes": "The supercell now has a canonical validation protocol, a machine-readable validation report schema, a current validation report, and an updated current-state pointer to the validation layer."
       }
+    },
+    {
+      "receipt_id": "refresh-lifecycle-status-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Supersession and archival policy, artifact lifecycle status schema, and current artifact lifecycle registry added for formal artifact state management",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "docs/SUPERSESSION_ARCHIVAL_POLICY.md",
+          "SCHEMAS/artifact_lifecycle_status.schema.json",
+          "docs/ARTIFACT_LIFECYCLE_STATUS.current.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "The supercell now has a formal policy for current/superseded/archived/retired artifacts, a machine-readable lifecycle status schema, a current lifecycle registry, and an updated current-state pointer to the lifecycle status layer."
+      }
     }
   ],
   "operating_rule": {
