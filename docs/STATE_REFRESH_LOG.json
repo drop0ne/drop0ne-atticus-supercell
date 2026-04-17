@@ -240,6 +240,28 @@
         "status": "complete",
         "notes": "The supercell now has an execution-oriented automation runner stub spec, a machine-readable runner config schema, a current stub config, and an updated current-state pointer to the automation-runner layer."
       }
+    },
+    {
+      "receipt_id": "refresh-automation-runner-execution-record-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Automation runner execution record schema and current execution record example added for concrete runner run artifacts",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "SCHEMAS/automation_runner_execution_record.schema.json",
+          "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.current.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "The supercell now has a machine-readable execution record schema, a concrete current execution record example, and an updated current-state pointer to the execution-record layer."
+      }
     }
   ],
   "operating_rule": {
