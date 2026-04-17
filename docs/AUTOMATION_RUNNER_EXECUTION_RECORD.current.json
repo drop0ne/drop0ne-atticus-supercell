@@ -1,7 +1,7 @@
 {
   "record_version": "v1",
-  "runner_run_id": "automation-runner-stub-layer-2026-04-17",
-  "current_refresh_id": "refresh-automation-runner-stub-layer-2026-04-17",
+  "runner_run_id": "automation-runner-live-read-layer-2026-04-17",
+  "current_refresh_id": "refresh-runner-live-read-layer-2026-04-17",
   "resolved_inputs": [
     {
       "role": "current_refresh",
@@ -36,6 +36,10 @@
     {
       "pointer": "validation_report_schema",
       "path": "SCHEMAS/validation_report.schema.json"
+    },
+    {
+      "pointer": "automation_runner_execution_record_schema",
+      "path": "SCHEMAS/automation_runner_execution_record.schema.json"
     }
   ],
   "planned_phases": [
@@ -47,8 +51,8 @@
   ],
   "status": "planned",
   "notes": [
-    "This is the first concrete execution record emitted by the automation runner stub layer.",
-    "It is non-mutating and records resolved inputs and current pointers only.",
-    "A future executable runner should generate this record programmatically at run time."
+    "This execution-record example is aligned to the live-read runner layer.",
+    "The concrete scaffold now performs basic existence checks for required inputs and key schema pointers.",
+    "A future executable runner should overwrite this current example with a runtime-emitted record."
   ]
 }
