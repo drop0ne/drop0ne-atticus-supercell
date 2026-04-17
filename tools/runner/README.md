@@ -10,7 +10,7 @@ It is designed to:
 - load current refresh/generator/validation inputs
 - call phase hooks for refresh, generation, and validation
 - perform basic live file-existence checks on required inputs and key schema pointers
-- emit a machine-readable execution record
+- emit a machine-readable execution record with runtime-emission receipt fields
 
 ## File layout
 
@@ -61,6 +61,7 @@ python3 main.py --repo-root ../.. --output docs/AUTOMATION_RUNNER_EXECUTION_RECO
 - validates key schema-pointer existence
 - emits `pass`, `warn`, or `fail` based on actual live path-check results and phase-hook outcomes
 - writes a runner execution record JSON
+- includes `emitted_at`, `runner_version`, `repo_root`, and `output_path` so each execution record is self-describing as a runtime artifact
 
 ## Future expansion
 
