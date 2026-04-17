@@ -114,7 +114,7 @@
       "source_branch": "main",
       "source_validation": {
         "landed": true,
-        "active_baseline_confirmed": true,
+        "active_baselineConfirmed": true,
         "mirrored_artifacts": [
           "SCHEMAS/refresh_manifest.schema.json",
           "docs/REFRESH_RUNNER_INPUT.current.json",
@@ -261,6 +261,32 @@
       "result": {
         "status": "complete",
         "notes": "The supercell now has a machine-readable execution record schema, a concrete current execution record example, and an updated current-state pointer to the execution-record layer."
+      }
+    },
+    {
+      "receipt_id": "refresh-runner-implementation-scaffold-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Concrete runner implementation scaffold added under tools/runner with entrypoint and phase hooks",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "tools/runner/README.md",
+          "tools/runner/main.py",
+          "tools/runner/phases/__init__.py",
+          "tools/runner/phases/refresh.py",
+          "tools/runner/phases/generate.py",
+          "tools/runner/phases/validate.py",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "The supercell now has a concrete runtime-shaped runner scaffold with a Python entrypoint, refresh/generate/validate phase hooks, and updated current pointers to the live implementation files."
       }
     }
   ],
