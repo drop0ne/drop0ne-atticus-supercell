@@ -1,0 +1,142 @@
+{
+  "cell_version": "v1",
+  "cell_type": "session_continuity_memory_cell",
+  "cell_name": "ATTICUS_SESSION_CONTINUITY_RUNNER_AUDIT_DETAIL_2026-04-17",
+  "created_at": "2026-04-17",
+  "scope": "atticus-supercell / automation-runner hardening",
+  "primary_repo": "drop0ne/drop0ne-atticus-supercell",
+  "continuity_intent": "Resume supercell automation-runner work from the latest machine-auditable execution-record layer without re-deriving prior layers.",
+  "current_baseline": {
+    "current_refresh_id": "refresh-runner-audit-detail-layer-2026-04-17",
+    "current_state": "Runner execution records now expose structured input_checks, pointer_checks, phase_results, and overall status.",
+    "latest_focus": "Make the execution record more machine-auditable and preserve continuity across an overlong chat."
+  },
+  "objectives_in_progress": [
+    "Operationalize the ATTICUS supercell as a cross-model authoritative memory repo.",
+    "Turn the supercell runner from a documentation-only scaffold into a minimally testable local runner.",
+    "Keep current pointers, schemas, examples, and refresh logs synchronized after each layer addition."
+  ],
+  "completed_layers": [
+    {
+      "layer": "operationalization",
+      "result": "Canonical refresh protocol, receipt template, refresh log, project registry, lifecycle ledgers, memory-cell index, and resume-packet index established."
+    },
+    {
+      "layer": "refresh-manifest",
+      "result": "Machine-readable refresh manifest schema and concrete current refresh-runner input created."
+    },
+    {
+      "layer": "session-state-generator",
+      "result": "Generator spec, input schema, input example, output schema, and current generated session-state bundle created."
+    },
+    {
+      "layer": "validation",
+      "result": "Supercell validation protocol, validation report schema, and current validation report created."
+    },
+    {
+      "layer": "artifact-lifecycle",
+      "result": "Supersession/archival policy plus artifact lifecycle status schema and current registry created."
+    },
+    {
+      "layer": "automation-runner-stub",
+      "result": "Stub spec, runner config schema, current config, execution-record schema, and execution-record examples created."
+    },
+    {
+      "layer": "runner-implementation-scaffold",
+      "result": "Concrete runtime files created under tools/runner/: README.md, main.py, phases/__init__.py, phases/refresh.py, phases/generate.py, phases/validate.py."
+    },
+    {
+      "layer": "runner-live-read",
+      "result": "Runner now performs live required-input and key-pointer existence checks and writes to docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json."
+    },
+    {
+      "layer": "runner-status",
+      "result": "Phase hooks now return pass/warn/fail from actual loaded content; README includes real local run commands."
+    },
+    {
+      "layer": "runner-audit-detail",
+      "result": "Execution record schema and runner output now include structured input_checks and pointer_checks in addition to phase_results."
+    }
+  ],
+  "current_runner_behavior": {
+    "entrypoint": "tools/runner/main.py",
+    "default_inputs": [
+      "CURRENT_REFRESH.json",
+      "docs/REFRESH_RUNNER_INPUT.current.json",
+      "docs/SESSION_STATE_GENERATOR_INPUT.current.json",
+      "docs/VALIDATION_REPORT.current.json"
+    ],
+    "default_output": "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json",
+    "current_output_fields": [
+      "record_version",
+      "runner_run_id",
+      "current_refresh_id",
+      "resolved_inputs",
+      "input_checks",
+      "resolved_current_pointers",
+      "pointer_checks",
+      "planned_phases",
+      "phase_results",
+      "status",
+      "notes"
+    ],
+    "phase_hooks": {
+      "refresh": "Fails on missing required refresh-runner keys; warns on empty critical lists; passes on structurally complete input.",
+      "generate": "Fails on missing required generator keys; warns on missing/invalid/tight bounds; passes on structurally complete bounded input.",
+      "validate": "Fails on missing/invalid validation report shape; warns when expected domains are missing or report status is warn; passes on complete healthy validation report."
+    },
+    "current_limits": [
+      "Runner is still non-mutating.",
+      "Runner does not yet perform real schema validation against JSON Schema.",
+      "Runner does not yet execute real refresh/generation/validation mutations.",
+      "Generated execution-record artifact in repo is still a seeded baseline example, not proof of a live repo-side run from this chat."
+    ]
+  },
+  "key_repo_files": [
+    "CURRENT_REFRESH.json",
+    "docs/STATE_REFRESH_LOG.json",
+    "SCHEMAS/automation_runner_execution_record.schema.json",
+    "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.current.json",
+    "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json",
+    "tools/runner/main.py",
+    "tools/runner/README.md",
+    "tools/runner/phases/refresh.py",
+    "tools/runner/phases/generate.py",
+    "tools/runner/phases/validate.py",
+    "docs/REFRESH_RUNNER_INPUT.current.json",
+    "docs/SESSION_STATE_GENERATOR_INPUT.current.json",
+    "docs/VALIDATION_REPORT.current.json"
+  ],
+  "current_resume_surfaces": {
+    "atticus_global": "SESSION_PACKETS/generated/atticus_resume_packet_2026-04-17_post_pr100.md",
+    "atticus_working_baseline": "SESSION_PACKETS/generated/atticus_working_baseline_resume_2026-04-17.md",
+    "amas_project": "PROJECTS/amas/SESSION_PACKETS/generated/amas_project_resume_2026-04-17.md",
+    "mpo_project": "PROJECTS/mpo/SESSION_PACKETS/generated/mpo_project_resume_2026-04-17.md",
+    "atticus_framework_project": "PROJECTS/atticus/SESSION_PACKETS/generated/atticus_framework_project_resume_2026-04-17.md",
+    "supercell_ops_project": "PROJECTS/supercell_ops/SESSION_PACKETS/generated/supercell_ops_resume_2026-04-17.md"
+  },
+  "next_recommended_step": {
+    "recommendation": "Add runtime-emission receipt fields to the execution record.",
+    "why": "The next clean hardening step is to make each generated execution record self-describing as a runtime artifact, not just a status snapshot.",
+    "target_fields": [
+      "emitted_at",
+      "runner_version",
+      "repo_root",
+      "output_path"
+    ]
+  },
+  "rehydration_instructions": {
+    "use_when_starting_next_chat": [
+      "State that work should resume from ATTICUS supercell runner audit-detail layer.",
+      "Preserve current_refresh_id = refresh-runner-audit-detail-layer-2026-04-17 unless superseded by newer repo state.",
+      "Do not regress to pre-audit-detail execution-record shape.",
+      "Next action: extend execution record with runtime-emission receipt fields and refresh CURRENT_REFRESH.json and STATE_REFRESH_LOG.json after the change."
+    ],
+    "operator_prompt_seed": "Resume ATTICUS supercell work from the runner-audit-detail layer. Current runner supports structured input_checks, pointer_checks, phase_results, and overall status. Next hardening step: add emitted_at, runner_version, repo_root, and output_path to the execution record, then refresh CURRENT_REFRESH.json and STATE_REFRESH_LOG.json."
+  },
+  "notes": [
+    "This cell is a continuity artifact for cross-chat resumption because the source chat became too long.",
+    "It is intended to preserve the relevant operational state, not to replace the repo’s canonical docs.",
+    "Use this cell together with the repo’s CURRENT_REFRESH.json when resuming."
+  ]
+}
