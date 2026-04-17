@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATTICUS Supercell Refresh Manifest",
+  "type": "object",
+  "required": [
+    "manifest_version",
+    "refresh_id",
+    "trigger_event",
+    "refresh_scope",
+    "source_repo",
+    "source_branch",
+    "affected_projects",
+    "expected_current_resume_packets",
+    "expected_current_baseline_cells"
+  ],
+  "properties": {
+    "manifest_version": { "type": "string" },
+    "refresh_id": { "type": "string" },
+    "trigger_event": { "type": "string" },
+    "refresh_scope": { "type": "string" },
+    "source_repo": { "type": "string" },
+    "source_branch": { "type": "string" },
+    "merged_pr": { "type": ["integer", "null"] },
+    "merged_commit": { "type": ["string", "null"] },
+    "active_packet": { "type": ["string", "null"] },
+    "affected_projects": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "expected_current_resume_packets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["project", "path"],
+        "properties": {
+          "project": { "type": "string" },
+          "path": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "expected_current_baseline_cells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["project", "cell_id", "path"],
+        "properties": {
+          "project": { "type": "string" },
+          "cell_id": { "type": "string" },
+          "path": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "follow_up_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}
