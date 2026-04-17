@@ -1,0 +1,75 @@
+{
+  "index_version": "v1",
+  "purpose": "machine-readable index of the latest valid restart surface for the ATTICUS umbrella supercell and each instantiated project-local supercell",
+  "generated_at": "2026-04-17",
+  "entries": [
+    {
+      "packet_id": "atticus-global-latest",
+      "scope": "global",
+      "project": "atticus",
+      "path": "SESSION_PACKETS/generated/atticus_resume_packet_2026-04-17_post_pr100.md",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Latest global ATTICUS resume packet after merged MPO PR #100 baseline."
+    },
+    {
+      "packet_id": "atticus-working-baseline-latest",
+      "scope": "global-working-baseline",
+      "project": "atticus",
+      "path": "SESSION_PACKETS/generated/atticus_working_baseline_resume_2026-04-17.md",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Normalized cross-repo working baseline spanning AMAS governance and MPO implementation state."
+    },
+    {
+      "packet_id": "amas-project-latest",
+      "scope": "project-local",
+      "project": "amas",
+      "path": "PROJECTS/amas/SESSION_PACKETS/generated/amas_project_resume_2026-04-17.md",
+      "source_repo": "drop0ne/amas-spec",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Project-local restart surface for AMAS doctrine continuity."
+    },
+    {
+      "packet_id": "mpo-project-latest",
+      "scope": "project-local",
+      "project": "atticus-mpo",
+      "path": "PROJECTS/mpo/SESSION_PACKETS/generated/mpo_project_resume_2026-04-17.md",
+      "source_repo": "drop0ne/atticus-mpo",
+      "source_branch": "release-candidate",
+      "status": "current",
+      "notes": "Project-local restart surface for MPO implementation continuity."
+    },
+    {
+      "packet_id": "atticus-framework-project-latest",
+      "scope": "project-local",
+      "project": "atticus-framework",
+      "path": "PROJECTS/atticus/SESSION_PACKETS/generated/atticus_framework_project_resume_2026-04-17.md",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Project-local restart surface for ATTICUS framework continuity."
+    },
+    {
+      "packet_id": "supercell-ops-project-latest",
+      "scope": "project-local",
+      "project": "supercell-ops",
+      "path": "PROJECTS/supercell_ops/SESSION_PACKETS/generated/supercell_ops_resume_2026-04-17.md",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "status": "current",
+      "notes": "Project-local restart surface for supercell architecture and instantiation-workflow continuity."
+    }
+  ],
+  "operating_rule": {
+    "update_when": [
+      "a newer resume packet supersedes an existing current packet",
+      "a new project-local supercell is instantiated",
+      "a project changes its primary restart surface",
+      "an umbrella working-baseline packet materially changes"
+    ]
+  }
+}
