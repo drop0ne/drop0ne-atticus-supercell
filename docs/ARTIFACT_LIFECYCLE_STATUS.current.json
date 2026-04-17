@@ -1,0 +1,95 @@
+{
+  "registry_version": "v1",
+  "entries": [
+    {
+      "artifact_id": "atticus-global-latest",
+      "artifact_type": "resume_packet",
+      "path": "SESSION_PACKETS/generated/atticus_resume_packet_2026-04-17_post_pr100.md",
+      "project": "atticus",
+      "role": "global-resume",
+      "status": "current",
+      "superseded_by": null,
+      "notes": "Current umbrella ATTICUS global resume surface."
+    },
+    {
+      "artifact_id": "atticus-working-baseline-latest",
+      "artifact_type": "resume_packet",
+      "path": "SESSION_PACKETS/generated/atticus_working_baseline_resume_2026-04-17.md",
+      "project": "atticus",
+      "role": "working-baseline-resume",
+      "status": "current",
+      "superseded_by": null,
+      "notes": "Current cross-repo working-baseline resume surface."
+    },
+    {
+      "artifact_id": "ATTICUS_CURRENT_WORKING_BASELINE_v1",
+      "artifact_type": "memory_cell",
+      "path": "MEMORY/cells/atticus/ATTICUS_CURRENT_WORKING_BASELINE_v1.json",
+      "project": "atticus",
+      "role": "working-baseline-cell",
+      "status": "current",
+      "superseded_by": null,
+      "notes": "Current umbrella cross-repo baseline cell."
+    },
+    {
+      "artifact_id": "AMAS_PROJECT_BASELINE_v1",
+      "artifact_type": "memory_cell",
+      "path": "PROJECTS/amas/MEMORY/cells/AMAS_PROJECT_BASELINE_v1.json",
+      "project": "amas",
+      "role": "project-baseline-cell",
+      "status": "current",
+      "superseded_by": null,
+      "notes": "Current AMAS project-local baseline cell."
+    },
+    {
+      "artifact_id": "MPO_PROJECT_BASELINE_v1",
+      "artifact_type": "memory_cell",
+      "path": "PROJECTS/mpo/MEMORY/cells/MPO_PROJECT_BASELINE_v1.json",
+      "project": "atticus-mpo",
+      "role": "project-baseline-cell",
+      "status": "current",
+      "superseded_by": null,
+      "notes": "Current MPO project-local baseline cell."
+    },
+    {
+      "artifact_id": "ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1",
+      "artifact_type": "memory_cell",
+      "path": "PROJECTS/atticus/MEMORY/cells/ATTICUS_FRAMEWORK_PROJECT_BASELINE_v1.json",
+      "project": "atticus-framework",
+      "role": "project-baseline-cell",
+      "status": "current",
+      "superseded_by": null,
+      "notes": "Current ATTICUS framework project-local baseline cell."
+    },
+    {
+      "artifact_id": "SUPERCELL_OPS_PROJECT_BASELINE_v1",
+      "artifact_type": "memory_cell",
+      "path": "PROJECTS/supercell_ops/MEMORY/cells/SUPERCELL_OPS_PROJECT_BASELINE_v1.json",
+      "project": "supercell-ops",
+      "role": "project-baseline-cell",
+      "status": "current",
+      "superseded_by": null,
+      "notes": "Current supercell-ops project-local baseline cell."
+    },
+    {
+      "artifact_id": "MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_MERGED_v1",
+      "artifact_type": "memory_cell",
+      "path": "MEMORY/cells/mpo/MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_MERGED_v1.json",
+      "project": "atticus-mpo",
+      "role": "merged-milestone-cell",
+      "status": "current",
+      "superseded_by": null,
+      "notes": "Current merged milestone for PR #99 context-cell upgrade."
+    },
+    {
+      "artifact_id": "MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1",
+      "artifact_type": "memory_cell",
+      "path": "MEMORY/cells/mpo/MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1.json",
+      "project": "atticus-mpo",
+      "role": "merged-milestone-cell",
+      "status": "current",
+      "superseded_by": null,
+      "notes": "Current merged milestone for PR #100 retrieval-quality upgrade."
+    }
+  ]
+}
