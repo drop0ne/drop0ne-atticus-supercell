@@ -1,0 +1,89 @@
+{
+  "log_version": "v1",
+  "purpose": "machine-readable audit trail of completed supercell maintenance cycles",
+  "entries": [
+    {
+      "receipt_id": "refresh-pr99-2026-04-16",
+      "generated_at": "2026-04-16",
+      "refresh_scope": "atticus-mpo",
+      "trigger_event": "PR #99 merged into release-candidate",
+      "source_repo": "drop0ne/atticus-mpo",
+      "source_branch": "release-candidate",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "CURRENT_STATE/atticus_mpo_state.md",
+          "CURRENT_STATE/planned_work.md",
+          "MIRRORS/atticus-mpo/repo_state.md",
+          "MIRRORS/atticus-mpo/pr_99_memory_engine_merge.md",
+          "SESSION_PACKETS/generated/atticus_resume_packet_2026-04-16_post_pr99.md",
+          "MEMORY/cells/mpo/MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_MERGED_v1.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "First context-carrying MPO memory-cell merge mirrored into the supercell baseline."
+      }
+    },
+    {
+      "receipt_id": "refresh-pr100-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-mpo",
+      "trigger_event": "PR #100 merged into release-candidate",
+      "source_repo": "drop0ne/atticus-mpo",
+      "source_branch": "release-candidate",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "CURRENT_STATE/atticus_mpo_state.md",
+          "CURRENT_STATE/planned_work.md",
+          "MIRRORS/atticus-mpo/repo_state.md",
+          "MIRRORS/atticus-mpo/pr_100_query_aware_retrieval_merge.md",
+          "SESSION_PACKETS/generated/atticus_resume_packet_2026-04-17_post_pr100.md",
+          "MEMORY/cells/mpo/MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "First query-aware MPO retrieval-quality merge mirrored into the supercell baseline."
+      }
+    },
+    {
+      "receipt_id": "refresh-project-local-instantiations-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "project-local-supercells",
+      "trigger_event": "Project-local supercell instantiation workflow expansion",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "PROJECTS/amas/",
+          "PROJECTS/mpo/",
+          "PROJECTS/atticus/",
+          "PROJECTS/supercell_ops/",
+          "PROJECTS/LIFECYCLE_LEDGER.md",
+          "PROJECTS/LIFECYCLE_LEDGER.json",
+          "PROJECTS/PROJECT_REGISTRY.json",
+          "SESSION_PACKETS/RESUME_PACKET_INDEX.json",
+          "MEMORY/MEMORY_CELL_INDEX.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "Project-local supercell creation patterns now exist in template, checklist+manifest, and one-file packet workflows."
+      }
+    }
+  ],
+  "operating_rule": {
+    "append_when": [
+      "a coherent refresh cycle completes under the state refresh protocol",
+      "a merged repo event changes current mirrors, resume packets, or durable current cells",
+      "a project-local supercell is instantiated, rebuilt, or materially changes lifecycle method",
+      "umbrella indexes or registries change current pointers"
+    ]
+  }
+}
