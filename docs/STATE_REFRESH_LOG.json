@@ -339,6 +339,30 @@
         "status": "complete",
         "notes": "The runner scaffold now returns pass/warn/fail from actual loaded content checks and live path checks, the runner docs now include concrete local run commands, and the umbrella current-state pointer now targets the runner-status layer."
       }
+    },
+    {
+      "receipt_id": "refresh-runner-audit-detail-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Execution records extended with structured input_checks and pointer_checks for machine-auditable runner outputs",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "SCHEMAS/automation_runner_execution_record.schema.json",
+          "tools/runner/main.py",
+          "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.current.json",
+          "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "The runner execution record now includes structured input_checks and pointer_checks in addition to phase_results, and the umbrella current-state pointer now targets the runner-audit-detail layer."
+      }
     }
   ],
   "operating_rule": {
