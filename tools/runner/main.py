@@ -133,7 +133,7 @@ def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
     phase_records = [refresh_phase, generate_phase, validate_phase]
     error_notes = [*refresh_notes, *generator_notes, *validation_notes, *pointer_notes]
 
-    status = "planned"
+    status = "pass"
     if error_notes:
         status = "fail"
     elif any(p["status"] == "fail" for p in phase_records):
