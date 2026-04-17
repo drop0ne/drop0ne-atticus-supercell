@@ -312,6 +312,33 @@
         "status": "complete",
         "notes": "The runner scaffold now performs basic live required-input and key-pointer existence checks, the expected generated execution-record path is seeded in-repo as a baseline artifact, and the umbrella current-state pointer now targets the live-read runner layer."
       }
+    },
+    {
+      "receipt_id": "refresh-runner-status-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Runner phase hooks hardened for content checks, runner status set to pass when live checks are clean, and local run recipe documented",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "tools/runner/main.py",
+          "tools/runner/phases/refresh.py",
+          "tools/runner/phases/generate.py",
+          "tools/runner/phases/validate.py",
+          "tools/runner/README.md",
+          "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.current.json",
+          "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.generated.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "The runner scaffold now returns pass/warn/fail from actual loaded content checks and live path checks, the runner docs now include concrete local run commands, and the umbrella current-state pointer now targets the runner-status layer."
+      }
     }
   ],
   "operating_rule": {
