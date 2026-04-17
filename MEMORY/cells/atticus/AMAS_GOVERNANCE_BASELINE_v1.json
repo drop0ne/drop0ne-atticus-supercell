@@ -1,0 +1,35 @@
+{
+  "cell_id": "AMAS_GOVERNANCE_BASELINE_v1",
+  "domain": "atticus",
+  "project": "amas",
+  "title": "AMAS governance baseline for ATTICUS supercell use",
+  "content": "AMAS is currently represented as v2.0-draft and is the governance anchor for ATTICUS cross-model memory. The doctrine now explicitly separates governance core, runtime binding, and conformance profiles, while preserving the four-tier authority model of CANONICAL, OPERATOR, SESSION, and INFERRED.",
+  "context_summary": "Durable AMAS baseline cell for ATTICUS supercell use. Captures the current governance split and preserves the active authority-model frame for cross-model memory operations.",
+  "context_scope": "global",
+  "context_tags": [
+    "amas",
+    "governance",
+    "atticus",
+    "v2.0-draft",
+    "authority-model"
+  ],
+  "source_repo": "drop0ne/amas-spec",
+  "source_ref": "main",
+  "source_branch": "main",
+  "baseline_app_version": null,
+  "baseline_framework_version": "ATTICUS umbrella context",
+  "parent_cell_id": "ATTICUS_GLOBAL_BOOTSTRAP_v1",
+  "created_at": "2026-04-17",
+  "updated_at": null,
+  "provenance": {
+    "origin": "supercell_mirror",
+    "source_docs": [
+      "README.md",
+      "SPEC.md",
+      "RUNTIME_BINDING.md",
+      "CONFORMANCE_PROFILES.md"
+    ]
+  },
+  "context_fingerprint": "amas-governance-baseline-v1",
+  "receipt_hash": null
+}
