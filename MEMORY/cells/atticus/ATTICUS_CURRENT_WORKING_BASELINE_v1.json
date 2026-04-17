@@ -1,0 +1,34 @@
+{
+  "cell_id": "ATTICUS_CURRENT_WORKING_BASELINE_v1",
+  "domain": "atticus",
+  "project": "global",
+  "title": "ATTICUS current working baseline across AMAS and MPO",
+  "content": "The current ATTICUS working baseline is defined by AMAS as the governance anchor and ATTICUS_MPO release-candidate as the active implementation baseline. AMAS is represented as v2.0-draft with explicit separation between governance core, runtime binding, and conformance profiles. ATTICUS_MPO release-candidate now includes both PR #99 (context-carrying memory cells) and PR #100 (query-aware retrieval hints), which together define the current memory-engine baseline for bounded long-term continuity and retrieval quality.",
+  "context_summary": "Durable cross-repo working-baseline cell for ATTICUS. Encodes the current AMAS governance anchor plus the current MPO implementation baseline after merged PRs #99 and #100.",
+  "context_scope": "global",
+  "context_tags": [
+    "atticus",
+    "working-baseline",
+    "amas",
+    "atticus-mpo",
+    "cross-repo"
+  ],
+  "source_repo": "drop0ne/drop0ne-atticus-supercell",
+  "source_ref": "main",
+  "source_branch": "main",
+  "baseline_app_version": "v5.0.1",
+  "baseline_framework_version": "ATTICUS umbrella context",
+  "parent_cell_id": "AMAS_GOVERNANCE_BASELINE_v1",
+  "created_at": "2026-04-17",
+  "updated_at": null,
+  "provenance": {
+    "origin": "cross_repo_normalization",
+    "source_repos": [
+      "drop0ne/amas-spec",
+      "drop0ne/atticus-mpo"
+    ],
+    "source_prs": [99, 100]
+  },
+  "context_fingerprint": "atticus-current-working-baseline-v1",
+  "receipt_hash": null
+}
