@@ -217,6 +217,29 @@
         "status": "complete",
         "notes": "The supercell now has a formal policy for current/superseded/archived/retired artifacts, a machine-readable lifecycle status schema, a current lifecycle registry, and an updated current-state pointer to the lifecycle status layer."
       }
+    },
+    {
+      "receipt_id": "refresh-automation-runner-stub-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Automation runner stub spec and machine-readable runner config added for execution-oriented control-plane discovery",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "docs/AUTOMATION_RUNNER_STUB_SPEC.md",
+          "SCHEMAS/automation_runner_config.schema.json",
+          "docs/AUTOMATION_RUNNER_STUB.current.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "The supercell now has an execution-oriented automation runner stub spec, a machine-readable runner config schema, a current stub config, and an updated current-state pointer to the automation-runner layer."
+      }
     }
   ],
   "operating_rule": {
