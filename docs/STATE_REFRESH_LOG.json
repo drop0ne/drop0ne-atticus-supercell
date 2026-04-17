@@ -171,6 +171,29 @@
         "status": "complete",
         "notes": "Session-state generation is now defined end to end with an input schema, current input JSON, output schema, concrete generated bundle example, and updated current-state pointer to the bundle layer."
       }
+    },
+    {
+      "receipt_id": "refresh-validation-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Supercell validation protocol, validation report schema, and current validation report added for structural integrity checks",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "docs/SUPERCELL_VALIDATION_PROTOCOL.md",
+          "SCHEMAS/validation_report.schema.json",
+          "docs/VALIDATION_REPORT.current.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "The supercell now has a canonical validation protocol, a machine-readable validation report schema, a current validation report, and an updated current-state pointer to the validation layer."
+      }
     }
   ],
   "operating_rule": {
