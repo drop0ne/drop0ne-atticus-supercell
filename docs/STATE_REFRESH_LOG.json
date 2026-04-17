@@ -104,6 +104,28 @@
         "status": "complete",
         "notes": "Umbrella operationalization layer now includes current-state pointer, refresh protocol, refresh receipt template, refresh log, machine-readable lifecycle/registry/indexes, and the first refresh-runner packet."
       }
+    },
+    {
+      "receipt_id": "refresh-runner-input-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Machine-readable refresh manifest schema and concrete runner input added for automation-ready refresh execution",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "SCHEMAS/refresh_manifest.schema.json",
+          "docs/REFRESH_RUNNER_INPUT.current.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "Automation-ready refresh execution now has a machine-readable manifest schema, a concrete runner input JSON, and an updated current-state pointer to the new runner-input layer."
+      }
     }
   ],
   "operating_rule": {
