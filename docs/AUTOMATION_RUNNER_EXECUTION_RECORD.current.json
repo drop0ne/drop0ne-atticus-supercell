@@ -1,7 +1,7 @@
 {
   "record_version": "v1",
-  "runner_run_id": "automation-runner-live-read-layer-2026-04-17",
-  "current_refresh_id": "refresh-runner-live-read-layer-2026-04-17",
+  "runner_run_id": "automation-runner-status-layer-2026-04-17",
+  "current_refresh_id": "refresh-runner-status-layer-2026-04-17",
   "resolved_inputs": [
     {
       "role": "current_refresh",
@@ -43,16 +43,14 @@
     }
   ],
   "planned_phases": [
-    "resolve_current_refresh",
-    "load_refresh_runner_input",
-    "load_session_state_generator_input",
-    "load_validation_report",
-    "emit_runner_execution_record"
+    "refresh",
+    "generate",
+    "validate"
   ],
-  "status": "planned",
+  "status": "pass",
   "notes": [
-    "This execution-record example is aligned to the live-read runner layer.",
-    "The concrete scaffold now performs basic existence checks for required inputs and key schema pointers.",
-    "A future executable runner should overwrite this current example with a runtime-emitted record."
+    "This execution-record example is aligned to the runner-status layer.",
+    "The concrete scaffold now emits pass when live required-input and key-pointer checks are clean and no phase returns warn/fail.",
+    "This artifact is maintained as a current example aligned to the expected runtime output shape."
   ]
 }
