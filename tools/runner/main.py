@@ -3,12 +3,12 @@ from __future__ import annotations
 import argparse
 import json
 from dataclasses import dataclass
-from datetime import datetime, UTC
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from phases.refresh import plan_refresh_phase
 from phases.generate import plan_generate_phase
+from phases.refresh import plan_refresh_phase
 from phases.validate import plan_validate_phase
 
 
@@ -27,6 +27,18 @@ def _load_json(path: Path) -> dict[str, Any]:
         return json.load(f)
 
 
+def _load_json_or_empty(path: Path, role: str, repo_root: Path) -> tuple[dict[str, Any], list[str]]:
+    if not path.exists():
+        rel = str(path.relative_to(repo_root))
+        return {}, [f"Missing required input for role={role}: {rel}"]
+
+    try:
+        return _load_json(path), []
+    except json.JSONDecodeError as exc:
+        rel = str(path.relative_to(repo_root))
+        return {}, [f"Invalid JSON for role={role}: {rel} ({exc})"]
+
+
 def _write_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
@@ -36,6 +48,9 @@ def _write_json(path: Path, payload: dict[str, Any]) -> None:
 
 def _resolve_paths(repo_root: Path, output: str | None) -> RunnerPaths:
     current_refresh = repo_root / "CURRENT_REFRESH.json"
+    if not current_refresh.exists():
+        raise FileNotFoundError(f"Missing current refresh pointer: {current_refresh}")
+
     refresh_doc = _load_json(current_refresh)
     pointers = refresh_doc.get("current_pointers", {})
 
@@ -63,23 +78,7 @@ def _resolve_paths(repo_root: Path, output: str | None) -> RunnerPaths:
     )
 
 
-def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
-    current_refresh_doc = _load_json(paths.current_refresh)
-    refresh_runner_input_doc = _load_json(paths.refresh_runner_input)
-    generator_input_doc = _load_json(paths.session_state_generator_input)
-    validation_report_doc = _load_json(paths.validation_report)
-
-    refresh_phase = plan_refresh_phase(paths, current_refresh_doc, refresh_runner_input_doc)
-    generate_phase = plan_generate_phase(paths, current_refresh_doc, generator_input_doc)
-    validate_phase = plan_validate_phase(paths, current_refresh_doc, validation_report_doc)
-
-    phase_records = [refresh_phase, generate_phase, validate_phase]
-    status = "planned"
-    if any(p["status"] == "fail" for p in phase_records):
-        status = "fail"
-    elif any(p["status"] == "warn" for p in phase_records):
-        status = "warn"
-
+def _resolve_pointer_status(repo_root: Path, current_refresh_doc: dict[str, Any]) -> tuple[list[dict[str, str]], list[str]]:
     current_pointers = current_refresh_doc.get("current_pointers", {})
     resolved_pointer_keys = [
         "refresh_manifest_schema",
@@ -88,6 +87,59 @@ def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
         "validation_report_schema",
         "automation_runner_execution_record_schema",
     ]
+
+    resolved: list[dict[str, str]] = []
+    notes: list[str] = []
+
+    for key in resolved_pointer_keys:
+        if key not in current_pointers:
+            notes.append(f"Missing current pointer: {key}")
+            continue
+
+        rel_path = current_pointers[key]
+        resolved.append({"pointer": key, "path": rel_path})
+        target = repo_root / rel_path
+        if not target.exists():
+            notes.append(f"Missing pointer target for {key}: {rel_path}")
+
+    return resolved, notes
+
+
+def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
+    current_refresh_doc = _load_json(paths.current_refresh)
+
+    refresh_runner_input_doc, refresh_notes = _load_json_or_empty(
+        paths.refresh_runner_input,
+        "refresh_runner_input",
+        paths.repo_root,
+    )
+    generator_input_doc, generator_notes = _load_json_or_empty(
+        paths.session_state_generator_input,
+        "session_state_generator_input",
+        paths.repo_root,
+    )
+    validation_report_doc, validation_notes = _load_json_or_empty(
+        paths.validation_report,
+        "validation_report",
+        paths.repo_root,
+    )
+
+    resolved_current_pointers, pointer_notes = _resolve_pointer_status(paths.repo_root, current_refresh_doc)
+
+    refresh_phase = plan_refresh_phase(paths, current_refresh_doc, refresh_runner_input_doc)
+    generate_phase = plan_generate_phase(paths, current_refresh_doc, generator_input_doc)
+    validate_phase = plan_validate_phase(paths, current_refresh_doc, validation_report_doc)
+
+    phase_records = [refresh_phase, generate_phase, validate_phase]
+    error_notes = [*refresh_notes, *generator_notes, *validation_notes, *pointer_notes]
+
+    status = "planned"
+    if error_notes:
+        status = "fail"
+    elif any(p["status"] == "fail" for p in phase_records):
+        status = "fail"
+    elif any(p["status"] == "warn" for p in phase_records):
+        status = "warn"
 
     record = {
         "record_version": "v1",
@@ -99,16 +151,13 @@ def _build_execution_record(paths: RunnerPaths) -> dict[str, Any]:
             {"role": "session_state_generator_input", "path": str(paths.session_state_generator_input.relative_to(paths.repo_root))},
             {"role": "validation_report", "path": str(paths.validation_report.relative_to(paths.repo_root))},
         ],
-        "resolved_current_pointers": [
-            {"pointer": key, "path": current_pointers[key]}
-            for key in resolved_pointer_keys
-            if key in current_pointers
-        ],
+        "resolved_current_pointers": resolved_current_pointers,
         "planned_phases": [phase["phase"] for phase in phase_records],
         "status": status,
         "notes": [
-            "Generated by the first concrete ATTICUS supercell runner scaffold.",
-            "This implementation is intentionally non-mutating and execution-oriented.",
+            "Generated by the concrete ATTICUS supercell runner scaffold.",
+            "This implementation is intentionally non-mutating and performs basic live file-existence checks.",
+            *error_notes,
             *[phase["summary"] for phase in phase_records],
         ],
     }
