@@ -1,0 +1,43 @@
+{
+  "bundle_version": "v1",
+  "generator_run_id": "session-state-generator-layer-2026-04-17",
+  "target_scope": "atticus-working-baseline",
+  "project_id": "atticus",
+  "mode": "bounded_resume",
+  "selected_resume_packets": [
+    {
+      "packet_id": "atticus-working-baseline-latest",
+      "path": "SESSION_PACKETS/generated/atticus_working_baseline_resume_2026-04-17.md"
+    },
+    {
+      "packet_id": "atticus-global-latest",
+      "path": "SESSION_PACKETS/generated/atticus_resume_packet_2026-04-17_post_pr100.md"
+    }
+  ],
+  "selected_cells": [
+    {
+      "cell_id": "ATTICUS_CURRENT_WORKING_BASELINE_v1",
+      "path": "MEMORY/cells/atticus/ATTICUS_CURRENT_WORKING_BASELINE_v1.json"
+    },
+    {
+      "cell_id": "AMAS_GOVERNANCE_BASELINE_v1",
+      "path": "MEMORY/cells/atticus/AMAS_GOVERNANCE_BASELINE_v1.json"
+    },
+    {
+      "cell_id": "MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1",
+      "path": "MEMORY/cells/mpo/MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1.json"
+    }
+  ],
+  "selected_state_surfaces": [
+    "CURRENT_STATE/atticus_framework_state.md",
+    "CURRENT_STATE/atticus_mpo_state.md",
+    "MIRRORS/amas-spec/state.md",
+    "MIRRORS/atticus-mpo/repo_state.md"
+  ],
+  "recommended_next_action": "Use the ATTICUS working-baseline resume packet as the primary restart surface, then hydrate the selected baseline and milestone cells to recover the current cross-repo working state before continuing implementation or doctrine work.",
+  "notes": [
+    "This is the first concrete example generated bundle for the ATTICUS session-state generator path.",
+    "It prioritizes the working-baseline packet, the umbrella ATTICUS resume packet, the AMAS governance anchor, and the latest MPO retrieval-quality milestone.",
+    "Future generators should emit project- or scope-specific bundles using the same schema."
+  ]
+}
