@@ -4,8 +4,12 @@
   "type": "object",
   "required": [
     "record_version",
+    "runner_version",
     "runner_run_id",
+    "emitted_at",
     "current_refresh_id",
+    "repo_root",
+    "output_path",
     "resolved_inputs",
     "input_checks",
     "resolved_current_pointers",
@@ -17,8 +21,12 @@
   ],
   "properties": {
     "record_version": { "type": "string" },
+    "runner_version": { "type": "string" },
     "runner_run_id": { "type": "string" },
+    "emitted_at": { "type": "string", "format": "date-time" },
     "current_refresh_id": { "type": "string" },
+    "repo_root": { "type": "string" },
+    "output_path": { "type": "string" },
     "resolved_inputs": {
       "type": "array",
       "items": {
