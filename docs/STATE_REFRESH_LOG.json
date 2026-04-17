@@ -149,6 +149,28 @@
         "status": "complete",
         "notes": "Automation-ready session resume generation now has a generator spec, a machine-readable input schema, a concrete current generator input JSON, and an updated current-state pointer to the generator layer."
       }
+    },
+    {
+      "receipt_id": "refresh-session-state-bundle-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Session-state bundle output schema and concrete generated bundle added for end-to-end generator definition",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "SCHEMAS/session_state_bundle.schema.json",
+          "docs/SESSION_STATE_BUNDLE.current.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "Session-state generation is now defined end to end with an input schema, current input JSON, output schema, concrete generated bundle example, and updated current-state pointer to the bundle layer."
+      }
     }
   ],
   "operating_rule": {
