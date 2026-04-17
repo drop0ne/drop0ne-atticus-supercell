@@ -12,6 +12,7 @@
     "output_path",
     "resolved_inputs",
     "input_checks",
+    "schema_checks",
     "resolved_current_pointers",
     "pointer_checks",
     "planned_phases",
@@ -47,6 +48,21 @@
         "properties": {
           "role": { "type": "string" },
           "path": { "type": "string" },
+          "status": { "type": "string", "enum": ["pass", "warn", "fail"] },
+          "detail": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "schema_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "payload_path", "schema_path", "status", "detail"],
+        "properties": {
+          "role": { "type": "string" },
+          "payload_path": { "type": "string" },
+          "schema_path": { "type": "string" },
           "status": { "type": "string", "enum": ["pass", "warn", "fail"] },
           "detail": { "type": "string" }
         },
