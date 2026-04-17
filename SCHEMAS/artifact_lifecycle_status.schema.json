@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATTICUS Artifact Lifecycle Status Registry",
+  "type": "object",
+  "required": [
+    "registry_version",
+    "entries"
+  ],
+  "properties": {
+    "registry_version": { "type": "string" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["artifact_id", "artifact_type", "path", "project", "role", "status"],
+        "properties": {
+          "artifact_id": { "type": "string" },
+          "artifact_type": { "type": "string" },
+          "path": { "type": "string" },
+          "project": { "type": "string" },
+          "role": { "type": "string" },
+          "status": { "type": "string", "enum": ["current", "superseded", "archived", "retired"] },
+          "superseded_by": { "type": ["string", "null"] },
+          "notes": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
