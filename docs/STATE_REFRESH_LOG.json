@@ -126,6 +126,29 @@
         "status": "complete",
         "notes": "Automation-ready refresh execution now has a machine-readable manifest schema, a concrete runner input JSON, and an updated current-state pointer to the new runner-input layer."
       }
+    },
+    {
+      "receipt_id": "refresh-session-state-generator-layer-2026-04-17",
+      "generated_at": "2026-04-17",
+      "refresh_scope": "atticus-umbrella",
+      "trigger_event": "Session-state generator spec and machine-readable generator inputs added for automation-ready session resume generation",
+      "source_repo": "drop0ne/drop0ne-atticus-supercell",
+      "source_branch": "main",
+      "source_validation": {
+        "landed": true,
+        "active_baseline_confirmed": true,
+        "mirrored_artifacts": [
+          "docs/SESSION_STATE_GENERATOR_SPEC.md",
+          "SCHEMAS/session_state_generator_input.schema.json",
+          "docs/SESSION_STATE_GENERATOR_INPUT.current.json",
+          "CURRENT_REFRESH.json",
+          "docs/STATE_REFRESH_LOG.json"
+        ]
+      },
+      "result": {
+        "status": "complete",
+        "notes": "Automation-ready session resume generation now has a generator spec, a machine-readable input schema, a concrete current generator input JSON, and an updated current-state pointer to the generator layer."
+      }
     }
   ],
   "operating_rule": {
