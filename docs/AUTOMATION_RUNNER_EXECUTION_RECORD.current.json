@@ -1,9 +1,9 @@
 {
-  "record_version": "v2",
-  "runner_version": "v1",
-  "runner_run_id": "automation-runner-runtime-receipt-layer-2026-04-17",
+  "record_version": "v3",
+  "runner_version": "v2",
+  "runner_run_id": "automation-runner-schema-validation-layer-2026-04-17",
   "emitted_at": "2026-04-17T00:00:00Z",
-  "current_refresh_id": "refresh-runner-runtime-receipt-layer-2026-04-17",
+  "current_refresh_id": "refresh-runner-schema-validation-layer-2026-04-17",
   "repo_root": "/repo/drop0ne-atticus-supercell",
   "output_path": "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.current.json",
   "resolved_inputs": [
@@ -48,6 +48,36 @@
       "path": "docs/VALIDATION_REPORT.current.json",
       "status": "pass",
       "detail": "Loaded JSON input for role=validation_report from docs/VALIDATION_REPORT.current.json."
+    }
+  ],
+  "schema_checks": [
+    {
+      "role": "refresh_runner_input",
+      "payload_path": "docs/REFRESH_RUNNER_INPUT.current.json",
+      "schema_path": "SCHEMAS/refresh_manifest.schema.json",
+      "status": "pass",
+      "detail": "Schema validation passed for role=refresh_runner_input against SCHEMAS/refresh_manifest.schema.json."
+    },
+    {
+      "role": "session_state_generator_input",
+      "payload_path": "docs/SESSION_STATE_GENERATOR_INPUT.current.json",
+      "schema_path": "SCHEMAS/session_state_generator_input.schema.json",
+      "status": "pass",
+      "detail": "Schema validation passed for role=session_state_generator_input against SCHEMAS/session_state_generator_input.schema.json."
+    },
+    {
+      "role": "validation_report",
+      "payload_path": "docs/VALIDATION_REPORT.current.json",
+      "schema_path": "SCHEMAS/validation_report.schema.json",
+      "status": "pass",
+      "detail": "Schema validation passed for role=validation_report against SCHEMAS/validation_report.schema.json."
+    },
+    {
+      "role": "execution_record_output",
+      "payload_path": "docs/AUTOMATION_RUNNER_EXECUTION_RECORD.current.json",
+      "schema_path": "SCHEMAS/automation_runner_execution_record.schema.json",
+      "status": "pass",
+      "detail": "Schema validation passed for role=execution_record_output against SCHEMAS/automation_runner_execution_record.schema.json."
     }
   ],
   "resolved_current_pointers": [
@@ -128,8 +158,8 @@
   ],
   "status": "pass",
   "notes": [
-    "This execution-record example is aligned to the runner-runtime-receipt layer.",
-    "The concrete scaffold now emits runtime-emission receipt fields (emitted_at, runner_version, repo_root, output_path) in addition to structured input_checks and pointer_checks.",
+    "This execution-record example is aligned to the runner-schema-validation layer.",
+    "The concrete scaffold now performs built-in JSON Schema checks for current runner inputs and the emitted execution record in addition to input_checks, pointer_checks, and phase_results.",
     "This artifact is maintained as a current example aligned to the expected runtime output shape."
   ]
 }
