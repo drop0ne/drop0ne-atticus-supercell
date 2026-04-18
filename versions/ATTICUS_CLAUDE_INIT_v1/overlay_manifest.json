@@ -9,6 +9,11 @@
   },
   "overlays": [
     {
+      "name": "release_dossier_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/RELEASE_DOSSIER.md",
+      "purpose": "human-readable release and handoff dossier"
+    },
+    {
       "name": "semantic_routing_overlay",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/semantic_map.json",
       "purpose": "semantic clustering and cognition routing"
@@ -149,5 +154,5 @@
     "single_canonical_root": true,
     "overlay_conflict_policy": "flag_do_not_silently_resolve"
   },
-  "notes": "Derived cognition, corpus projection, internalization-plan, runtime-contract, release-control, operator-action, and final release-orchestration overlays for ATTICUS_CLAUDE_INIT_v1."
+  "notes": "Derived cognition, corpus projection, internalization-plan, runtime-contract, release-control, operator-action, human-readable, and final release-orchestration overlays for ATTICUS_CLAUDE_INIT_v1."
 }
