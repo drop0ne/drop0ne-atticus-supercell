@@ -1,0 +1,33 @@
+{
+  "schema": "atticus.supercell.corpus_lineage.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "lineage_chain": [
+    {
+      "stage": "origin",
+      "label": "claude-initiated-running-framework",
+      "dominance": "primary"
+    },
+    {
+      "stage": "archive_capture",
+      "label": "atticus_cells_20260302_PASS7_FULL.tar.gz",
+      "sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357"
+    },
+    {
+      "stage": "deterministic_local_encoding",
+      "label": "ATTICUS_SUPERCELL_IMPORT_BUNDLE.tar.gz",
+      "status": "completed"
+    },
+    {
+      "stage": "supercell_version_projection",
+      "label": "ATTICUS_CLAUDE_INIT_v1",
+      "status": "structured_candidate"
+    }
+  ],
+  "provenance_rules": {
+    "raw_preservation_required": true,
+    "dominant_origin_retained": true,
+    "chatgpt_scope_limited": true,
+    "silent_origin_rewriting": false
+  },
+  "notes": "Corpus lineage locks the preserved Claude-init framework as the dominant origin lineage for this selectable Atticus version."
+}
