@@ -129,6 +129,11 @@ Role:
 - preferred first file for direct model-to-model or runtime-to-runtime handoff
 - intended as the smallest practical current-state entry surface before deeper escalation
 
+### `CURRENT_STATE/HANDOFF_PACKET_TEMPLATE.md`
+Role:
+- reusable template for generating or refreshing compact packet-style handoff surfaces
+- keeps future packet updates consistent when active receipts, baselines, governance floor, or handoff rules change
+
 ### `CURRENT_STATE/ACTIVE_BASELINES.md`
 Role:
 - compact current-state source for framework, runtime, schema, and governance-floor baselines
