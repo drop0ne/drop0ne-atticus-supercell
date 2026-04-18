@@ -1,0 +1,27 @@
+{
+  "artifact_name": "AMAS_CONFORMANCE_PROFILE_v2.json",
+  "artifact_type": "conformance_profile",
+  "version": "2.0.0-draft",
+  "target_level": 4,
+  "mandatory_requirements": {
+    "single_canonical_root": true,
+    "single_writable_authority_ledger": true,
+    "read_only_hydrate_default": true,
+    "derived_artifacts_non_authoritative": true,
+    "preflight_hard_fail": true,
+    "two_phase_commit_or_equivalent": true,
+    "repair_receipts": true,
+    "migration_receipts": true,
+    "export_time_validation": true,
+    "deterministic_state_transitions": true
+  },
+  "forbidden_patterns": [
+    "multiple_active_canonical_roots",
+    "multiple_writable_ledgers",
+    "auto_append_on_load_by_default",
+    "silent_repair",
+    "wrapper_promoted_to_canonical_without_event",
+    "export_claim_without_state_validation",
+    "inferred_self_promotion"
+  ]
+}
