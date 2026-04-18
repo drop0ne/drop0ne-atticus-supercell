@@ -1,7 +1,7 @@
 {
   "schema": "atticus.supercell.release_checklist.v1",
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
-  "status": "incomplete_pending_operator_actions",
+  "status": "complete_for_promotion_pending_manual_merge_and_enablement",
   "checklist": [
     {
       "item": "canonical_identity_verified",
@@ -21,23 +21,23 @@
     {
       "item": "operator_signoff_completed",
       "required": true,
-      "state": "pending"
+      "state": "done"
     },
     {
       "item": "promotion_receipt_issued",
       "required": true,
-      "state": "pending"
+      "state": "done"
     },
     {
       "item": "main_merge_packet_approved",
       "required": true,
-      "state": "pending"
+      "state": "done"
     },
     {
       "item": "runtime_enablement_packet_approved",
       "required": true,
-      "state": "pending"
+      "state": "done"
     }
   ],
-  "notes": "Final release checklist for promoting ATTICUS_CLAUDE_INIT_v1 from promotion candidate to promoted selectable release."
+  "notes": "Final release checklist for ATTICUS_CLAUDE_INIT_v1 after operator-approved promotion on the import branch."
 }
