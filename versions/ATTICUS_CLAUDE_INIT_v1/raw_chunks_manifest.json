@@ -1,0 +1,55 @@
+{
+  "schema": "atticus.supercell.raw_chunks_manifest.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "phase": "1A_raw_corpus_ingress",
+  "status": "partial_embedding_started",
+  "source": {
+    "archive_label": "atticus_cells_20260302_PASS7_FULL.tar.gz",
+    "source_archive_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+    "raw_file_count": 348,
+    "encoded_bundle_label": "ATTICUS_SUPERCELL_IMPORT_BUNDLE.tar.gz",
+    "encoded_bundle_sha256": "50b68b922da387a82a1462e3735fb6b1dacc3bda1f097cebe58ebe23b4dbb3b2"
+  },
+  "chunking": {
+    "mode": "chunked_repo_ingest",
+    "chunk_path_prefix": "imports/ATTICUS_PASS7_2026_04_18/chunks/",
+    "chunk_manifest_authoritative_for_ingress": true,
+    "chunks_embedded": true,
+    "embedded_chunks_count": 2,
+    "embedded_bytes": 16384,
+    "embedded_base64_chars": 21848,
+    "chunk_size_strategy": "deterministic_fixed_prefix_seed_then_continue",
+    "ordering": "deterministic"
+  },
+  "embedded_chunks": [
+    {
+      "index": 1,
+      "path": "imports/ATTICUS_PASS7_2026_04_18/chunks/chunk_0001.part_0001.b64",
+      "byte_size": 8192,
+      "base64_length": 10924,
+      "sha256": "7e47f897445eed33811d59b52f221cabcffdfad912d4840fd2f3349d7a011192"
+    },
+    {
+      "index": 2,
+      "path": "imports/ATTICUS_PASS7_2026_04_18/chunks/chunk_0002.part_0002.b64",
+      "byte_size": 8192,
+      "base64_length": 10924,
+      "sha256": "83e103043fc637a0bad28c2de514e05cfa4beb7455a096e846eecd0edef4d373"
+    }
+  ],
+  "integrity": {
+    "raw_payload_mutation": false,
+    "append_only": true,
+    "canonical_artifact_mutation": false,
+    "lineage_must_match_source_sha": true
+  },
+  "planned_outputs": [
+    "imports/ATTICUS_PASS7_2026_04_18/chunks/README.md",
+    "imports/ATTICUS_PASS7_2026_04_18/chunks/chunk_0001.*",
+    "imports/ATTICUS_PASS7_2026_04_18/chunks/chunk_0002.*",
+    "imports/ATTICUS_PASS7_2026_04_18/chunks/chunk_0003.*",
+    "imports/ATTICUS_PASS7_2026_04_18/chunks/chunk_0004.*",
+    "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json (normalized after ingress)"
+  ],
+  "notes": "This manifest records partial real repo-backed raw payload ingress. Full bundle embedding is not complete yet."
+}
