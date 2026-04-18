@@ -15,6 +15,12 @@
       "authority": "canonical"
     },
     {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/release_dossier",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/RELEASE_DOSSIER.md",
+      "type": "atticus.supercell.release_dossier",
+      "authority": "derived_human_readable"
+    },
+    {
       "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/activation",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/activation.json",
       "type": "atticus.supercell.activation",
@@ -139,7 +145,55 @@
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/operator_signoff.json",
       "type": "atticus.supercell.operator_signoff",
       "authority": "derived_release_control"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/signoff_template",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/signoff_template.json",
+      "type": "atticus.supercell.signoff_template",
+      "authority": "derived_operator_action"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/promotion_receipt",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_receipt.json",
+      "type": "atticus.supercell.promotion_receipt",
+      "authority": "derived_operator_action"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/release_state",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/release_state.json",
+      "type": "atticus.supercell.release_state",
+      "authority": "derived_operator_action"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/branch_handoff",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/branch_handoff.json",
+      "type": "atticus.supercell.branch_handoff",
+      "authority": "derived_operator_action"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/release_checklist",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/release_checklist.json",
+      "type": "atticus.supercell.release_checklist",
+      "authority": "derived_release_orchestration"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/promotion_summary",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_summary.json",
+      "type": "atticus.supercell.promotion_summary",
+      "authority": "derived_release_orchestration"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/main_merge_packet",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/main_merge_packet.json",
+      "type": "atticus.supercell.main_merge_packet",
+      "authority": "derived_release_orchestration"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/runtime_enablement_packet",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/runtime_enablement_packet.json",
+      "type": "atticus.supercell.runtime_enablement_packet",
+      "authority": "derived_release_orchestration"
     }
   ],
-  "notes": "Index of canonical, derived, corpus projection, internalization-plan, runtime-contract, and release-control cells for ATTICUS_CLAUDE_INIT_v1."
+  "notes": "Index of canonical, derived, human-readable, corpus projection, internalization-plan, runtime-contract, release-control, operator-action, and final release-orchestration cells for ATTICUS_CLAUDE_INIT_v1."
 }
