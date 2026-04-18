@@ -22,6 +22,13 @@
     "embedded_bytes": 16384,
     "status": "partial_embedding_started"
   },
+  "uploaded_archive_set": {
+    "manifest": "versions/ATTICUS_CLAUDE_INIT_v1/raw_archive_set_manifest.json",
+    "registered": true,
+    "archive_count": 7,
+    "aggregate_sha256": "709e880cbb3663051951b12e75c3c3370d2fe0d9ada423f5c891563ba9caefc6",
+    "status": "full_uploaded_archive_set_registered"
+  },
   "artifacts": {
     "local_bundle_name": "ATTICUS_SUPERCELL_IMPORT_BUNDLE.tar.gz",
     "raw_cell_stream": "atticus_supercell_cells.ndjson",
