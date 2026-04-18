@@ -1,0 +1,43 @@
+{
+  "schema": "atticus.supercell.promotion_gate.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "promotion_target": "promoted_selectable_release",
+  "gates": [
+    {
+      "name": "canonical_integrity_gate",
+      "required": true,
+      "condition": "canonical_cell_present_and_root_consistent"
+    },
+    {
+      "name": "runtime_contract_gate",
+      "required": true,
+      "condition": "loader_contract_selection_resolver_activation_sequence_validation_gate_present"
+    },
+    {
+      "name": "overlay_discipline_gate",
+      "required": true,
+      "condition": "append_only_overlay_and_non_authoritative_derived_artifacts"
+    },
+    {
+      "name": "origin_lock_gate",
+      "required": true,
+      "condition": "Claude_origin_retained_without_silent_rewrite"
+    },
+    {
+      "name": "raw_preservation_gate",
+      "required": true,
+      "condition": "source_sha_matches_and_raw_payload_not_mutated"
+    },
+    {
+      "name": "operator_signoff_gate",
+      "required": true,
+      "condition": "operator_signoff_recorded"
+    }
+  ],
+  "failure_behavior": {
+    "mode": "do_not_promote",
+    "silent_override": false,
+    "report": "explicit_promotion_failure"
+  },
+  "notes": "Promotion gate suite governing advancement of ATTICUS_CLAUDE_INIT_v1 from candidate to promoted selectable release."
+}
