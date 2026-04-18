@@ -1,0 +1,33 @@
+{
+  "schema": "atticus.supercell.overlay_manifest.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "overlay_policy": {
+    "mode": "append_only_overlay",
+    "raw_payload_mutation": false,
+    "canonical_truth_location": "versions/ATTICUS_CLAUDE_INIT_v1/canonical_cell.json",
+    "derived_artifacts_non_authoritative": true
+  },
+  "overlays": [
+    {
+      "name": "semantic_routing_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/semantic_map.json",
+      "purpose": "semantic clustering and cognition routing"
+    },
+    {
+      "name": "dependency_activation_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/dependency_graph.json",
+      "purpose": "runtime load order and dependency resolution"
+    },
+    {
+      "name": "cell_index_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/cell_index.json",
+      "purpose": "cell discovery and loader indexing"
+    }
+  ],
+  "governance": {
+    "authority_model": "AMAS_v1.2",
+    "single_canonical_root": true,
+    "overlay_conflict_policy": "flag_do_not_silently_resolve"
+  },
+  "notes": "Derived cognition overlays for ATTICUS_CLAUDE_INIT_v1. These artifacts enhance routing and loading without changing canonical raw provenance."
+}
