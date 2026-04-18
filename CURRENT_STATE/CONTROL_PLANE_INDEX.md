@@ -46,6 +46,15 @@ Role:
 - first live example boot report
 - records a PASS control-plane boot under current state
 
+### `CURRENT_STATE/COLD_START_BOOT_REPORT_TEMPLATE.md`
+Role:
+- ultra-compact standardized report format for quickstart boots
+
+### `CURRENT_STATE/COLD_START_BOOT_REPORT_2026-04-17.md`
+Role:
+- first live example cold-start boot report
+- records a PASS quickstart boot under current state
+
 ### `SUPERCELL_LOAD_ORDER.md`
 Role:
 - deterministic boot path
@@ -73,6 +82,21 @@ Role:
 Role:
 - records that current session state was refreshed against the rehydrated global control plane
 
+### `CURRENT_STATE/OPERATING_MODES.md`
+Role:
+- explicitly names the supported entry modes
+- defines when to use compact vs full control-plane boot
+
+### `CURRENT_STATE/OPERATING_MODE_EXAMPLES.md`
+Role:
+- provides short worked examples for each operating mode
+- shows practical difference between compact and full boot behavior
+
+### `CURRENT_STATE/QUICKSTART.md`
+Role:
+- very short cold-start entrypoint
+- tells new nodes which five files to read first and when to stop
+
 ---
 
 ## Baseline and state surfaces
@@ -98,6 +122,11 @@ Role:
 Role:
 - root-chat provenance locator
 - explicit gap logging for unrecovered raw roots
+
+### `CURRENT_STATE/CHANGELOG_CONTROL_PLANE.md`
+Role:
+- append-only history of the control-plane buildout
+- helps future maintainers understand how boot/governance surfaces evolved
 
 ---
 
