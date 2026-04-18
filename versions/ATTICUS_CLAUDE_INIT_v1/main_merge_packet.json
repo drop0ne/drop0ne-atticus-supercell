@@ -1,7 +1,7 @@
 {
   "schema": "atticus.supercell.main_merge_packet.v1",
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
-  "status": "authorized_pending_manual_merge",
+  "status": "consumed_merged_to_main",
   "packet": {
     "source_branch": "import/atticus-raw-pass7-2026-04-18",
     "target_branch": "main",
@@ -14,7 +14,12 @@
     ],
     "non_blocking_deferrals": [
       "bulk_raw_attachment_not_complete"
-    ]
+    ],
+    "merge_result": {
+      "merged": true,
+      "landing_pr": 11,
+      "merge_commit": "a5b87475c7a0f6e9c83f13a31f7542d59df3ea0a"
+    }
   },
-  "notes": "Main-branch merge packet for ATTICUS_CLAUDE_INIT_v1 after operator-approved promotion. Manual repository merge remains separate from this workflow."
+  "notes": "Main-branch merge packet for ATTICUS_CLAUDE_INIT_v1 retained as an archival audit artifact after successful merge to main via PR #11."
 }
