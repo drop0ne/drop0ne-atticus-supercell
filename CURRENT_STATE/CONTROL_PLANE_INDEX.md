@@ -97,6 +97,11 @@ Role:
 - very short cold-start entrypoint
 - tells new nodes which five files to read first and when to stop
 
+### `CURRENT_STATE/RECEIPT_LIFECYCLE.md`
+Role:
+- defines how governance receipts are created, activated, superseded, revoked, and referenced by current-state surfaces
+- keeps future receipt updates mechanically consistent
+
 ---
 
 ## Baseline and state surfaces
