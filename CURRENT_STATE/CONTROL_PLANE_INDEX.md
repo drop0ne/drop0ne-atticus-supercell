@@ -147,6 +147,11 @@ Role:
 - append-only history of the control-plane buildout
 - helps future maintainers understand how boot/governance surfaces evolved
 
+### `CURRENT_STATE/CONTROL_PLANE_DOCTRINE.md`
+Role:
+- plain-language summary of the repo’s governing control-plane principles
+- summarizes receipt-first, drift-preserving, read-only-first, deterministic boot, and history-preserving maintenance
+
 ### `CURRENT_STATE/MAINTENANCE_RULES.md`
 Role:
 - defines update discipline for future control-plane changes
