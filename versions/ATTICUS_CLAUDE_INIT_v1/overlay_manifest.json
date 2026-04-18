@@ -42,6 +42,26 @@
       "name": "corpus_lineage_overlay",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/corpus_lineage.json",
       "purpose": "corpus origin locking and provenance continuity"
+    },
+    {
+      "name": "raw_cells_stub_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_cells_stub_index.json",
+      "purpose": "formal stub plan for raw-file cell internalization"
+    },
+    {
+      "name": "segment_cells_stub_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/segment_cells_stub_index.json",
+      "purpose": "formal stub plan for segment-cell projection"
+    },
+    {
+      "name": "claim_cluster_stub_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/claim_cluster_stub_index.json",
+      "purpose": "formal stub plan for claim-cluster projection"
+    },
+    {
+      "name": "attachment_contract_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/attachment_contract.json",
+      "purpose": "deterministic attachment contract for future corpus internalization"
     }
   ],
   "governance": {
@@ -49,5 +69,5 @@
     "single_canonical_root": true,
     "overlay_conflict_policy": "flag_do_not_silently_resolve"
   },
-  "notes": "Derived cognition and corpus projection overlays for ATTICUS_CLAUDE_INIT_v1. These artifacts enhance routing, loading, and raw corpus preservation without changing canonical raw provenance."
+  "notes": "Derived cognition, corpus projection, and internalization-plan overlays for ATTICUS_CLAUDE_INIT_v1. These artifacts enhance routing, loading, and future raw-cell attachment without changing canonical raw provenance."
 }
