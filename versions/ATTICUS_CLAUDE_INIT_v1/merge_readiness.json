@@ -1,7 +1,7 @@
 {
   "schema": "atticus.supercell.merge_readiness.v1",
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
-  "status": "not_ready_until_signoff",
+  "status": "ready_pending_manual_merge",
   "checks": [
     {
       "name": "version_manifest_complete",
@@ -21,7 +21,7 @@
     {
       "name": "operator_signoff_present",
       "required": true,
-      "state": "pending"
+      "state": "pass"
     },
     {
       "name": "bulk_raw_attachment_complete",
@@ -35,5 +35,5 @@
     "auto_merge": false,
     "fail_if_operator_signoff_missing": true
   },
-  "notes": "Merge-readiness record for ATTICUS_CLAUDE_INIT_v1. Current blocker is operator signoff."
+  "notes": "Merge-readiness record for ATTICUS_CLAUDE_INIT_v1 after operator-approved promotion. Main merge remains a separate manual repository action."
 }
