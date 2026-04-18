@@ -11,8 +11,16 @@
   "preservation": {
     "raw_payload_mutation": false,
     "authoritative_source_reference": true,
-    "repo_embedding_status": "partial_metadata_only",
-    "note": "The full raw payload was deterministically encoded locally but not bulk-ingested into the repository due connector bulk-write limits."
+    "repo_embedding_status": "partial_chunked_embedding_started",
+    "note": "The full raw payload is not yet fully bulk-ingested into the repository, but verified repo-backed chunk ingress has started on main."
+  },
+  "repo_backed_ingress": {
+    "ingress_plan": "versions/ATTICUS_CLAUDE_INIT_v1/raw_ingress_plan.json",
+    "chunk_manifest": "versions/ATTICUS_CLAUDE_INIT_v1/raw_chunks_manifest.json",
+    "chunk_path_prefix": "imports/ATTICUS_PASS7_2026_04_18/chunks/",
+    "embedded_chunks_count": 2,
+    "embedded_bytes": 16384,
+    "status": "partial_embedding_started"
   },
   "artifacts": {
     "local_bundle_name": "ATTICUS_SUPERCELL_IMPORT_BUNDLE.tar.gz",
