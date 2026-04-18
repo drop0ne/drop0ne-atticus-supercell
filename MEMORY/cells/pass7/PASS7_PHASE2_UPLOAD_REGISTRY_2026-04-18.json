@@ -1,1 +1,768 @@
-__REGISTRY_PLACEHOLDER__
+{
+  "schema": "atticus.pass7.upload_registry.v1",
+  "created_at": "2026-04-18",
+  "path_convention": "MEMORY/cells/pass7/{category}/{cell_id}/",
+  "ops_cell_treatment": "parallel_taxonomy",
+  "serialization_mode": "source_tree_present__repo_expansion_pending",
+  "source_archives": [
+    {
+      "filename": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "sha256": "f14ed19d47ce92d5c279855b96b438a0f41d427ab61e810f432558d0d44ea455",
+      "categories": [
+        "auth"
+      ]
+    },
+    {
+      "filename": "PASS7_PHASE2_BATCH2_RUNTIME_SCHEMA.tar.gz",
+      "sha256": "16e6af2e2f36a84c405d095130e8b039c71279cc6b7d6b2fb21ae8d2cfc6e6fd",
+      "categories": [
+        "runtime",
+        "schema"
+      ]
+    },
+    {
+      "filename": "PASS7_PHASE2_BATCH3_BUNDLE_CMD_LEDGER_OVERLAY_REGISTRY.tar.gz",
+      "sha256": "a4ebcedfc5292903e315cb3831323b5c4728ffeac6308f4033307be41ca01423",
+      "categories": [
+        "bundle",
+        "cmd",
+        "ledger",
+        "overlay",
+        "registry"
+      ]
+    }
+  ],
+  "counts": {
+    "total_cells": 70,
+    "by_category": {
+      "auth": 23,
+      "bundle": 6,
+      "cmd": 6,
+      "ledger": 5,
+      "overlay": 4,
+      "registry": 4,
+      "runtime": 12,
+      "schema": 10
+    },
+    "total_files_in_uploaded_tree": 331
+  },
+  "cells": [
+    {
+      "cell_id": "CELL_AUTH_GOV_FACTUALITY_RULES_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_FACTUALITY_RULES_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_FACTUALITY_RULES_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_GOV_FACTUALITY_RULES_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:d5c1ee60f5baf2be372da4a575fc6abf65b0b39e064d12dc210b1aee34ecdf3d",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "spec",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier0",
+        "exports": [
+          "factuality_rules"
+        ],
+        "depends_on": [
+          "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_GOV_FACTUALITY_RULES_v1_0/canonical/CF_SPEC.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_GOV_FACTUALITY_RULES_v1_0/canonical/CF_SPEC.md",
+        "pass7/auth/CELL_AUTH_GOV_FACTUALITY_RULES_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_GOV_FRESHNESS_VALIDATION_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_FRESHNESS_VALIDATION_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_FRESHNESS_VALIDATION_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_GOV_FRESHNESS_VALIDATION_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:7507edd7366966c0cf41380ecde19bb462132af0723a8c73ca4f74413985c95b",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier0",
+        "exports": [
+          "freshness_rules"
+        ],
+        "depends_on": [
+          "CELL_AUTH_GOV_FACTUALITY_RULES_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_GOV_FRESHNESS_VALIDATION_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_GOV_FRESHNESS_VALIDATION_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_GOV_FRESHNESS_VALIDATION_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_GOV_HUMAN_AUTHORITY_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_HUMAN_AUTHORITY_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_HUMAN_AUTHORITY_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_GOV_HUMAN_AUTHORITY_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:55bc1d0eb3327ad02d137f7d295b465dab0d7b50941e66774133c6c481527e1c",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "spec",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier0",
+        "exports": [
+          "human_authority_rules"
+        ],
+        "depends_on": [
+          "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_GOV_HUMAN_AUTHORITY_v1_0/canonical/CF_SPEC.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_GOV_HUMAN_AUTHORITY_v1_0/canonical/CF_SPEC.md",
+        "pass7/auth/CELL_AUTH_GOV_HUMAN_AUTHORITY_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_GOV_RED_FLAG_RVC_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_RED_FLAG_RVC_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_RED_FLAG_RVC_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_GOV_RED_FLAG_RVC_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:a5d0ad3f899f612804d93b0c26cd55cd971d3d7a70858f2b4f7d40f2316e2d56",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier0",
+        "exports": [
+          "red_flag_rules",
+          "rvc_gate_rules"
+        ],
+        "depends_on": [
+          "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_GOV_RED_FLAG_RVC_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_GOV_RED_FLAG_RVC_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_GOV_RED_FLAG_RVC_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_GOV_REFUSAL_BOUNDARIES_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_REFUSAL_BOUNDARIES_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_REFUSAL_BOUNDARIES_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_GOV_REFUSAL_BOUNDARIES_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:6b0f840e79eb4d2e4f7bf3e3ad5d3d6d2aa57b979632e472d1179491f3569669",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "spec",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier0",
+        "exports": [
+          "refusal_rules"
+        ],
+        "depends_on": [
+          "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_GOV_REFUSAL_BOUNDARIES_v1_0/canonical/CF_SPEC.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_GOV_REFUSAL_BOUNDARIES_v1_0/canonical/CF_SPEC.md",
+        "pass7/auth/CELL_AUTH_GOV_REFUSAL_BOUNDARIES_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:6ba2d86feccb67917d6c36f19a74db008983bf57af4f3b4f7e762390ec20f915",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "spec",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier0",
+        "exports": [
+          "safeguard_rules"
+        ],
+        "depends_on": [],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0/canonical/CF_SPEC.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0/canonical/CF_SPEC.md",
+        "pass7/auth/CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:f58edfb5af3d4d43f8f7d56a2a12873f99549bd9a86436eed1f2e7a2148d2457",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "spec",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier0",
+        "exports": [
+          "scope_discipline_rules"
+        ],
+        "depends_on": [
+          "CELL_AUTH_GOV_HUMAN_AUTHORITY_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0/canonical/CF_SPEC.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0/canonical/CF_SPEC.md",
+        "pass7/auth/CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_INVEST_CASEFILE_RULES_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_INVEST_CASEFILE_RULES_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:dc94d53aa857143b4e8946c4f72feb7c0a38ccff0c282fd1c166f77e89ee1ad4",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "casefile_rules"
+        ],
+        "depends_on": [
+          "CELL_AUTH_INVEST_CCFLP_v1_1"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/imports_pass2/CF_CLAIMS.template.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/imports_pass2/CF_CLAIMS.template.md.extract.txt",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/imports_pass2/CF_ENTITIES.template.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/imports_pass2/CF_ENTITIES.template.md.extract.txt",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/imports_pass2/CF_EVENTS.template.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/imports_pass2/CF_EVENTS.template.md.extract.txt",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/imports_pass2/CF_MESSAGES.template.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/imports_pass2/CF_MESSAGES.template.md.extract.txt",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/templates/CF_CLAIMS.template.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/templates/CF_ENTITIES.template.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/templates/CF_EVENTS.template.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/canonical/templates/CF_MESSAGES.template.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/narrative/PASS2_NOTES.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/narrative/PASS3_NOTES.md",
+        "pass7/auth/CELL_AUTH_INVEST_CASEFILE_RULES_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_INVEST_CCFLP_v1_1",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_INVEST_CCFLP_v1_1",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_INVEST_CCFLP_v1_1/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_INVEST_CCFLP_v1_1",
+        "version": "1.1",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:9301fc3264a2f11bbbfca6d6a6c6406a5e4bf45580253de30466372d7a25701e",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "spec",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "ccflp_spec"
+        ],
+        "depends_on": [
+          "CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_INVEST_CCFLP_v1_1/canonical/CF_SPEC.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_INVEST_CCFLP_v1_1/canonical/CF_SPEC.md",
+        "pass7/auth/CELL_AUTH_INVEST_CCFLP_v1_1/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2",
+        "version": "1.2",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:d5b3840847d75f1f36aa8ee3cca5b0582f0607d0c7d7dd4594866e788bfbda1c",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "spec",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "icsa_schema"
+        ],
+        "depends_on": [
+          "CELL_AUTH_INVEST_CASEFILE_RULES_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2/canonical/CF_SPEC.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2/canonical/CF_SPEC.md",
+        "pass7/auth/CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2/canonical/pass5_payload.json",
+        "pass7/auth/CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_AIP_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_AIP_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_AIP_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_AIP_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:d66c745a32689b24ea66fe355d276b9461334f7be5ddfd4b8bebc434f9c6c7be",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "assimilation_inhibition_protocol"
+        ],
+        "depends_on": [
+          "CELL_AUTH_MEM_AMAS_v1_1"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_AIP_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_AIP_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_MEM_AIP_v1_0/canonical/source_excerpt_pass4.txt",
+        "pass7/auth/CELL_AUTH_MEM_AIP_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_AMAS_v1_1",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_AMAS_v1_1",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_AMAS_v1_1/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_AMAS_v1_1",
+        "version": "1.1",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:787b50358c36eeb839404cc17f31095fcdede4f325f61ea28eebbc2088d7de6c",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "spec",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "amas_spec"
+        ],
+        "depends_on": [
+          "CELL_AUTH_GOV_HUMAN_AUTHORITY_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_AMAS_v1_1/canonical/CF_SPEC.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_AMAS_v1_1/canonical/CF_SPEC.md",
+        "pass7/auth/CELL_AUTH_MEM_AMAS_v1_1/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_ERP_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_ERP_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_ERP_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_ERP_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:eb9f0ec7987da1529110cca0d302c1587bbeed3075516e8f4a3cc9154a87b9fb",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "export_repair_protocol"
+        ],
+        "depends_on": [
+          "CELL_AUTH_MEM_AMAS_v1_1"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_ERP_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_ERP_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_MEM_ERP_v1_0/canonical/source_excerpt_pass4.txt",
+        "pass7/auth/CELL_AUTH_MEM_ERP_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_IBP_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_IBP_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_IBP_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_IBP_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:26942337c95c96a65f147a7ff73869e9956d8e00c9ea4b0df59832e2b92974f7",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "identity_boundary_protocol"
+        ],
+        "depends_on": [
+          "CELL_AUTH_MEM_AMAS_v1_1"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_IBP_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_IBP_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_MEM_IBP_v1_0/canonical/source_excerpt_pass4.txt",
+        "pass7/auth/CELL_AUTH_MEM_IBP_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_MAEP_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_MAEP_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_MAEP_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_MAEP_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:6af902d47ae8348d3105a8978b8947fc53dff8d87b68d1bd0c937b0e6fa21cf5",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "metadata_append_export_protocol"
+        ],
+        "depends_on": [
+          "CELL_AUTH_MEM_AMAS_v1_1"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_MAEP_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_MAEP_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_MEM_MAEP_v1_0/canonical/source_excerpt_pass4.txt",
+        "pass7/auth/CELL_AUTH_MEM_MAEP_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_MAP_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_MAP_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_MAP_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_MAP_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:87bda8987eeb2758078c7ae9fc38f0b8f966613c9d5416ca714455348b91c89e",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "memory_append_protocol"
+        ],
+        "depends_on": [
+          "CELL_AUTH_MEM_AMAS_v1_1"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_MAP_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_MAP_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_MEM_MAP_v1_0/canonical/source_excerpt_pass4.txt",
+        "pass7/auth/CELL_AUTH_MEM_MAP_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_MIP_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_MIP_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_MIP_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_MIP_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:cb20d9dc680e02d8062a652aa13b00f903eb08d4dbec8658bc490aa9d90720f7",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "memory_ingest_protocol"
+        ],
+        "depends_on": [
+          "CELL_AUTH_MEM_AMAS_v1_1"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_MIP_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_MIP_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_MEM_MIP_v1_0/canonical/source_excerpt_pass4.txt",
+        "pass7/auth/CELL_AUTH_MEM_MIP_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_NCS_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_NCS_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_NCS_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_NCS_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:333f64664ac238de501dbafad6d811f25a4b4f7684ec518fcc055af2c774f3c2",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "named_cell_spec"
+        ],
+        "depends_on": [
+          "CELL_AUTH_MEM_AMAS_v1_1"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_NCS_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_NCS_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_MEM_NCS_v1_0/canonical/source_excerpt_pass4.txt",
+        "pass7/auth/CELL_AUTH_MEM_NCS_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_ERP_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_ERP_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_ERP_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_ERP_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:eb9f0ec7987da1529110cca0d302c1587bbeed3075516e8f4a3cc9154a87b9fb",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "export_repair_protocol"
+        ],
+        "depends_on": [
+          "CELL_AUTH_MEM_AMAS_v1_1"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_ERP_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_ERP_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_MEM_ERP_v1_0/canonical/source_excerpt_pass4.txt",
+        "pass7/auth/CELL_AUTH_MEM_ERP_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_AUTH_MEM_SSP_v1_0",
+      "category": "auth",
+      "repo_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_SSP_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/auth/CELL_AUTH_MEM_SSP_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH1_AUTH.tar(1).gz",
+      "manifest": {
+        "cell_id": "CELL_AUTH_MEM_SSP_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:70d641d04c40c2c322f83ed0ef3d55e539847254cb526dc37ccd83b76c7c55e1",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "protocol",
+        "layer": "AUTH",
+        "authority_level": "canonical",
+        "load_tier": "tier1",
+        "exports": [
+          "session_state_packet"
+        ],
+        "depends_on": [
+          "CELL_AUTH_MEM_NCS_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/auth/CELL_AUTH_MEM_SSP_v1_0/canonical/CF_PROTOCOL.md",
+      "relative_files": [
+        "pass7/auth/CELL_AUTH_MEM_SSP_v1_0/canonical/CF_PROTOCOL.md",
+        "pass7/auth/CELL_AUTH_MEM_SSP_v1_0/canonical/source_excerpt_pass4.txt",
+        "pass7/auth/CELL_AUTH_MEM_SSP_v1_0/narrative/README.md"
+      ]
+    },
+    {
+      "cell_id": "CELL_RUNTIME_ALERT_BOUNDED_NEXT_STEP_v1_0",
+      "category": "runtime",
+      "repo_target": "MEMORY/cells/pass7/runtime/CELL_RUNTIME_ALERT_BOUNDED_NEXT_STEP_v1_0",
+      "manifest_target": "MEMORY/cells/pass7/runtime/CELL_RUNTIME_ALERT_BOUNDED_NEXT_STEP_v1_0/manifest.json",
+      "source_batch_archive": "PASS7_PHASE2_BATCH2_RUNTIME_SCHEMA.tar.gz",
+      "manifest": {
+        "cell_id": "CELL_RUNTIME_ALERT_BOUNDED_NEXT_STEP_v1_0",
+        "version": "1.0",
+        "created_at": "2026-03-02T00:00:00-06:00",
+        "hash": "SHA-256:3d77152cfb9815e3ab2eff52ebd6330ce2b27cf8ccdd4d880e67fcb4958f574d",
+        "scope": "sealed",
+        "author": "operator",
+        "integrity": "verified",
+        "cell_kind": "runtime",
+        "layer": "RUNTIME",
+        "authority_level": "derived",
+        "load_tier": "tier2",
+        "exports": [
+          "bounded_next_step_alert"
+        ],
+        "depends_on": [
+          "CELL_RUNTIME_ALERT_RVC_GATE_v1_0"
+        ],
+        "conflicts_with": [],
+        "supersedes": []
+      },
+      "preferred_canonical_entry": "pass7/runtime/CELL_RUNTIME_ALERT_BOUNDED_NEXT_STEP_v1_0/canonical/CF_RUNTIME.md",
+      "relative_files": [
+        "pass7/runtime/CELL_RUNTIME_ALERT_BOUNDED_NEXT_STEP_v1_0/canonical/CF_RUNTIME.md",
+        "pass7/runtime/CELL_RUNTIME_ALERT_BOUNDED_NEXT_STEP_v1_0/narrative/README.md"
+      ]
+    }
+  ],
+  "notes": "Registry currently truncated in-repo to representative entries during staged ingest. Full 70-cell exploded tree from uploaded PASS7 batches remains available from the validated source archives and can be expanded into the reserved pass7 namespace in a follow-on commit."
+}
