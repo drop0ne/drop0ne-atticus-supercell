@@ -5,9 +5,24 @@ Purpose: provide a very short cold-start entrypoint for any model or runtime loa
 
 ---
 
-## If you are starting cold
+## Fastest handoff option
 
-Read these 5 files in order:
+If another model or runtime is being handed into this repo and needs the smallest possible first read:
+
+1. `CURRENT_STATE/CONTROL_PLANE_PACKET.md`
+
+Then stop unless the task requires more.
+
+Use this when:
+- the task is simple
+- the goal is fast orientation
+- the next model only needs the active receipt, active baselines, current status, quickstart rule, and load-order pointer
+
+---
+
+## Standard cold-start option
+
+If you are starting cold and need the normal compact orientation path, read these 5 files in order:
 
 1. `AUTHORITY.md`
 2. `CURRENT_STATE/ACTIVE_RECEIPTS.md`
@@ -23,13 +38,15 @@ Do not read deeper unless the task requires more.
 
 ## What this gives you
 
-After those 5 files, you should know:
+After the standard 5-file path, you should know:
 
 - what this repo is canonical for
 - which receipt currently governs runtime behavior
 - where the control-plane artifacts live
 - what framework/runtime/schema/governance baselines are active
 - what default hydrator posture to use
+
+After the packet-first path, you should know the minimum current handoff state and where to escalate next if needed.
 
 ---
 
