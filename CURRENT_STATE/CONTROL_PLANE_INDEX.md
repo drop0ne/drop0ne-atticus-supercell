@@ -132,6 +132,11 @@ Role:
 - append-only history of the control-plane buildout
 - helps future maintainers understand how boot/governance surfaces evolved
 
+### `CURRENT_STATE/MAINTENANCE_RULES.md`
+Role:
+- defines update discipline for future control-plane changes
+- identifies which files move together, what should remain append-only, and what requires a new receipt
+
 ---
 
 ## Source-canon surfaces
