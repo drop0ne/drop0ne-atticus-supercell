@@ -1,0 +1,33 @@
+{
+  "schema": "atticus.supercell.raw_cells_stub_index.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "status": "stub_projection",
+  "source_bundle_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+  "attachment_mode": "deferred_raw_cell_attachment",
+  "planned_cell_type": "atticus.raw.file",
+  "planned_population": {
+    "raw_file_count": 348,
+    "cell_id_format": "sha256:<file_hash>",
+    "payload_policy": "preserve",
+    "mutation": false
+  },
+  "stub_groups": [
+    {
+      "group": "governance_sources",
+      "estimated_contents": ["AMAS", "authority", "canonical_root", "operator_primacy"]
+    },
+    {
+      "group": "reasoning_sources",
+      "estimated_contents": ["W_Stack", "ATFP", "AVM", "SAFEGUARD"]
+    },
+    {
+      "group": "runtime_sources",
+      "estimated_contents": ["activation", "selection", "loader", "overlay"]
+    },
+    {
+      "group": "lineage_sources",
+      "estimated_contents": ["Claude_origin", "archive_capture", "projection_status"]
+    }
+  ],
+  "notes": "Stub index for later attachment of the deterministically encoded 348-file raw corpus as internal raw-file cells."
+}
