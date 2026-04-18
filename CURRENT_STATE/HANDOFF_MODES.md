@@ -15,8 +15,12 @@ Purpose:
 - smallest practical current-state entry surface
 - minimal orientation before a simple task
 
-First file:
+Primary implementation surface:
 - `CURRENT_STATE/CONTROL_PLANE_PACKET.md`
+
+Companion surfaces:
+- `CURRENT_STATE/HANDOFF_EXAMPLES.md`
+- `CURRENT_STATE/CONTROL_PLANE_INDEX.md`
 
 Use when:
 - the receiving model needs the smallest possible first read
@@ -29,6 +33,7 @@ Default posture:
 Escalation path:
 - `CURRENT_STATE/QUICKSTART.md` for compact expansion
 - `CURRENT_STATE/CONTROL_PLANE_INDEX.md` for broader navigation
+- `CURRENT_STATE/HANDOFF_EXAMPLES.md` for worked path selection examples
 - `SUPERCELL_LOAD_ORDER.md` for deterministic full boot
 
 Stop rule:
@@ -44,6 +49,13 @@ Name:
 Purpose:
 - low-cost but fuller orientation than packet-first handoff
 - compact baseline restoration for simple to moderate tasks
+
+Primary implementation surface:
+- `CURRENT_STATE/QUICKSTART.md`
+
+Companion surfaces:
+- `CURRENT_STATE/HANDOFF_EXAMPLES.md`
+- `CURRENT_STATE/CONTROL_PLANE_INDEX.md`
 
 Primary path:
 1. `AUTHORITY.md`
@@ -63,6 +75,7 @@ Default posture:
 Escalation path:
 - `CURRENT_STATE/TASK_ROUTING_MATRIX.md`
 - `CURRENT_STATE/QUERY_CHECKLIST.md`
+- `CURRENT_STATE/HANDOFF_EXAMPLES.md`
 - `SUPERCELL_LOAD_ORDER.md`
 
 Stop rule:
@@ -80,6 +93,14 @@ Purpose:
 - provenance-sensitive work
 - drift-sensitive work
 - mutation-adjacent or authorization-sensitive work
+
+Primary implementation surface:
+- `SUPERCELL_LOAD_ORDER.md`
+
+Companion surfaces:
+- `CURRENT_STATE/HANDOFF_EXAMPLES.md`
+- `CURRENT_STATE/TASK_ROUTING_MATRIX.md`
+- `CURRENT_STATE/QUERY_CHECKLIST.md`
 
 Primary path:
 - follow `SUPERCELL_LOAD_ORDER.md`
