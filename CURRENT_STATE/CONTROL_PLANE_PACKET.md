@@ -5,6 +5,14 @@ Purpose: provide one compact handoff surface that points a new model or runtime 
 
 ---
 
+## Active handoff mode
+
+- mode: `packet_first_direct_handoff`
+- mode_source: `CURRENT_STATE/HANDOFF_MODES.md`
+- intended_use: `smallest practical current-state entry surface for direct model-to-model or runtime-to-runtime handoff`
+
+---
+
 ## Primary handoff
 
 Read these in order:
