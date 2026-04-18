@@ -114,6 +114,11 @@ Role:
 Role:
 - one-page readiness/health summary for compact use, full boot, framework restoration, provenance audit, and mutation-capable interpretation
 
+### `CURRENT_STATE/GOVERNANCE_DEPENDENCY_MAP.md`
+Role:
+- shows which control-plane surfaces depend on receipts, active baselines, drift, and load-order behavior
+- helps maintainers see the dependency graph before making governance changes
+
 ### `CURRENT_STATE/ATTICUS_FRAMEWORK_STATE_2026-04-17.md`
 Role:
 - detailed framework state snapshot
