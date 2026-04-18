@@ -115,7 +115,31 @@
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/validation_gate.json",
       "type": "atticus.supercell.validation_gate",
       "authority": "derived_runtime_contract"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/promotion_gate",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_gate.json",
+      "type": "atticus.supercell.promotion_gate",
+      "authority": "derived_release_control"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/release_candidate",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/release_candidate.json",
+      "type": "atticus.supercell.release_candidate",
+      "authority": "derived_release_control"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/merge_readiness",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/merge_readiness.json",
+      "type": "atticus.supercell.merge_readiness",
+      "authority": "derived_release_control"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/operator_signoff",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/operator_signoff.json",
+      "type": "atticus.supercell.operator_signoff",
+      "authority": "derived_release_control"
     }
   ],
-  "notes": "Index of canonical, derived, corpus projection, internalization-plan, and runtime-contract cells for ATTICUS_CLAUDE_INIT_v1."
+  "notes": "Index of canonical, derived, corpus projection, internalization-plan, runtime-contract, and release-control cells for ATTICUS_CLAUDE_INIT_v1."
 }
