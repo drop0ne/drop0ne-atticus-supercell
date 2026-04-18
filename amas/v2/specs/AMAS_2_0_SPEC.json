@@ -1,0 +1,169 @@
+{
+  "artifact_name": "AMAS_2_0_SPEC.json",
+  "artifact_type": "governance_spec",
+  "version": "2.0.0-draft",
+  "status": "draft_baseline",
+  "date": "2026-04-17",
+  "author": "Jacob Dougherty / Atticus-Node-One collaboration",
+  "title": "Authority Mapping and Arbitration System 2.0",
+  "summary": "AMAS 2.0 defines operator-governed authority, canonical memory binding, arbitration, repair, migration, preflight hard-fail, and export truthfulness for persistent AI memory systems.",
+  "design_goals": [
+    "preserve operator primacy",
+    "preserve narrative-first canonical truth",
+    "enforce exactly one canonical root",
+    "enforce exactly one writable authority event ledger",
+    "prevent silent canonicality laundering",
+    "require explicit repair and migration events",
+    "support deterministic export validation"
+  ],
+  "non_goals": [
+    "ui specification",
+    "database vendor lock-in",
+    "autonomous model authority over canonical truth",
+    "implicit promotion of inferred artifacts"
+  ],
+  "authority_model": {
+    "tiers": [
+      {
+        "tier": 0,
+        "name": "CANONICAL",
+        "scope": "authoritative durable truth substrate",
+        "may_self_promote": false,
+        "mutation_rule": "explicit authority event only"
+      },
+      {
+        "tier": 1,
+        "name": "OPERATOR",
+        "scope": "human directives, overrides, repairs, migrations, freezes",
+        "may_self_promote": false,
+        "mutation_rule": "must emit authority event when affecting canonical state"
+      },
+      {
+        "tier": 2,
+        "name": "SESSION",
+        "scope": "runtime-local working state",
+        "may_self_promote": false,
+        "mutation_rule": "cannot become canonical without explicit promotion event"
+      },
+      {
+        "tier": 3,
+        "name": "INFERRED",
+        "scope": "summaries, model suggestions, candidate repairs, conveniences",
+        "may_self_promote": false,
+        "mutation_rule": "never authoritative absent explicit promotion"
+      }
+    ],
+    "truth_precedence": ["CANONICAL", "OPERATOR", "SESSION", "INFERRED"],
+    "instruction_precedence": ["OPERATOR", "CANONICAL", "SESSION", "INFERRED"]
+  },
+  "required_invariants": [
+    "exactly_one_canonical_root",
+    "exactly_one_writable_authority_event_ledger",
+    "read_only_hydrate_by_default",
+    "derived_artifacts_non_authoritative",
+    "explicit_repair_and_migration_events",
+    "no_silent_canonicality_laundering",
+    "export_claims_must_match_canonical_state"
+  ],
+  "core_objects": [
+    "canonical_root",
+    "authority_event_ledger",
+    "canonical_narrative_store",
+    "runtime_binding_contract",
+    "derived_artifact_manifest",
+    "conformance_profile"
+  ],
+  "arbitration": {
+    "conflict_classes": [
+      "tier_conflict",
+      "root_conflict",
+      "ledger_conflict",
+      "wrapper_conflict",
+      "export_claim_conflict",
+      "narrative_vs_structure_conflict",
+      "inference_promotion_conflict",
+      "migration_conflict"
+    ],
+    "outcomes": [
+      "accept",
+      "reject",
+      "defer",
+      "freeze",
+      "repair_required",
+      "operator_decision_required",
+      "rollback"
+    ],
+    "deterministic_rules": [
+      "if_multiple_canonical_roots_then_hard_fail",
+      "if_multiple_writable_ledgers_then_hard_fail",
+      "if_derived_artifact_conflicts_with_narrative_then_derived_loses_and_drift_event_is_emitted",
+      "if_inferred_object_attempts_self_promotion_then_reject",
+      "if_session_conflicts_with_canonical_then_canonical_wins_unless_operator_override_event_exists"
+    ]
+  },
+  "runtime_states": [
+    "UNBOUND",
+    "PREFLIGHT",
+    "BOUND_READONLY",
+    "MUTATION_PENDING",
+    "COMMITTING",
+    "BOUND_WRITABLE",
+    "FROZEN",
+    "REPAIR",
+    "MIGRATION",
+    "EXPORTING",
+    "FAILED"
+  ],
+  "conformance_levels": [
+    {
+      "level": 0,
+      "name": "Conceptual",
+      "requirements": ["human_readable_governance_defined"]
+    },
+    {
+      "level": 1,
+      "name": "Structured Authority",
+      "requirements": ["tier_model_declared", "canonical_root_declared"]
+    },
+    {
+      "level": 2,
+      "name": "Runtime Binding",
+      "requirements": ["runtime_binding_contract_declared", "writable_ledger_declared"]
+    },
+    {
+      "level": 3,
+      "name": "Guarded Persistence",
+      "requirements": ["preflight_hard_fail", "explicit_repair", "export_validation"]
+    },
+    {
+      "level": 4,
+      "name": "Persistent Runtime Conformance",
+      "requirements": [
+        "single_canonical_root",
+        "single_writable_authority_ledger",
+        "derived_artifact_discipline",
+        "read_only_hydrate_default",
+        "two_phase_commit_or_equivalent",
+        "repair_and_migration_receipts",
+        "export_time_validation",
+        "deterministic_state_transitions"
+      ]
+    },
+    {
+      "level": 5,
+      "name": "Auditable Deterministic Governance",
+      "requirements": [
+        "cryptographic_chain_validation",
+        "replay_validation",
+        "machine_verifiable_arbitration",
+        "drift_detection_ledger",
+        "conformance_attestation_artifacts"
+      ]
+    }
+  ],
+  "unknowns": [
+    "final hash and signature strategy",
+    "transport-specific actor authentication model",
+    "database-specific transaction semantics"
+  ]
+}
