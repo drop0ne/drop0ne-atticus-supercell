@@ -1,0 +1,32 @@
+{
+  "cell_id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/canonical",
+  "type": "atticus.supercell.canonical",
+  "version": "ATTICUS_CLAUDE_INIT_v1",
+  "authority": {
+    "model": "AMAS_v1.2",
+    "tiering": ["CANONICAL","OPERATOR","SESSION","INFERRED"],
+    "canonical_root": true
+  },
+  "composition": {
+    "source_bundle_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+    "ingest_mode": "raw_preserved_hybrid",
+    "origin": "claude_initiated_framework",
+    "notes": "Full raw import preserved; higher-order structuring to be layered without mutating source payload."
+  },
+  "capabilities": {
+    "w_stack": "enabled",
+    "atfp": "enabled",
+    "avm": "enabled",
+    "amas": "enforced",
+    "selection": "version_switchable"
+  },
+  "entrypoints": {
+    "default_activation": "ATTICUS_CLAUDE_INIT_v1",
+    "selector_key": "atticus_claude_init_v1"
+  },
+  "provenance": {
+    "created": "2026-04-18",
+    "builder": "chatgpt-assisted transformation",
+    "source": "uploaded PASS7 archive"
+  }
+}
