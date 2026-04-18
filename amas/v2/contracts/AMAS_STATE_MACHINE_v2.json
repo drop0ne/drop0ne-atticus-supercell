@@ -1,0 +1,75 @@
+{
+  "artifact_name": "AMAS_STATE_MACHINE_v2.json",
+  "artifact_type": "state_machine",
+  "version": "2.0.0-draft",
+  "initial_state": "UNBOUND",
+  "terminal_states": ["FAILED"],
+  "states": [
+    {
+      "name": "UNBOUND",
+      "allowed_transitions": ["PREFLIGHT"]
+    },
+    {
+      "name": "PREFLIGHT",
+      "allowed_transitions": ["BOUND_READONLY", "FAILED"]
+    },
+    {
+      "name": "BOUND_READONLY",
+      "allowed_transitions": ["MUTATION_PENDING", "EXPORTING", "FROZEN", "REPAIR", "MIGRATION", "FAILED"]
+    },
+    {
+      "name": "MUTATION_PENDING",
+      "allowed_transitions": ["COMMITTING", "FAILED", "REPAIR"]
+    },
+    {
+      "name": "COMMITTING",
+      "allowed_transitions": ["BOUND_WRITABLE", "FAILED", "REPAIR"]
+    },
+    {
+      "name": "BOUND_WRITABLE",
+      "allowed_transitions": ["BOUND_READONLY", "EXPORTING", "FROZEN", "REPAIR", "MIGRATION", "FAILED"]
+    },
+    {
+      "name": "FROZEN",
+      "allowed_transitions": ["BOUND_READONLY", "MIGRATION", "FAILED"]
+    },
+    {
+      "name": "REPAIR",
+      "allowed_transitions": ["BOUND_READONLY", "FAILED"]
+    },
+    {
+      "name": "MIGRATION",
+      "allowed_transitions": ["BOUND_READONLY", "FAILED"]
+    },
+    {
+      "name": "EXPORTING",
+      "allowed_transitions": ["BOUND_READONLY", "FAILED"]
+    },
+    {
+      "name": "FAILED",
+      "allowed_transitions": []
+    }
+  ],
+  "guards": {
+    "bind_requires": [
+      "exactly_one_canonical_root",
+      "exactly_one_writable_authority_event_ledger",
+      "runtime_binding_contract_present",
+      "conformance_profile_present"
+    ],
+    "mutation_requires": [
+      "preflight_passed",
+      "prepare_event_written",
+      "sequence_reserved"
+    ],
+    "commit_requires": [
+      "post_mutation_validation_passed",
+      "commit_event_written",
+      "derived_artifacts_regenerated"
+    ],
+    "export_requires": [
+      "active_root_present",
+      "claim_vs_state_validation_passed"
+    ]
+  }
+}
