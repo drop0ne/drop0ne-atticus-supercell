@@ -1,0 +1,24 @@
+{
+  "schema": "atticus.supercell.activation.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "selector_key": "atticus_claude_init_v1",
+  "activation": {
+    "mode": "direct_select",
+    "entry_cell": "atticus://version/ATTICUS_CLAUDE_INIT_v1/canonical",
+    "default_stack": {
+      "safeguard": true,
+      "w_stack": true,
+      "atfp": true,
+      "avm": true,
+      "amas": true
+    },
+    "persona": "ATTICUS-CORE",
+    "baseline": "SAFEGUARD",
+    "selection_behavior": "version_switchable"
+  },
+  "runtime_notes": {
+    "intended_use": "selectable Claude-init Atticus framework package",
+    "mutation_policy": "append_only_overlay",
+    "raw_payload_policy": "preserve"
+  }
+}
