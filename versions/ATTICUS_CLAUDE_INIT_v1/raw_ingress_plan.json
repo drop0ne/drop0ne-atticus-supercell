@@ -1,0 +1,39 @@
+{
+  "schema": "atticus.supercell.raw_ingress_plan.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "phase": "1A_raw_corpus_ingress",
+  "status": "planned_not_started",
+  "objective": "Embed the preserved ATTICUS raw import bundle into the repository in a deterministic, append-only form without mutating canonical artifacts.",
+  "source": {
+    "archive_label": "atticus_cells_20260302_PASS7_FULL.tar.gz",
+    "source_archive_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+    "raw_file_count": 348,
+    "current_repo_state": "partial_metadata_only"
+  },
+  "ingress_strategy": {
+    "mode": "chunked_repo_ingest",
+    "preserve_raw_payload": true,
+    "canonical_artifact_mutation": false,
+    "write_discipline": "append_only",
+    "chunking_required": true,
+    "reason": "full raw payload was encoded locally but not previously bulk-ingested through the connector"
+  },
+  "planned_artifacts": [
+    "versions/ATTICUS_CLAUDE_INIT_v1/raw_chunks_manifest.json",
+    "imports/ATTICUS_PASS7_2026_04_18/chunks/",
+    "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json (normalized after ingress)"
+  ],
+  "definition_of_done": [
+    "repo contains chunked representation of preserved raw bundle or equivalent deterministic payload",
+    "raw_bundle_manifest.json no longer reports partial_metadata_only",
+    "source sha lineage remains intact",
+    "no canonical cell mutation occurs",
+    "follow-on phases can populate raw cell indexes from repo-backed payload"
+  ],
+  "next_after_completion": [
+    "Phase 1B raw cell population",
+    "Phase 1C higher-order projection",
+    "Phase 1D runtime hookup"
+  ],
+  "notes": "This plan records the first real full-load step. It does not claim the raw payload is already embedded."
+}
