@@ -37,7 +37,11 @@ If you need the next level of orientation after this packet:
    - use for broader control-plane navigation
    - gives the full map of current control-plane artifacts
 
-3. `SUPERCELL_LOAD_ORDER.md`
+3. `CURRENT_STATE/HANDOFF_EXAMPLES.md`
+   - use for worked examples of each supported handoff path
+   - helps choose between packet-first, compact cold-start, and full control-plane handoff
+
+4. `SUPERCELL_LOAD_ORDER.md`
    - use when the task needs deterministic full boot behavior
    - gives the ordered escalation path into deeper surfaces
 
