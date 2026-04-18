@@ -55,6 +55,11 @@ Role:
 - first live example cold-start boot report
 - records a PASS quickstart boot under current state
 
+### `CURRENT_STATE/AUDIT_REPORT_TEMPLATE.md`
+Role:
+- standardized format for emitting recurring audit results
+- pairs with `CURRENT_STATE/AUDIT_CHECKLIST.md`
+
 ### `SUPERCELL_LOAD_ORDER.md`
 Role:
 - deterministic boot path
@@ -156,6 +161,11 @@ Role:
 Role:
 - short recurring audit pass for weekly or post-governance-update review
 - helps detect stale current-state, boot, drift, and maintenance surfaces before they silently diverge
+
+### `CURRENT_STATE/AUDIT_REPORT_TEMPLATE.md`
+Role:
+- standardized format for recording audit outcomes, mismatches, and repair actions
+- completes the recurring audit workflow with `AUDIT_CHECKLIST.md`
 
 ---
 
