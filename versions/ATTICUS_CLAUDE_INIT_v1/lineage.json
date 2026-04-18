@@ -1,0 +1,21 @@
+{
+  "schema": "atticus.supercell.lineage.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "origin": {
+    "dominant_origin": "Claude",
+    "source_label": "claude-initiated-running-framework",
+    "chatgpt_extraction_scope": "partial",
+    "canonical_intent": "Preserve the Claude-origin Atticus framework as a selectable canonical supercell version."
+  },
+  "source_provenance": {
+    "source_archive_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+    "ingest_mode": "raw_preserved_hybrid",
+    "builder_branch": "import/atticus-raw-pass7-2026-04-18"
+  },
+  "governance": {
+    "authority_model": "AMAS_v1.2",
+    "raw_preservation": true,
+    "canonical_root_required": true,
+    "derived_artifacts_are_non_authoritative": true
+  }
+}

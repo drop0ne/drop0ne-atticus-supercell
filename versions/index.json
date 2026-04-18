@@ -1,0 +1,12 @@
+{
+  "schema": "atticus.supercell.versions.index.v1",
+  "versions": [
+    {
+      "version_id": "ATTICUS_CLAUDE_INIT_v1",
+      "selector_key": "atticus_claude_init_v1",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/version.json",
+      "status": "active_candidate"
+    }
+  ],
+  "default": null
+}

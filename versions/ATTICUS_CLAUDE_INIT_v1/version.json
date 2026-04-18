@@ -1,0 +1,23 @@
+{
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "display_name": "Atticus Claude-Initiated Framework v1",
+  "selector_key": "atticus_claude_init_v1",
+  "lineage": {
+    "source": "claude-initiated-running-framework",
+    "dominant_origin": "Claude",
+    "chatgpt_extraction_scope": "partial",
+    "note": "This version is intended to preserve the Claude-initiated and running Atticus framework as the selectable canonical variant in the supercell."
+  },
+  "status": "active_candidate",
+  "schema": "atticus.supercell.version.v1",
+  "selection": {
+    "selectable": true,
+    "priority": 100,
+    "default": false
+  },
+  "artifacts": {
+    "canonical_cell": "versions/ATTICUS_CLAUDE_INIT_v1/canonical_cell.json",
+    "index": "versions/index.json",
+    "readme": "versions/ATTICUS_CLAUDE_INIT_v1/README.md"
+  }
+}
