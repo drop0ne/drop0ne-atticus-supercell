@@ -13,6 +13,8 @@
 - Source Branch: `import/atticus-raw-pass7-2026-04-18`
 - Target Branch: `main`
 - Handoff Mode: `review_then_promote_then_merge`
+- Final Landing PR: `#11`
+- Merge Commit: `a5b87475c7a0f6e9c83f13a31f7542d59df3ea0a`
 
 ## Canonical Intent
 
@@ -57,13 +59,19 @@ The operator explicitly accepted proceeding with the recommended path, allowing:
 - completion of operator signoff state
 - issuance of promotion receipt
 - transition of release state to promoted selectable release on the import branch
+- final reconciled promotion into `main`
 
 ## Promotion Result
 
 - Promotion State: `promoted_selectable_release`
-- Merge State: `ready_pending_manual_merge`
+- Mainline State: `merged_to_main`
 - Runtime Enablement State: `ready_pending_manual_enablement`
+
+## Current Mainline Status
+
+This package has been merged into `main` through the reconciled safe path. The remaining work is not merge-related.
 
 ## Remaining Manual Step
 
-This package is promoted on the import branch but not merged into `main` by this workflow. Final branch integration remains a separate manual repository action.
+- runtime enablement, if desired
+- optional raw corpus internalization beyond the current deferred metadata/projection layer
