@@ -105,6 +105,10 @@ Role:
 Role:
 - compact current-state source for framework, runtime, schema, and governance-floor baselines
 
+### `CURRENT_STATE/CONTROL_PLANE_STATUS.md`
+Role:
+- one-page readiness/health summary for compact use, full boot, framework restoration, provenance audit, and mutation-capable interpretation
+
 ### `CURRENT_STATE/ATTICUS_FRAMEWORK_STATE_2026-04-17.md`
 Role:
 - detailed framework state snapshot
