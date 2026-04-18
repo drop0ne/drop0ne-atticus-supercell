@@ -1,0 +1,113 @@
+{
+  "schema": "atticus.supercell.overlay_manifest.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "overlay_policy": {
+    "mode": "append_only_overlay",
+    "raw_payload_mutation": false,
+    "canonical_truth_location": "versions/ATTICUS_CLAUDE_INIT_v1/canonical_cell.json",
+    "derived_artifacts_non_authoritative": true
+  },
+  "overlays": [
+    {
+      "name": "semantic_routing_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/semantic_map.json",
+      "purpose": "semantic clustering and cognition routing"
+    },
+    {
+      "name": "dependency_activation_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/dependency_graph.json",
+      "purpose": "runtime load order and dependency resolution"
+    },
+    {
+      "name": "cell_index_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/cell_index.json",
+      "purpose": "cell discovery and loader indexing"
+    },
+    {
+      "name": "raw_bundle_projection_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json",
+      "purpose": "raw bundle preservation and ingest metadata"
+    },
+    {
+      "name": "raw_corpus_projection_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_corpus_index.json",
+      "purpose": "raw corpus metadata indexing and future attachment planning"
+    },
+    {
+      "name": "segment_projection_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/segment_map.json",
+      "purpose": "future segmentation contract for higher-order cell derivation"
+    },
+    {
+      "name": "corpus_lineage_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/corpus_lineage.json",
+      "purpose": "corpus origin locking and provenance continuity"
+    },
+    {
+      "name": "raw_cells_stub_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_cells_stub_index.json",
+      "purpose": "formal stub plan for raw-file cell internalization"
+    },
+    {
+      "name": "segment_cells_stub_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/segment_cells_stub_index.json",
+      "purpose": "formal stub plan for segment-cell projection"
+    },
+    {
+      "name": "claim_cluster_stub_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/claim_cluster_stub_index.json",
+      "purpose": "formal stub plan for claim-cluster projection"
+    },
+    {
+      "name": "attachment_contract_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/attachment_contract.json",
+      "purpose": "deterministic attachment contract for future corpus internalization"
+    },
+    {
+      "name": "loader_contract_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/loader_contract.json",
+      "purpose": "runtime loader contract for deterministic selection and activation"
+    },
+    {
+      "name": "selection_resolver_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/selection_resolver.json",
+      "purpose": "stable selector resolution from repo-level registries"
+    },
+    {
+      "name": "activation_sequence_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/activation_sequence.json",
+      "purpose": "ordered activation flow for runtime implementations"
+    },
+    {
+      "name": "validation_gate_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/validation_gate.json",
+      "purpose": "fail-closed validation checks before runtime activation"
+    },
+    {
+      "name": "promotion_gate_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_gate.json",
+      "purpose": "promotion eligibility checks before release advancement"
+    },
+    {
+      "name": "release_candidate_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/release_candidate.json",
+      "purpose": "release-candidate state tracking for controlled promotion"
+    },
+    {
+      "name": "merge_readiness_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/merge_readiness.json",
+      "purpose": "merge readiness status and blocking condition tracking"
+    },
+    {
+      "name": "operator_signoff_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/operator_signoff.json",
+      "purpose": "operator approval record required for promotion"
+    }
+  ],
+  "governance": {
+    "authority_model": "AMAS_v1.2",
+    "single_canonical_root": true,
+    "overlay_conflict_policy": "flag_do_not_silently_resolve"
+  },
+  "notes": "Derived cognition, corpus projection, internalization-plan, runtime-contract, and release-control overlays for ATTICUS_CLAUDE_INIT_v1."
+}

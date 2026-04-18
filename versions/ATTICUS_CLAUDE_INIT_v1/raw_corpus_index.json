@@ -1,0 +1,41 @@
+{
+  "schema": "atticus.supercell.raw_corpus_index.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "corpus": {
+    "source_bundle_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+    "index_scope": "metadata_projection",
+    "indexed_units": [
+      {
+        "unit_id": "raw_bundle_manifest",
+        "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json",
+        "unit_type": "bundle_manifest"
+      },
+      {
+        "unit_id": "canonical_cell",
+        "path": "versions/ATTICUS_CLAUDE_INIT_v1/canonical_cell.json",
+        "unit_type": "canonical_cell"
+      },
+      {
+        "unit_id": "semantic_map",
+        "path": "versions/ATTICUS_CLAUDE_INIT_v1/semantic_map.json",
+        "unit_type": "derived_cognition"
+      },
+      {
+        "unit_id": "dependency_graph",
+        "path": "versions/ATTICUS_CLAUDE_INIT_v1/dependency_graph.json",
+        "unit_type": "derived_cognition"
+      }
+    ],
+    "planned_units": [
+      "raw_file_cells",
+      "segment_cells",
+      "claim_clusters",
+      "dependency_expansion_edges"
+    ]
+  },
+  "loader_notes": {
+    "current_mode": "index_metadata_first",
+    "future_mode": "full_raw_cell_attachment",
+    "selection_ready": true
+  }
+}

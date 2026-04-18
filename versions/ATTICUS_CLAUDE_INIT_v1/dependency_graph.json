@@ -1,0 +1,41 @@
+{
+  "schema": "atticus.supercell.dependency_graph.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "graph_type": "directed_activation_dependency",
+  "nodes": [
+    {"id": "SAFEGUARD", "layer": "L0", "required": true},
+    {"id": "Data_Integrity", "layer": "L1", "required": true},
+    {"id": "ATFP", "layer": "L1.5", "required": true},
+    {"id": "W_Stack", "layer": "L2", "required": true},
+    {"id": "AVM", "layer": "L2.5", "required": true},
+    {"id": "Ethical_Legal", "layer": "L3", "required": true},
+    {"id": "Planning", "layer": "L4", "required": true},
+    {"id": "Output", "layer": "L5", "required": true},
+    {"id": "AMAS_v1.2", "layer": "governance", "required": true},
+    {"id": "ATTICUS_CORE", "layer": "persona", "required": true},
+    {"id": "Claude_Origin", "layer": "lineage", "required": true}
+  ],
+  "dependencies": [
+    {"from": "Data_Integrity", "to": "SAFEGUARD", "kind": "requires"},
+    {"from": "ATFP", "to": "Data_Integrity", "kind": "requires"},
+    {"from": "W_Stack", "to": "ATFP", "kind": "requires"},
+    {"from": "AVM", "to": "W_Stack", "kind": "requires"},
+    {"from": "Ethical_Legal", "to": "AVM", "kind": "requires"},
+    {"from": "Planning", "to": "Ethical_Legal", "kind": "requires"},
+    {"from": "Output", "to": "Planning", "kind": "requires"},
+    {"from": "ATTICUS_CORE", "to": "SAFEGUARD", "kind": "bounded_by"},
+    {"from": "ATTICUS_CORE", "to": "AMAS_v1.2", "kind": "governed_by"},
+    {"from": "Claude_Origin", "to": "ATTICUS_CORE", "kind": "lineage_informs"}
+  ],
+  "activation_order": [
+    "SAFEGUARD",
+    "Data_Integrity",
+    "ATFP",
+    "W_Stack",
+    "AVM",
+    "Ethical_Legal",
+    "Planning",
+    "Output"
+  ],
+  "notes": "Derived dependency graph for runtime loading and cognition sequencing. Governance remains authoritative outside this graph."
+}

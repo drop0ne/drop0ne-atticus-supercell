@@ -1,0 +1,30 @@
+{
+  "schema": "atticus.supercell.release_candidate.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "candidate_label": "RC1",
+  "status": "pending_operator_signoff",
+  "promotion_target": "promoted_selectable_release",
+  "summary": {
+    "identity": "Claude-initiated Atticus framework",
+    "selector_key": "atticus_claude_init_v1",
+    "current_stage": "runtime_contract_candidate",
+    "release_intent": "Preserve and promote the Claude-init Atticus line as a selectable canonical runtime package."
+  },
+  "required_artifacts": [
+    "canonical_cell.json",
+    "activation.json",
+    "lineage.json",
+    "semantic_map.json",
+    "dependency_graph.json",
+    "cell_index.json",
+    "overlay_manifest.json",
+    "loader_contract.json",
+    "selection_resolver.json",
+    "activation_sequence.json",
+    "validation_gate.json",
+    "promotion_gate.json",
+    "merge_readiness.json",
+    "operator_signoff.json"
+  ],
+  "notes": "Release candidate record for ATTICUS_CLAUDE_INIT_v1 pending operator signoff and merge-readiness confirmation."
+}

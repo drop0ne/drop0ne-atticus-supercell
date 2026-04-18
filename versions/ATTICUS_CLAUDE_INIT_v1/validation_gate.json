@@ -1,0 +1,42 @@
+{
+  "schema": "atticus.supercell.validation_gate.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "gates": [
+    {
+      "name": "canonical_root_gate",
+      "required": true,
+      "condition": "canonical_cell_present_and_root_manifest_consistent"
+    },
+    {
+      "name": "selection_consistency_gate",
+      "required": true,
+      "condition": "selector_key_and_version_id_resolve_consistently"
+    },
+    {
+      "name": "authority_model_gate",
+      "required": true,
+      "condition": "AMAS_v1.2_declared_and_not_overridden"
+    },
+    {
+      "name": "overlay_discipline_gate",
+      "required": true,
+      "condition": "derived_artifacts_non_authoritative_and_append_only"
+    },
+    {
+      "name": "origin_lock_gate",
+      "required": true,
+      "condition": "Claude_origin_retained_without_silent_rewrite"
+    },
+    {
+      "name": "raw_preservation_gate",
+      "required": true,
+      "condition": "source_sha_matches_and_raw_payload_not_mutated"
+    }
+  ],
+  "failure_behavior": {
+    "mode": "fail_closed",
+    "report": "explicit_gate_failure",
+    "silent_repair": false
+  },
+  "notes": "Validation gate suite for deterministic loader activation of ATTICUS_CLAUDE_INIT_v1."
+}

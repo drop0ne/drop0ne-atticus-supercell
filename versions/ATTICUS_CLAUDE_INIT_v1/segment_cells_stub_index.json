@@ -1,0 +1,23 @@
+{
+  "schema": "atticus.supercell.segment_cells_stub_index.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "status": "stub_projection",
+  "derives_from": "versions/ATTICUS_CLAUDE_INIT_v1/raw_cells_stub_index.json",
+  "planned_cell_type": "atticus.segment.cell",
+  "segmentation_policy": {
+    "mode": "additive_projection",
+    "source_mutation": false,
+    "canonicality": "derived_non_authoritative"
+  },
+  "planned_segment_classes": [
+    "governance_spec",
+    "reasoning_stack",
+    "runtime_contract",
+    "lineage_provenance"
+  ],
+  "planned_outputs": {
+    "segment_id_format": "sha256:<segment_hash>",
+    "edge_targets": ["claim_cluster_stub_index", "semantic_map", "dependency_graph"]
+  },
+  "notes": "Stub index for projected segment cells derived from preserved raw-file cells."
+}

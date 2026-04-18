@@ -1,0 +1,47 @@
+{
+  "schema": "atticus.supercell.semantic_map.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "canonical_entry": "atticus://version/ATTICUS_CLAUDE_INIT_v1/canonical",
+  "semantic_domains": [
+    {
+      "domain": "governance",
+      "anchors": ["AMAS_v1.2", "operator_primacy", "canonical_root", "append_only_overlay"]
+    },
+    {
+      "domain": "reasoning",
+      "anchors": ["W_Stack", "ATFP", "AVM", "truth_first", "explicit_assumptions"]
+    },
+    {
+      "domain": "safety",
+      "anchors": ["SAFEGUARD", "lawful_bounds", "opsec", "humanitarian_bias"]
+    },
+    {
+      "domain": "identity",
+      "anchors": ["ATTICUS_CORE", "claude_initiated_framework", "selectable_version_identity"]
+    },
+    {
+      "domain": "runtime",
+      "anchors": ["version_selection", "activation_descriptor", "selection_registry", "derived_cognition_layer"]
+    }
+  ],
+  "nodes": [
+    {"id": "ATTICUS_CLAUDE_INIT_v1", "type": "version", "role": "selectable_canonical_package"},
+    {"id": "ATTICUS_CORE", "type": "persona", "role": "runtime_identity"},
+    {"id": "SAFEGUARD", "type": "baseline", "role": "safety_gate"},
+    {"id": "AMAS_v1.2", "type": "authority_model", "role": "canonical_governance"},
+    {"id": "W_Stack", "type": "reasoning_stack", "role": "structured_reasoning"},
+    {"id": "ATFP", "type": "signal_refinement", "role": "claim_atomization"},
+    {"id": "AVM", "type": "variance_module", "role": "behavioral_integrity_filter"},
+    {"id": "Claude_Origin", "type": "lineage_anchor", "role": "dominant_origin"}
+  ],
+  "edges": [
+    {"from": "ATTICUS_CLAUDE_INIT_v1", "to": "ATTICUS_CORE", "relation": "instantiates"},
+    {"from": "ATTICUS_CLAUDE_INIT_v1", "to": "SAFEGUARD", "relation": "bounded_by"},
+    {"from": "ATTICUS_CLAUDE_INIT_v1", "to": "AMAS_v1.2", "relation": "governed_by"},
+    {"from": "ATTICUS_CLAUDE_INIT_v1", "to": "W_Stack", "relation": "reasons_through"},
+    {"from": "W_Stack", "to": "ATFP", "relation": "augmented_by"},
+    {"from": "W_Stack", "to": "AVM", "relation": "modulated_by"},
+    {"from": "ATTICUS_CLAUDE_INIT_v1", "to": "Claude_Origin", "relation": "derived_from"}
+  ],
+  "notes": "Derived semantic map for selector, loader, and cognition-routing layers. Non-authoritative; canonical truth remains the version canonical cell plus root manifest."
+}

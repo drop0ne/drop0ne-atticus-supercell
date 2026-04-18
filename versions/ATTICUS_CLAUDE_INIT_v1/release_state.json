@@ -1,0 +1,19 @@
+{
+  "schema": "atticus.supercell.release_state.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "state": {
+    "current": "promotion_candidate",
+    "allowed_transitions": [
+      "pending_operator_signoff",
+      "promoted_selectable_release",
+      "held_for_review"
+    ],
+    "blocking_conditions": [
+      "missing_operator_signoff"
+    ],
+    "non_blocking_deferrals": [
+      "bulk_raw_attachment_not_complete"
+    ]
+  },
+  "notes": "Release state tracker for ATTICUS_CLAUDE_INIT_v1 promotion workflow."
+}

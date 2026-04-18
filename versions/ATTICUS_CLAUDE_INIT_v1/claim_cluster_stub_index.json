@@ -1,0 +1,24 @@
+{
+  "schema": "atticus.supercell.claim_cluster_stub_index.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "status": "stub_projection",
+  "derives_from": "versions/ATTICUS_CLAUDE_INIT_v1/segment_cells_stub_index.json",
+  "planned_cell_type": "atticus.claim.cluster",
+  "projection_policy": {
+    "mode": "claim_and_cluster_projection",
+    "source_mutation": false,
+    "canonicality": "derived_non_authoritative"
+  },
+  "planned_cluster_domains": [
+    "governance",
+    "reasoning",
+    "safety",
+    "runtime",
+    "lineage"
+  ],
+  "planned_outputs": {
+    "cluster_id_format": "sha256:<cluster_hash>",
+    "downstream_edges": ["semantic_map", "dependency_graph", "overlay_manifest"]
+  },
+  "notes": "Stub index for future claim and cluster projection derived from segment cells in the Claude-init Atticus corpus."
+}

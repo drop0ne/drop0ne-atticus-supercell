@@ -1,0 +1,42 @@
+{
+  "schema": "atticus.supercell.activation_sequence.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "sequence": [
+    {
+      "step": 1,
+      "name": "resolve_version",
+      "requires": ["selection_resolver.json", "selection_registry.json"]
+    },
+    {
+      "step": 2,
+      "name": "validate_contracts",
+      "requires": ["validation_gate.json", "loader_contract.json"]
+    },
+    {
+      "step": 3,
+      "name": "load_canonical",
+      "requires": ["canonical_cell.json", "activation.json"]
+    },
+    {
+      "step": 4,
+      "name": "attach_derived_layers",
+      "requires": ["semantic_map.json", "dependency_graph.json", "overlay_manifest.json"]
+    },
+    {
+      "step": 5,
+      "name": "bind_corpus_projection",
+      "requires": ["raw_bundle_manifest.json", "raw_corpus_index.json", "segment_map.json", "corpus_lineage.json"]
+    },
+    {
+      "step": 6,
+      "name": "register_internalization_plan",
+      "requires": ["raw_cells_stub_index.json", "segment_cells_stub_index.json", "claim_cluster_stub_index.json", "attachment_contract.json"]
+    },
+    {
+      "step": 7,
+      "name": "enter_runtime_ready_state",
+      "requires": ["SAFEGUARD", "AMAS_v1.2", "ATTICUS_CORE"]
+    }
+  ],
+  "notes": "Ordered activation sequence for loader implementations targeting ATTICUS_CLAUDE_INIT_v1."
+}

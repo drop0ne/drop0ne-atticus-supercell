@@ -1,0 +1,39 @@
+{
+  "schema": "atticus.supercell.merge_readiness.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "status": "not_ready_until_signoff",
+  "checks": [
+    {
+      "name": "version_manifest_complete",
+      "required": true,
+      "state": "pass"
+    },
+    {
+      "name": "runtime_contract_layer_present",
+      "required": true,
+      "state": "pass"
+    },
+    {
+      "name": "promotion_gate_present",
+      "required": true,
+      "state": "pass"
+    },
+    {
+      "name": "operator_signoff_present",
+      "required": true,
+      "state": "pending"
+    },
+    {
+      "name": "bulk_raw_attachment_complete",
+      "required": false,
+      "state": "deferred"
+    }
+  ],
+  "merge_policy": {
+    "target_branch": "main",
+    "required_mode": "review_then_promote",
+    "auto_merge": false,
+    "fail_if_operator_signoff_missing": true
+  },
+  "notes": "Merge-readiness record for ATTICUS_CLAUDE_INIT_v1. Current blocker is operator signoff."
+}
