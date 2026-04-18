@@ -1,0 +1,19 @@
+{
+  "schema": "atticus.supercell.promotion_summary.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "status": "awaiting_final_operator_actions",
+  "summary": {
+    "identity": "Atticus Claude-Initiated Framework v1",
+    "selector_key": "atticus_claude_init_v1",
+    "current_state": "promotion_candidate",
+    "package_readiness": "structurally_complete_pending_signoff",
+    "origin_lock": "Claude",
+    "raw_preservation": "maintained",
+    "bulk_raw_attachment": "deferred_non_blocking"
+  },
+  "blocking_items": [
+    "operator_signoff_missing",
+    "promotion_receipt_not_issued"
+  ],
+  "notes": "Promotion summary for ATTICUS_CLAUDE_INIT_v1 capturing current readiness and remaining operator-controlled actions."
+}
