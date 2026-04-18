@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atticus Sealed Cell Manifest",
+  "type": "object",
+  "required": [
+    "cell_id",
+    "version",
+    "created_at",
+    "hash",
+    "scope",
+    "author",
+    "integrity"
+  ],
+  "properties": {
+    "cell_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^(SHA-256:)?[A-Fa-f0-9]{6,}$"
+    },
+    "scope": {
+      "type": "string",
+      "const": "sealed"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "integrity": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "unverified",
+        "invalid"
+      ]
+    },
+    "cell_kind": {
+      "type": "string"
+    },
+    "layer": {
+      "type": "string"
+    },
+    "authority_level": {
+      "type": "string"
+    },
+    "load_tier": {
+      "type": "string"
+    },
+    "exports": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "depends_on": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conflicts_with": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$id": "https://drop0ne.local/schemas/memory_cell.pass7.schema.json",
+  "description": "Shape contract for an Atticus sealed PASS7 cell manifest.json. Sourced verbatim from CELL_SCHEMA_CORE_MANIFEST_v1_0 (PASS7)."
+}
