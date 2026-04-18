@@ -1,5 +1,46 @@
 {
   "schema": "bootstrap-v1",
-  "cells": [],
-  "notes": "Index of compact context-bearing long-term memory cells."
+  "cells": [
+    {
+      "cell_id": "ATTICUS_GLOBAL_BOOTSTRAP_v1",
+      "path": "MEMORY/cells/atticus/ATTICUS_GLOBAL_BOOTSTRAP_v1.json"
+    },
+    {
+      "cell_id": "AMAS_GOVERNANCE_BASELINE_v1",
+      "path": "MEMORY/cells/atticus/AMAS_GOVERNANCE_BASELINE_v1.json"
+    },
+    {
+      "cell_id": "ATTICUS_CURRENT_WORKING_BASELINE_v1",
+      "path": "MEMORY/cells/atticus/ATTICUS_CURRENT_WORKING_BASELINE_v1.json"
+    },
+    {
+      "cell_id": "ATTICUS_SESSION_CONTINUITY_RUNNER_AUDIT_DETAIL_2026-04-17",
+      "path": "MEMORY/cells/atticus/ATTICUS_SESSION_CONTINUITY_RUNNER_AUDIT_DETAIL_2026-04-17.json"
+    },
+    {
+      "cell_id": "MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_MERGED_v1",
+      "path": "MEMORY/cells/mpo/MPO_MEMORY_ENGINE_CONTEXT_UPGRADE_MERGED_v1.json"
+    },
+    {
+      "cell_id": "MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1",
+      "path": "MEMORY/cells/mpo/MPO_QUERY_AWARE_RETRIEVAL_MERGED_v1.json"
+    },
+    {
+      "cell_id": "MPO_PACKET_CHAIN_PROGRESS_POST_PR100_v1",
+      "path": "MEMORY/cells/mpo/MPO_PACKET_CHAIN_PROGRESS_POST_PR100_v1.json"
+    },
+    {
+      "cell_id": "AMAS_PROJECT_BASELINE_v1",
+      "path": "PROJECTS/amas/MEMORY/cells/AMAS_PROJECT_BASELINE_v1.json"
+    },
+    {
+      "cell_id": "MPO_PROJECT_BASELINE_v1",
+      "path": "PROJECTS/mpo/MEMORY/cells/MPO_PROJECT_BASELINE_v1.json"
+    },
+    {
+      "cell_id": "SUPERCELL_OPS_PROJECT_BASELINE_v1",
+      "path": "PROJECTS/supercell_ops/MEMORY/cells/SUPERCELL_OPS_PROJECT_BASELINE_v1.json"
+    }
+  ],
+  "notes": "Index of compact context-bearing long-term memory cells. Currently tracking orthogonal project/ops baselines. PASS7 framework cells pending ingestion."
 }
