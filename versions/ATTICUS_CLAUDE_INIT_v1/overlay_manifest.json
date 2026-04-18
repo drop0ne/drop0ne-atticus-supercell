@@ -9,6 +9,11 @@
   },
   "overlays": [
     {
+      "name": "release_dossier_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/RELEASE_DOSSIER.md",
+      "purpose": "human-readable release and handoff dossier"
+    },
+    {
       "name": "semantic_routing_overlay",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/semantic_map.json",
       "purpose": "semantic clustering and cognition routing"
@@ -102,6 +107,46 @@
       "name": "operator_signoff_overlay",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/operator_signoff.json",
       "purpose": "operator approval record required for promotion"
+    },
+    {
+      "name": "signoff_template_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/signoff_template.json",
+      "purpose": "reusable operator approval template"
+    },
+    {
+      "name": "promotion_receipt_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_receipt.json",
+      "purpose": "formal receipt issued after successful promotion"
+    },
+    {
+      "name": "release_state_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/release_state.json",
+      "purpose": "state tracking across promotion workflow transitions"
+    },
+    {
+      "name": "branch_handoff_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/branch_handoff.json",
+      "purpose": "controlled handoff from import branch to main"
+    },
+    {
+      "name": "release_checklist_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/release_checklist.json",
+      "purpose": "final release completion checklist"
+    },
+    {
+      "name": "promotion_summary_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_summary.json",
+      "purpose": "condensed readiness summary for operator review"
+    },
+    {
+      "name": "main_merge_packet_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/main_merge_packet.json",
+      "purpose": "main-branch merge instructions after promotion"
+    },
+    {
+      "name": "runtime_enablement_packet_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/runtime_enablement_packet.json",
+      "purpose": "runtime activation packet after release promotion"
     }
   ],
   "governance": {
@@ -109,5 +154,5 @@
     "single_canonical_root": true,
     "overlay_conflict_policy": "flag_do_not_silently_resolve"
   },
-  "notes": "Derived cognition, corpus projection, internalization-plan, runtime-contract, and release-control overlays for ATTICUS_CLAUDE_INIT_v1."
+  "notes": "Derived cognition, corpus projection, internalization-plan, runtime-contract, release-control, operator-action, human-readable, and final release-orchestration overlays for ATTICUS_CLAUDE_INIT_v1."
 }
