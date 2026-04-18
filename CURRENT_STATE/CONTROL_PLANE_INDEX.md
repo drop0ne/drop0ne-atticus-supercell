@@ -1,0 +1,141 @@
+# Control Plane Index
+
+Status: active
+Purpose: provide a one-page map of the ATTICUS supercell control-plane artifacts and their purpose.
+
+---
+
+## Core authority surfaces
+
+### `AUTHORITY.md`
+Role:
+- defines repository authority boundaries
+- identifies what this repo is canonical for
+- preserves source-repo canon boundaries
+
+### `CURRENT_STATE/ACTIVE_RECEIPTS.md`
+Role:
+- points to currently governing authority-resolution receipts
+- gives the smallest receipt-entry surface for early boot
+
+### `MIRRORS/AUTHORITY_RESOLUTION_RECEIPT_AMAS_0001.md`
+Role:
+- active AMAS/supercell runtime governance receipt
+- anchors the explicit rehydration-safe floor
+
+### `MIRRORS/DRIFT_LEDGER.md`
+Role:
+- preserves unresolved doctrine/version drift
+- prevents silent normalization of conflicting surfaces
+
+---
+
+## Boot and reporting surfaces
+
+### `CURRENT_STATE/BOOT_ASSERTIONS.md`
+Role:
+- compact pass/fail boot assertion sheet
+- identifies required control-plane surfaces
+
+### `CURRENT_STATE/BOOT_REPORT_TEMPLATE.md`
+Role:
+- standardized format for emitting boot results
+
+### `CURRENT_STATE/BOOT_REPORT_2026-04-17.md`
+Role:
+- first live example boot report
+- records a PASS control-plane boot under current state
+
+### `SUPERCELL_LOAD_ORDER.md`
+Role:
+- deterministic boot path
+- controls early-load sequence and mutation-capable gate
+
+---
+
+## Hydrator behavior surfaces
+
+### `CURRENT_STATE/HYDRATOR_PROFILE.md`
+Role:
+- default hydrator behavior contract
+- read-only-first posture and escalation ladder
+
+### `CURRENT_STATE/TASK_ROUTING_MATRIX.md`
+Role:
+- maps common tasks to minimum escalation levels
+- helps nodes avoid unnecessary deep reads
+
+### `CURRENT_STATE/QUERY_CHECKLIST.md`
+Role:
+- live-use checklist before answering, escalating, claiming mutation authority, or asserting certainty
+
+### `CURRENT_STATE/SESSION_STATE_REFRESH_2026-04-17.md`
+Role:
+- records that current session state was refreshed against the rehydrated global control plane
+
+---
+
+## Baseline and state surfaces
+
+### `CURRENT_STATE/ACTIVE_BASELINES.md`
+Role:
+- compact current-state source for framework, runtime, schema, and governance-floor baselines
+
+### `CURRENT_STATE/ATTICUS_FRAMEWORK_STATE_2026-04-17.md`
+Role:
+- detailed framework state snapshot
+- main mirrored framework summary surface
+
+### `MIRRORS/ATTICUS_FRAMEWORK/CANONICAL_DERIVATION_LEDGER.md`
+Role:
+- records deterministic derivation order and conflict handling choices
+
+### `SESSION_PACKETS/ATTICUS_FRAMEWORK_BOOTSTRAP_PACKET.md`
+Role:
+- deterministic framework bootstrap packet for future model nodes
+
+### `MIRRORS/ATTICUS_FRAMEWORK/ROOT_CHAT_INDEX.md`
+Role:
+- root-chat provenance locator
+- explicit gap logging for unrecovered raw roots
+
+---
+
+## Source-canon surfaces
+
+### `MIRRORS/SOURCE_CANON/SOURCE_CANON_MANIFEST_2026-04-17.md`
+Role:
+- source-canon manifest for pinned upstream surfaces
+
+### `MIRRORS/SOURCE_CANON/AMAS_CORE_PINSET_2026-04-17.md`
+Role:
+- compact AMAS doctrine pinset summary
+
+### `MIRRORS/SOURCE_CANON/ATTICUS_MPO_PINSET_2026-04-17.md`
+Role:
+- compact ATTICUS MPO doctrine/runtime pinset summary
+
+### `MIRRORS/SOURCE_CANON/FULL_BODY/...`
+Role:
+- full-body mirrored source docs
+- used only when line-accurate doctrine/runtime analysis is needed
+
+---
+
+## Fast orientation rule
+
+For fast orientation, read in this order:
+1. `AUTHORITY.md`
+2. `CURRENT_STATE/ACTIVE_RECEIPTS.md`
+3. `CURRENT_STATE/CONTROL_PLANE_INDEX.md`
+4. `CURRENT_STATE/ACTIVE_BASELINES.md`
+5. `CURRENT_STATE/HYDRATOR_PROFILE.md`
+6. `SUPERCELL_LOAD_ORDER.md`
+
+---
+
+## Interpretation rule
+
+This index is a navigation surface.
+It does not supersede receipts, drift entries, or mirrored canon.
+If any listed artifact conflicts with a signed receipt or drift-preserved state, the signed receipt and drift-preserved state control interpretation.
