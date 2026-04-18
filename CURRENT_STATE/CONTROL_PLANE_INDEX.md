@@ -152,6 +152,11 @@ Role:
 - plain-language summary of the repo’s governing control-plane principles
 - summarizes receipt-first, drift-preserving, read-only-first, deterministic boot, and history-preserving maintenance
 
+### `CURRENT_STATE/CONTROL_PLANE_GLOSSARY.md`
+Role:
+- defines recurring control-plane terms in one place
+- standardizes vocabulary such as active receipt, governance floor, drift-preserved, read-only hydrate, compact mode, and mutation-capable interpretation
+
 ### `CURRENT_STATE/NORMALIZATION_RULES.md`
 Role:
 - defines which kinds of summary/index normalization are allowed and which are forbidden
