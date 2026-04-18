@@ -85,6 +85,11 @@ Role:
 - short recurring audit pass specifically for handoff surfaces
 - helps verify packet, quickstart, handoff modes, handoff examples, and navigation stay aligned after repo changes
 
+### `CURRENT_STATE/HANDOFF_AUDIT_REPORT_TEMPLATE.md`
+Role:
+- standardized format for recording handoff-audit outcomes, mismatches, and repair actions
+- completes the handoff-specific audit workflow with `HANDOFF_AUDIT_CHECKLIST.md`
+
 ### `CURRENT_STATE/HYDRATOR_PROFILE.md`
 Role:
 - default hydrator behavior contract
