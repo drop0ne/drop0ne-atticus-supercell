@@ -152,6 +152,11 @@ Role:
 - plain-language summary of the repo’s governing control-plane principles
 - summarizes receipt-first, drift-preserving, read-only-first, deterministic boot, and history-preserving maintenance
 
+### `CURRENT_STATE/NORMALIZATION_RULES.md`
+Role:
+- defines which kinds of summary/index normalization are allowed and which are forbidden
+- prevents summaries, quickstarts, examples, or indexes from collapsing drift, erasing history, or outranking receipts
+
 ### `CURRENT_STATE/MAINTENANCE_RULES.md`
 Role:
 - defines update discipline for future control-plane changes
