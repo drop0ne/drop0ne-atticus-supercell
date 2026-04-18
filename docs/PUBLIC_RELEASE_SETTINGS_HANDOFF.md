@@ -96,3 +96,64 @@ Do not describe it as:
 4. Add minimal CI if desired
 5. Re-check seeded vs runtime-generated artifacts
 6. Only then flip visibility to public
+
+## Claude cowork execution instructions
+
+Use this section as the direct execution brief.
+
+### Mission
+
+Finish the GitHub UI settings that cannot be changed from inside the repository.
+Do not redesign the repo. Do not broaden scope.
+
+### Required actions
+
+1. In repo settings, set feature posture intentionally:
+   - Wiki: OFF
+   - Discussions: OFF unless explicitly needed
+   - Projects: OFF unless actively needed
+   - Issues: OFF by default for a read-mostly canonical repo, unless public issue intake is intentionally wanted
+
+2. In merge settings, prefer a curated history:
+   - Squash merge: ON
+   - Merge commits: OFF if available
+   - Rebase merge: OFF unless there is a reason to keep it
+
+3. In branch protection or rulesets for `main`, enable best-available enforcement:
+   - require pull requests
+   - require at least 1 approval
+   - require code owner review
+   - dismiss stale approvals
+   - require conversation resolution
+   - block force-push
+   - block branch deletion
+   - restrict direct push to maintainer only if supported
+
+4. In Actions / status checks:
+   - ensure Actions is enabled as needed
+   - if supported, require the validation workflow from `.github/workflows/validate-supercell.yml`
+   - if the workflow check is not yet selectable, report that as pending rather than guessing
+
+5. Only after all prior items are verified:
+   - change visibility from private to public
+
+### Verification report format
+
+Report each item as `pass`, `fail`, or `unavailable`.
+
+Return a final note in this structure:
+
+- Completed
+- Unavailable in current repo type
+- Still pending
+- Visibility state
+- Main protection state
+- Recommended next action
+
+### Stop conditions
+
+Stop and report if:
+
+- expected controls do not exist for this repo type
+- visibility is changed before `main` protection is applied
+- a setting cannot be verified after changing it
