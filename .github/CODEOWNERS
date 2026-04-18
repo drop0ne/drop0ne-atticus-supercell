@@ -1,0 +1,4 @@
+# Canonical owner surface for the ATTICUS supercell.
+# This becomes enforceable when GitHub branch protection or rulesets require review from code owners.
+
+* @drop0ne
