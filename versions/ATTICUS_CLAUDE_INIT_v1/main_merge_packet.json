@@ -1,0 +1,20 @@
+{
+  "schema": "atticus.supercell.main_merge_packet.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "status": "authorized_pending_manual_merge",
+  "packet": {
+    "source_branch": "import/atticus-raw-pass7-2026-04-18",
+    "target_branch": "main",
+    "merge_mode": "review_then_promote_then_merge",
+    "required_pre_merge": [
+      "operator_signoff_complete",
+      "promotion_gate_passed",
+      "merge_readiness_passed",
+      "promotion_receipt_issued"
+    ],
+    "non_blocking_deferrals": [
+      "bulk_raw_attachment_not_complete"
+    ]
+  },
+  "notes": "Main-branch merge packet for ATTICUS_CLAUDE_INIT_v1 after operator-approved promotion. Manual repository merge remains separate from this workflow."
+}

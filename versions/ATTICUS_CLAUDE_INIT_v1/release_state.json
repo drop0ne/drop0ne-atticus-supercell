@@ -2,18 +2,16 @@
   "schema": "atticus.supercell.release_state.v1",
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
   "state": {
-    "current": "promotion_candidate",
+    "current": "promoted_selectable_release",
     "allowed_transitions": [
-      "pending_operator_signoff",
-      "promoted_selectable_release",
-      "held_for_review"
+      "held_for_review",
+      "merged_to_main"
     ],
-    "blocking_conditions": [
-      "missing_operator_signoff"
-    ],
+    "blocking_conditions": [],
     "non_blocking_deferrals": [
-      "bulk_raw_attachment_not_complete"
+      "bulk_raw_attachment_not_complete",
+      "main_branch_merge_not_executed_by_this_workflow"
     ]
   },
-  "notes": "Release state tracker for ATTICUS_CLAUDE_INIT_v1 promotion workflow."
+  "notes": "Release state tracker for ATTICUS_CLAUDE_INIT_v1 after operator-approved promotion on the import branch."
 }

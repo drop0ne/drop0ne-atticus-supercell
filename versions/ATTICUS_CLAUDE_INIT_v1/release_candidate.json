@@ -2,12 +2,12 @@
   "schema": "atticus.supercell.release_candidate.v1",
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
   "candidate_label": "RC1",
-  "status": "pending_operator_signoff",
+  "status": "promoted_selectable_release",
   "promotion_target": "promoted_selectable_release",
   "summary": {
     "identity": "Claude-initiated Atticus framework",
     "selector_key": "atticus_claude_init_v1",
-    "current_stage": "runtime_contract_candidate",
+    "current_stage": "final_release_orchestration_candidate",
     "release_intent": "Preserve and promote the Claude-init Atticus line as a selectable canonical runtime package."
   },
   "required_artifacts": [
@@ -26,5 +26,5 @@
     "merge_readiness.json",
     "operator_signoff.json"
   ],
-  "notes": "Release candidate record for ATTICUS_CLAUDE_INIT_v1 pending operator signoff and merge-readiness confirmation."
+  "notes": "Release candidate record for ATTICUS_CLAUDE_INIT_v1 after operator-approved promotion on the import branch."
 }

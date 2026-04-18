@@ -1,7 +1,7 @@
 {
   "schema": "atticus.supercell.operator_signoff.v1",
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
-  "status": "awaiting_operator",
+  "status": "approved",
   "operator_role": "Jake",
   "signoff_requirements": {
     "review_required": true,
@@ -11,10 +11,10 @@
     "merge_readiness_acknowledged": true
   },
   "approval_fields": {
-    "approved": null,
-    "approved_by": null,
-    "approved_at": null,
-    "notes": null
+    "approved": true,
+    "approved_by": "Jake",
+    "approved_at": "2026-04-18",
+    "notes": "Operator accepted proceed in chat and authorized the promotion-state transition on the import branch."
   },
   "notes": "Operator signoff record for promotion of ATTICUS_CLAUDE_INIT_v1 from candidate to promoted selectable release."
 }

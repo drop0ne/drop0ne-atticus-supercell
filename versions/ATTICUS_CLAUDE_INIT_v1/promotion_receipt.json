@@ -1,15 +1,15 @@
 {
   "schema": "atticus.supercell.promotion_receipt.v1",
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
-  "status": "not_issued",
+  "status": "issued",
   "receipt": {
     "promotion_target": "promoted_selectable_release",
-    "issued": false,
-    "issued_by": null,
-    "issued_at": null,
+    "issued": true,
+    "issued_by": "Jake",
+    "issued_at": "2026-04-18",
     "source_status": "promotion_candidate",
-    "result_status": null,
-    "notes": null
+    "result_status": "promoted_selectable_release",
+    "notes": "Issued following operator acceptance to proceed with promotion-state transition on the import branch."
   },
-  "notes": "Promotion receipt placeholder to be issued after operator signoff and promotion gate satisfaction."
+  "notes": "Promotion receipt issued after operator signoff and promotion gate satisfaction."
 }
