@@ -22,6 +22,26 @@
       "name": "cell_index_overlay",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/cell_index.json",
       "purpose": "cell discovery and loader indexing"
+    },
+    {
+      "name": "raw_bundle_projection_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json",
+      "purpose": "raw bundle preservation and ingest metadata"
+    },
+    {
+      "name": "raw_corpus_projection_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_corpus_index.json",
+      "purpose": "raw corpus metadata indexing and future attachment planning"
+    },
+    {
+      "name": "segment_projection_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/segment_map.json",
+      "purpose": "future segmentation contract for higher-order cell derivation"
+    },
+    {
+      "name": "corpus_lineage_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/corpus_lineage.json",
+      "purpose": "corpus origin locking and provenance continuity"
     }
   ],
   "governance": {
@@ -29,5 +49,5 @@
     "single_canonical_root": true,
     "overlay_conflict_policy": "flag_do_not_silently_resolve"
   },
-  "notes": "Derived cognition overlays for ATTICUS_CLAUDE_INIT_v1. These artifacts enhance routing and loading without changing canonical raw provenance."
+  "notes": "Derived cognition and corpus projection overlays for ATTICUS_CLAUDE_INIT_v1. These artifacts enhance routing, loading, and raw corpus preservation without changing canonical raw provenance."
 }
