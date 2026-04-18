@@ -15,6 +15,12 @@
       "authority": "canonical"
     },
     {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/release_dossier",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/RELEASE_DOSSIER.md",
+      "type": "atticus.supercell.release_dossier",
+      "authority": "derived_human_readable"
+    },
+    {
       "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/activation",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/activation.json",
       "type": "atticus.supercell.activation",
@@ -189,5 +195,5 @@
       "authority": "derived_release_orchestration"
     }
   ],
-  "notes": "Index of canonical, derived, corpus projection, internalization-plan, runtime-contract, release-control, operator-action, and final release-orchestration cells for ATTICUS_CLAUDE_INIT_v1."
+  "notes": "Index of canonical, derived, human-readable, corpus projection, internalization-plan, runtime-contract, release-control, operator-action, and final release-orchestration cells for ATTICUS_CLAUDE_INIT_v1."
 }
