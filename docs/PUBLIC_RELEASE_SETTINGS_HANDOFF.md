@@ -157,3 +157,19 @@ Stop and report if:
 - expected controls do not exist for this repo type
 - visibility is changed before `main` protection is applied
 - a setting cannot be verified after changing it
+
+## Operator reply for Claude
+
+Use this exact response if Claude asks what path to take:
+
+- Choose **Path 2 — Execute the brief**.
+- You are the intended executor.
+- The repository is `drop0ne/drop0ne-atticus-supercell`.
+- The handoff doc to follow is this file: `docs/PUBLIC_RELEASE_SETTINGS_HANDOFF.md`.
+- Treat this file as the authoritative execution brief.
+- Do not ask to redesign the repo.
+- Do not broaden scope.
+- Apply the GitHub UI settings using the required actions and stop conditions above.
+- Verify each setting and return the verification report in the requested format.
+- If a control is unavailable in a personal-user-owned repo, mark it `unavailable` rather than guessing.
+- Do not flip visibility to public until `main` protection is in place and verified.
