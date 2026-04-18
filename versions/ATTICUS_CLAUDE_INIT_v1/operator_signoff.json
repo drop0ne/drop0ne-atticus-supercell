@@ -1,0 +1,20 @@
+{
+  "schema": "atticus.supercell.operator_signoff.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "status": "awaiting_operator",
+  "operator_role": "Jake",
+  "signoff_requirements": {
+    "review_required": true,
+    "promotion_gate_acknowledged": true,
+    "origin_lock_acknowledged": true,
+    "raw_preservation_acknowledged": true,
+    "merge_readiness_acknowledged": true
+  },
+  "approval_fields": {
+    "approved": null,
+    "approved_by": null,
+    "approved_at": null,
+    "notes": null
+  },
+  "notes": "Operator signoff record for promotion of ATTICUS_CLAUDE_INIT_v1 from candidate to promoted selectable release."
+}
