@@ -1,0 +1,28 @@
+{
+  "schema": "atticus.supercell.loader_contract.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "loader_mode": "deterministic_select_and_activate",
+  "selector_key": "atticus_claude_init_v1",
+  "entrypoints": {
+    "root_manifest": "supercell/root_manifest.json",
+    "selection_registry": "supercell/selection_registry.json",
+    "version_descriptor": "versions/ATTICUS_CLAUDE_INIT_v1/version.json",
+    "canonical_cell": "versions/ATTICUS_CLAUDE_INIT_v1/canonical_cell.json",
+    "activation_descriptor": "versions/ATTICUS_CLAUDE_INIT_v1/activation.json"
+  },
+  "required_preconditions": [
+    "canonical_root_present",
+    "selection_registry_present",
+    "version_descriptor_present",
+    "activation_descriptor_present",
+    "validation_gate_passed"
+  ],
+  "runtime_policies": {
+    "authority_model": "AMAS_v1.2",
+    "selection_behavior": "version_switchable",
+    "raw_mutation": false,
+    "overlay_mode": "append_only",
+    "conflict_policy": "flag_do_not_silently_resolve"
+  },
+  "notes": "Deterministic loader contract for selecting and activating ATTICUS_CLAUDE_INIT_v1 in a future Atticus runtime."
+}
