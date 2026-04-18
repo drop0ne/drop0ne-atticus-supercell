@@ -152,6 +152,11 @@ Role:
 - short worked maintenance scenarios for common governance/control-plane changes
 - shows practical update order for receipts, baselines, drift resolution, and dependent surfaces
 
+### `CURRENT_STATE/AUDIT_CHECKLIST.md`
+Role:
+- short recurring audit pass for weekly or post-governance-update review
+- helps detect stale current-state, boot, drift, and maintenance surfaces before they silently diverge
+
 ---
 
 ## Source-canon surfaces
