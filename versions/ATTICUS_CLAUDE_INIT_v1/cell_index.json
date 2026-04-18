@@ -1,0 +1,49 @@
+{
+  "schema": "atticus.supercell.cell_index.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "cells": [
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/canonical",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/canonical_cell.json",
+      "type": "atticus.supercell.canonical",
+      "authority": "canonical"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/version",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/version.json",
+      "type": "atticus.supercell.version",
+      "authority": "canonical"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/activation",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/activation.json",
+      "type": "atticus.supercell.activation",
+      "authority": "derived_runtime"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/lineage",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/lineage.json",
+      "type": "atticus.supercell.lineage",
+      "authority": "derived_provenance"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/semantic_map",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/semantic_map.json",
+      "type": "atticus.supercell.semantic_map",
+      "authority": "derived_cognition"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/dependency_graph",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/dependency_graph.json",
+      "type": "atticus.supercell.dependency_graph",
+      "authority": "derived_cognition"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/overlay_manifest",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/overlay_manifest.json",
+      "type": "atticus.supercell.overlay_manifest",
+      "authority": "derived_overlay"
+    }
+  ],
+  "notes": "Index of canonical and derived cells for ATTICUS_CLAUDE_INIT_v1. Raw source bundle remains externally preserved and may be attached later as additional indexed cells."
+}
