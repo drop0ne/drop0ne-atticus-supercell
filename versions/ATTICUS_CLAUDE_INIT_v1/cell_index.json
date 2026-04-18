@@ -91,7 +91,31 @@
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/attachment_contract.json",
       "type": "atticus.supercell.attachment_contract",
       "authority": "derived_internalization_plan"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/loader_contract",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/loader_contract.json",
+      "type": "atticus.supercell.loader_contract",
+      "authority": "derived_runtime_contract"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/selection_resolver",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/selection_resolver.json",
+      "type": "atticus.supercell.selection_resolver",
+      "authority": "derived_runtime_contract"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/activation_sequence",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/activation_sequence.json",
+      "type": "atticus.supercell.activation_sequence",
+      "authority": "derived_runtime_contract"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/validation_gate",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/validation_gate.json",
+      "type": "atticus.supercell.validation_gate",
+      "authority": "derived_runtime_contract"
     }
   ],
-  "notes": "Index of canonical, derived, corpus projection, and internalization-plan cells for ATTICUS_CLAUDE_INIT_v1. Raw source bundle remains externally preserved while attachment contracts and stub indexes formalize future internal cell population."
+  "notes": "Index of canonical, derived, corpus projection, internalization-plan, and runtime-contract cells for ATTICUS_CLAUDE_INIT_v1."
 }
