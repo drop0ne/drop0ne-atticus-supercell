@@ -144,6 +144,11 @@ Role:
 - reusable template for generating or refreshing compact packet-style handoff surfaces
 - keeps future packet updates consistent when active receipts, baselines, governance floor, or handoff rules change
 
+### `CURRENT_STATE/HANDOFF_STATUS.md`
+Role:
+- one-page readiness summary for the handoff layer
+- states whether packet-first direct handoff, compact cold-start handoff, full control-plane handoff, packet regeneration, and handoff audit coverage are ready
+
 ### `CURRENT_STATE/ACTIVE_BASELINES.md`
 Role:
 - compact current-state source for framework, runtime, schema, and governance-floor baselines
