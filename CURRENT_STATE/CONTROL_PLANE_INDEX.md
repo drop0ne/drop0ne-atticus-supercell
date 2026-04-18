@@ -74,6 +74,11 @@ Role:
 - explicitly defines the supported handoff entry paths
 - distinguishes packet-first direct handoff, compact cold-start handoff, and full control-plane handoff
 
+### `CURRENT_STATE/HANDOFF_EXAMPLES.md`
+Role:
+- provides short worked examples for each supported handoff mode
+- shows when to use packet-first direct handoff, compact cold-start handoff, and full control-plane handoff
+
 ### `CURRENT_STATE/HYDRATOR_PROFILE.md`
 Role:
 - default hydrator behavior contract
