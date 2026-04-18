@@ -1,0 +1,14 @@
+{
+  "schema": "atticus.supercell.selection_registry.v1",
+  "registry": [
+    {
+      "selector_key": "atticus_claude_init_v1",
+      "version_id": "ATTICUS_CLAUDE_INIT_v1",
+      "activation_path": "versions/ATTICUS_CLAUDE_INIT_v1/activation.json",
+      "canonical_cell": "versions/ATTICUS_CLAUDE_INIT_v1/canonical_cell.json",
+      "lineage_path": "versions/ATTICUS_CLAUDE_INIT_v1/lineage.json",
+      "status": "active_candidate"
+    }
+  ],
+  "default_selector": null
+}
