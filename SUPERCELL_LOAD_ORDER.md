@@ -36,32 +36,33 @@ Until superseded by an operator-approved authority-resolution receipt:
 3. `MIRRORS/DRIFT_LEDGER.md`
 4. latest applicable authority-resolution receipt, if any
 
-### Phase 1 — Current behavior contract, effective baselines, and framework state
+### Phase 1 — Current behavior contract, routing guidance, effective baselines, and framework state
 5. `CURRENT_STATE/HYDRATOR_PROFILE.md`
-6. `CURRENT_STATE/ACTIVE_BASELINES.md`
-7. `CURRENT_STATE/ATTICUS_FRAMEWORK_STATE_2026-04-17.md`
-8. `MIRRORS/ATTICUS_FRAMEWORK/CANONICAL_DERIVATION_LEDGER.md`
+6. `CURRENT_STATE/TASK_ROUTING_MATRIX.md`
+7. `CURRENT_STATE/ACTIVE_BASELINES.md`
+8. `CURRENT_STATE/ATTICUS_FRAMEWORK_STATE_2026-04-17.md`
+9. `MIRRORS/ATTICUS_FRAMEWORK/CANONICAL_DERIVATION_LEDGER.md`
 
 ### Phase 2 — Framework cells
-9. `MEMORY/cells/atticus_framework_v6_4_1_hcii/0001_identity_and_kernel.md`
-10. `MEMORY/cells/atticus_framework_v6_4_1_hcii/0002_stack_and_governance.md`
-11. `MEMORY/cells/atticus_framework_v6_4_1_hcii/0003_runtime_mapping_lineage_and_gaps.md`
+10. `MEMORY/cells/atticus_framework_v6_4_1_hcii/0001_identity_and_kernel.md`
+11. `MEMORY/cells/atticus_framework_v6_4_1_hcii/0002_stack_and_governance.md`
+12. `MEMORY/cells/atticus_framework_v6_4_1_hcii/0003_runtime_mapping_lineage_and_gaps.md`
 
 ### Phase 3 — Bootstrap and provenance
-12. `SESSION_PACKETS/ATTICUS_FRAMEWORK_BOOTSTRAP_PACKET.md`
-13. `MIRRORS/ATTICUS_FRAMEWORK/ROOT_CHAT_INDEX.md`
+13. `SESSION_PACKETS/ATTICUS_FRAMEWORK_BOOTSTRAP_PACKET.md`
+14. `MIRRORS/ATTICUS_FRAMEWORK/ROOT_CHAT_INDEX.md`
 
 ### Phase 4 — Source-canon mirrors
-14. `MIRRORS/SOURCE_CANON/SOURCE_CANON_MANIFEST_2026-04-17.md`
-15. `MIRRORS/SOURCE_CANON/AMAS_CORE_PINSET_2026-04-17.md`
-16. `MIRRORS/SOURCE_CANON/ATTICUS_MPO_PINSET_2026-04-17.md`
+15. `MIRRORS/SOURCE_CANON/SOURCE_CANON_MANIFEST_2026-04-17.md`
+16. `MIRRORS/SOURCE_CANON/AMAS_CORE_PINSET_2026-04-17.md`
+17. `MIRRORS/SOURCE_CANON/ATTICUS_MPO_PINSET_2026-04-17.md`
 
 ### Phase 5 — Full-body mirrors (only when needed)
-17. `MIRRORS/SOURCE_CANON/FULL_BODY/amas-spec/SPEC.md`
-18. `MIRRORS/SOURCE_CANON/FULL_BODY/amas-spec/RUNTIME_BINDING.md`
-19. `MIRRORS/SOURCE_CANON/FULL_BODY/atticus-mpo/INDEX.md`
-20. `MIRRORS/SOURCE_CANON/FULL_BODY/atticus-mpo/ORCHESTRATION.md`
-21. `MIRRORS/SOURCE_CANON/FULL_BODY/atticus-mpo/ARCHITECTURE.md`
+18. `MIRRORS/SOURCE_CANON/FULL_BODY/amas-spec/SPEC.md`
+19. `MIRRORS/SOURCE_CANON/FULL_BODY/amas-spec/RUNTIME_BINDING.md`
+20. `MIRRORS/SOURCE_CANON/FULL_BODY/atticus-mpo/INDEX.md`
+21. `MIRRORS/SOURCE_CANON/FULL_BODY/atticus-mpo/ORCHESTRATION.md`
+22. `MIRRORS/SOURCE_CANON/FULL_BODY/atticus-mpo/ARCHITECTURE.md`
 
 ---
 
