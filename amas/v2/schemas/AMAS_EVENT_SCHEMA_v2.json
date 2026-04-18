@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AMAS Authority Event",
+  "type": "object",
+  "required": ["event_id","sequence","event_type","timestamp_utc","actor","tier","root_id","status"],
+  "properties": {
+    "event_id": {"type": "string"},
+    "sequence": {"type": "integer"},
+    "event_type": {"type": "string"},
+    "timestamp_utc": {"type": "string"},
+    "actor": {"type": "object"},
+    "tier": {"type": "integer"},
+    "root_id": {"type": "string"},
+    "status": {"type": "string"}
+  }
+}
