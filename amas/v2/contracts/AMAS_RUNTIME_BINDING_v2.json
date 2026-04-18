@@ -1,0 +1,33 @@
+{
+  "artifact_name": "AMAS_RUNTIME_BINDING_v2.json",
+  "artifact_type": "runtime_binding_contract",
+  "version": "2.0.0-draft",
+  "canonical_root": {
+    "id_format": "sha256:<full_hash>",
+    "active_root_required": true,
+    "multiple_active_roots_allowed": false,
+    "root_resolution_policy": "hard_fail_on_ambiguity"
+  },
+  "authority_ledger": {
+    "path": "canonical/ledger/authority_events.jsonl",
+    "append_only": true,
+    "multiple_writable_ledgers_allowed": false,
+    "hash_chain_required": true
+  },
+  "hydrate_policy": {
+    "default_mode": "read_only",
+    "auto_append_on_load": false
+  },
+  "mutation_protocol": {
+    "requires_two_phase_commit": true
+  },
+  "repair_policy": {
+    "explicit_repair_event_required": true
+  },
+  "export_policy": {
+    "export_validation_required": true
+  },
+  "failure_policy": {
+    "on_invariant_breach": "enter_FAILED_state"
+  }
+}
