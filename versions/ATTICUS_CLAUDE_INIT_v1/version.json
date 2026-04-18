@@ -8,7 +8,7 @@
     "chatgpt_extraction_scope": "partial",
     "note": "This version is intended to preserve the Claude-initiated and running Atticus framework as the selectable canonical variant in the supercell."
   },
-  "status": "promotion_candidate",
+  "status": "final_release_orchestration_candidate",
   "schema": "atticus.supercell.version.v1",
   "selection": {
     "selectable": true,
@@ -40,6 +40,14 @@
     "promotion_gate": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_gate.json",
     "release_candidate": "versions/ATTICUS_CLAUDE_INIT_v1/release_candidate.json",
     "merge_readiness": "versions/ATTICUS_CLAUDE_INIT_v1/merge_readiness.json",
-    "operator_signoff": "versions/ATTICUS_CLAUDE_INIT_v1/operator_signoff.json"
+    "operator_signoff": "versions/ATTICUS_CLAUDE_INIT_v1/operator_signoff.json",
+    "signoff_template": "versions/ATTICUS_CLAUDE_INIT_v1/signoff_template.json",
+    "promotion_receipt": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_receipt.json",
+    "release_state": "versions/ATTICUS_CLAUDE_INIT_v1/release_state.json",
+    "branch_handoff": "versions/ATTICUS_CLAUDE_INIT_v1/branch_handoff.json",
+    "release_checklist": "versions/ATTICUS_CLAUDE_INIT_v1/release_checklist.json",
+    "promotion_summary": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_summary.json",
+    "main_merge_packet": "versions/ATTICUS_CLAUDE_INIT_v1/main_merge_packet.json",
+    "runtime_enablement_packet": "versions/ATTICUS_CLAUDE_INIT_v1/runtime_enablement_packet.json"
   }
 }
