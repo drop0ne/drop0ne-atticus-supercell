@@ -43,7 +43,31 @@
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/overlay_manifest.json",
       "type": "atticus.supercell.overlay_manifest",
       "authority": "derived_overlay"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json",
+      "type": "atticus.supercell.raw_bundle_manifest",
+      "authority": "derived_corpus_projection"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/raw_corpus_index",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_corpus_index.json",
+      "type": "atticus.supercell.raw_corpus_index",
+      "authority": "derived_corpus_projection"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/segment_map",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/segment_map.json",
+      "type": "atticus.supercell.segment_map",
+      "authority": "derived_corpus_projection"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/corpus_lineage",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/corpus_lineage.json",
+      "type": "atticus.supercell.corpus_lineage",
+      "authority": "derived_provenance"
     }
   ],
-  "notes": "Index of canonical and derived cells for ATTICUS_CLAUDE_INIT_v1. Raw source bundle remains externally preserved and may be attached later as additional indexed cells."
+  "notes": "Index of canonical and derived cells for ATTICUS_CLAUDE_INIT_v1. Raw source bundle remains externally preserved while corpus projection artifacts are now indexed for loader discovery."
 }
