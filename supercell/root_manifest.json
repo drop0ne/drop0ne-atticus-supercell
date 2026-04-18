@@ -1,0 +1,18 @@
+{
+  "schema": "atticus.supercell.root_manifest.v1",
+  "supercell_name": "drop0ne-atticus-supercell",
+  "purpose": "Version-selectable Atticus supercell repository",
+  "selection_index": "versions/index.json",
+  "canonical_versions": [
+    {
+      "version_id": "ATTICUS_CLAUDE_INIT_v1",
+      "selector_key": "atticus_claude_init_v1",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/version.json"
+    }
+  ],
+  "authority": {
+    "model": "AMAS_v1.2",
+    "single_canonical_root": true,
+    "derived_artifact_discipline": true
+  }
+}
