@@ -1,0 +1,18 @@
+{
+  "schema": "atticus.supercell.branch_handoff.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "handoff": {
+    "source_branch": "import/atticus-raw-pass7-2026-04-18",
+    "target_branch": "main",
+    "handoff_mode": "review_then_promote_then_merge",
+    "required_before_merge": [
+      "operator_signoff",
+      "promotion_gate_pass",
+      "merge_readiness_pass"
+    ],
+    "blocked_by": [
+      "missing_operator_signoff"
+    ]
+  },
+  "notes": "Branch handoff contract for moving ATTICUS_CLAUDE_INIT_v1 from import branch to main after operator-controlled promotion."
+}
