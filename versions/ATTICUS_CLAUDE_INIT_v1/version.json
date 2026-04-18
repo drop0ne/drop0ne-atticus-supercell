@@ -27,6 +27,7 @@
     "cell_index": "versions/ATTICUS_CLAUDE_INIT_v1/cell_index.json",
     "overlay_manifest": "versions/ATTICUS_CLAUDE_INIT_v1/overlay_manifest.json",
     "raw_bundle_manifest": "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json",
+    "raw_archive_set_manifest": "versions/ATTICUS_CLAUDE_INIT_v1/raw_archive_set_manifest.json",
     "raw_ingress_plan": "versions/ATTICUS_CLAUDE_INIT_v1/raw_ingress_plan.json",
     "raw_chunks_manifest": "versions/ATTICUS_CLAUDE_INIT_v1/raw_chunks_manifest.json",
     "raw_corpus_index": "versions/ATTICUS_CLAUDE_INIT_v1/raw_corpus_index.json",
