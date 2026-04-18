@@ -1,0 +1,28 @@
+{
+  "schema": "atticus.supercell.attachment_contract.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "contract": {
+    "attachment_mode": "deferred_but_deterministic",
+    "source_bundle_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+    "raw_cells_source": "atticus_supercell_cells.ndjson",
+    "expected_raw_cell_count": 348,
+    "write_policy": "append_only",
+    "canonical_root": "versions/ATTICUS_CLAUDE_INIT_v1/canonical_cell.json",
+    "conflict_policy": "flag_do_not_silently_resolve",
+    "source_of_truth": "preserved_raw_bundle_plus_canonical_cell"
+  },
+  "attachment_sequence": [
+    "attach_raw_file_cells",
+    "project_segment_cells",
+    "project_claim_clusters",
+    "expand_semantic_edges",
+    "refresh_indexes"
+  ],
+  "validation": {
+    "source_sha_must_match": true,
+    "cell_id_format": "sha256:<hash>",
+    "no_raw_mutation": true,
+    "overlay_only_derivation": true
+  },
+  "notes": "Attachment contract governing future internalization of the preserved Claude-init raw corpus into actual indexed supercell cells."
+}
