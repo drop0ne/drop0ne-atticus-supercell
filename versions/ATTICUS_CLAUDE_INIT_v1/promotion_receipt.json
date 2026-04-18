@@ -1,0 +1,15 @@
+{
+  "schema": "atticus.supercell.promotion_receipt.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "status": "not_issued",
+  "receipt": {
+    "promotion_target": "promoted_selectable_release",
+    "issued": false,
+    "issued_by": null,
+    "issued_at": null,
+    "source_status": "promotion_candidate",
+    "result_status": null,
+    "notes": null
+  },
+  "notes": "Promotion receipt placeholder to be issued after operator signoff and promotion gate satisfaction."
+}
