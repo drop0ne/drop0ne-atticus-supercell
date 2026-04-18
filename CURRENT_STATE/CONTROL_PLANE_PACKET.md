@@ -12,8 +12,26 @@ Read these in order:
 1. `CURRENT_STATE/ACTIVE_RECEIPTS.md`
 2. `CURRENT_STATE/ACTIVE_BASELINES.md`
 3. `CURRENT_STATE/CONTROL_PLANE_STATUS.md`
-4. `CURRENT_STATE/QUICKSTART.md`
-5. `SUPERCELL_LOAD_ORDER.md`
+
+Then stop unless the task requires more.
+
+---
+
+## Next-hop escalation surfaces
+
+If you need the next level of orientation after this packet:
+
+1. `CURRENT_STATE/QUICKSTART.md`
+   - use for compact cold-start expansion
+   - gives the standard small-file orientation path
+
+2. `CURRENT_STATE/CONTROL_PLANE_INDEX.md`
+   - use for broader control-plane navigation
+   - gives the full map of current control-plane artifacts
+
+3. `SUPERCELL_LOAD_ORDER.md`
+   - use when the task needs deterministic full boot behavior
+   - gives the ordered escalation path into deeper surfaces
 
 ---
 
