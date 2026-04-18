@@ -114,7 +114,8 @@ Role:
 ### `CURRENT_STATE/CONTROL_PLANE_PACKET.md`
 Role:
 - one compact handoff surface pointing to the active receipt, active baselines, current status, quickstart, and load order
-- intended as the single first file for another model or runtime handoff
+- preferred first file for direct model-to-model or runtime-to-runtime handoff
+- intended as the smallest practical current-state entry surface before deeper escalation
 
 ### `CURRENT_STATE/ACTIVE_BASELINES.md`
 Role:
@@ -212,7 +213,10 @@ Role:
 
 ## Fast orientation rule
 
-For fast orientation, read in this order:
+For direct handoff:
+1. `CURRENT_STATE/CONTROL_PLANE_PACKET.md`
+
+For standard fast orientation:
 1. `AUTHORITY.md`
 2. `CURRENT_STATE/ACTIVE_RECEIPTS.md`
 3. `CURRENT_STATE/CONTROL_PLANE_INDEX.md`
