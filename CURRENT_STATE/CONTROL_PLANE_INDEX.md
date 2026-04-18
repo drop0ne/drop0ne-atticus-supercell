@@ -111,6 +111,11 @@ Role:
 
 ## Baseline and state surfaces
 
+### `CURRENT_STATE/CONTROL_PLANE_PACKET.md`
+Role:
+- one compact handoff surface pointing to the active receipt, active baselines, current status, quickstart, and load order
+- intended as the single first file for another model or runtime handoff
+
 ### `CURRENT_STATE/ACTIVE_BASELINES.md`
 Role:
 - compact current-state source for framework, runtime, schema, and governance-floor baselines
