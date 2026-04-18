@@ -1,7 +1,7 @@
 {
   "schema": "atticus.supercell.runtime_enablement_packet.v1",
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
-  "status": "pending_promotion_completion",
+  "status": "ready_pending_manual_enablement",
   "packet": {
     "selector_key": "atticus_claude_init_v1",
     "entrypoint": "versions/ATTICUS_CLAUDE_INIT_v1/activation.json",
@@ -15,5 +15,5 @@
     ],
     "enablement_mode": "deterministic_select_and_activate"
   },
-  "notes": "Runtime enablement packet for ATTICUS_CLAUDE_INIT_v1 after promotion to selectable release state."
+  "notes": "Runtime enablement packet for ATTICUS_CLAUDE_INIT_v1 after operator-approved promotion. Actual runtime enablement remains a separate manual action."
 }
