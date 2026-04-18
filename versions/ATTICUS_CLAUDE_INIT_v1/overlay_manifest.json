@@ -34,6 +34,16 @@
       "purpose": "raw bundle preservation and ingest metadata"
     },
     {
+      "name": "raw_ingress_plan_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_ingress_plan.json",
+      "purpose": "planned and governed phase 1A raw corpus ingress"
+    },
+    {
+      "name": "raw_chunks_manifest_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_chunks_manifest.json",
+      "purpose": "partial repo-backed raw chunk ingress state"
+    },
+    {
       "name": "raw_corpus_projection_overlay",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_corpus_index.json",
       "purpose": "raw corpus metadata indexing and future attachment planning"
@@ -154,5 +164,5 @@
     "single_canonical_root": true,
     "overlay_conflict_policy": "flag_do_not_silently_resolve"
   },
-  "notes": "Derived cognition, corpus projection, internalization-plan, runtime-contract, release-control, operator-action, human-readable, and final release-orchestration overlays for ATTICUS_CLAUDE_INIT_v1."
+  "notes": "Derived cognition, corpus projection, corpus ingress, internalization-plan, runtime-contract, release-control, operator-action, human-readable, and final release-orchestration overlays for ATTICUS_CLAUDE_INIT_v1."
 }
