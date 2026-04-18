@@ -82,6 +82,26 @@
       "name": "validation_gate_overlay",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/validation_gate.json",
       "purpose": "fail-closed validation checks before runtime activation"
+    },
+    {
+      "name": "promotion_gate_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/promotion_gate.json",
+      "purpose": "promotion eligibility checks before release advancement"
+    },
+    {
+      "name": "release_candidate_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/release_candidate.json",
+      "purpose": "release-candidate state tracking for controlled promotion"
+    },
+    {
+      "name": "merge_readiness_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/merge_readiness.json",
+      "purpose": "merge readiness status and blocking condition tracking"
+    },
+    {
+      "name": "operator_signoff_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/operator_signoff.json",
+      "purpose": "operator approval record required for promotion"
     }
   ],
   "governance": {
@@ -89,5 +109,5 @@
     "single_canonical_root": true,
     "overlay_conflict_policy": "flag_do_not_silently_resolve"
   },
-  "notes": "Derived cognition, corpus projection, internalization-plan, and runtime-contract overlays for ATTICUS_CLAUDE_INIT_v1."
+  "notes": "Derived cognition, corpus projection, internalization-plan, runtime-contract, and release-control overlays for ATTICUS_CLAUDE_INIT_v1."
 }
