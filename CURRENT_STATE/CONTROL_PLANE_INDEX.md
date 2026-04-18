@@ -69,6 +69,11 @@ Role:
 
 ## Hydrator behavior surfaces
 
+### `CURRENT_STATE/HANDOFF_MODES.md`
+Role:
+- explicitly defines the supported handoff entry paths
+- distinguishes packet-first direct handoff, compact cold-start handoff, and full control-plane handoff
+
 ### `CURRENT_STATE/HYDRATOR_PROFILE.md`
 Role:
 - default hydrator behavior contract
