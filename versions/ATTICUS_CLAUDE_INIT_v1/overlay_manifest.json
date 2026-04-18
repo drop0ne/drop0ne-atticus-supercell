@@ -62,6 +62,26 @@
       "name": "attachment_contract_overlay",
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/attachment_contract.json",
       "purpose": "deterministic attachment contract for future corpus internalization"
+    },
+    {
+      "name": "loader_contract_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/loader_contract.json",
+      "purpose": "runtime loader contract for deterministic selection and activation"
+    },
+    {
+      "name": "selection_resolver_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/selection_resolver.json",
+      "purpose": "stable selector resolution from repo-level registries"
+    },
+    {
+      "name": "activation_sequence_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/activation_sequence.json",
+      "purpose": "ordered activation flow for runtime implementations"
+    },
+    {
+      "name": "validation_gate_overlay",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/validation_gate.json",
+      "purpose": "fail-closed validation checks before runtime activation"
     }
   ],
   "governance": {
@@ -69,5 +89,5 @@
     "single_canonical_root": true,
     "overlay_conflict_policy": "flag_do_not_silently_resolve"
   },
-  "notes": "Derived cognition, corpus projection, and internalization-plan overlays for ATTICUS_CLAUDE_INIT_v1. These artifacts enhance routing, loading, and future raw-cell attachment without changing canonical raw provenance."
+  "notes": "Derived cognition, corpus projection, internalization-plan, and runtime-contract overlays for ATTICUS_CLAUDE_INIT_v1."
 }
