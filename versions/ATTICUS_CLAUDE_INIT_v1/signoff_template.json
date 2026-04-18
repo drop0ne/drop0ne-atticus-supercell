@@ -1,0 +1,22 @@
+{
+  "schema": "atticus.supercell.signoff_template.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "template": {
+    "operator": "Jake",
+    "required_acknowledgements": [
+      "promotion_gate_reviewed",
+      "origin_lock_reviewed",
+      "raw_preservation_reviewed",
+      "merge_readiness_reviewed",
+      "release_candidate_reviewed"
+    ],
+    "fields": {
+      "approved": null,
+      "approved_by": null,
+      "approved_at": null,
+      "approval_scope": null,
+      "notes": null
+    }
+  },
+  "notes": "Reusable operator signoff template for promotion actions on ATTICUS_CLAUDE_INIT_v1."
+}
