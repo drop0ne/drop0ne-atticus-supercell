@@ -8,7 +8,7 @@
     "chatgpt_extraction_scope": "partial",
     "note": "This version is intended to preserve the Claude-initiated and running Atticus framework as the selectable canonical variant in the supercell."
   },
-  "status": "corpus_projected_candidate",
+  "status": "internalization_stubbed_candidate",
   "schema": "atticus.supercell.version.v1",
   "selection": {
     "selectable": true,
@@ -28,6 +28,10 @@
     "raw_bundle_manifest": "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json",
     "raw_corpus_index": "versions/ATTICUS_CLAUDE_INIT_v1/raw_corpus_index.json",
     "segment_map": "versions/ATTICUS_CLAUDE_INIT_v1/segment_map.json",
-    "corpus_lineage": "versions/ATTICUS_CLAUDE_INIT_v1/corpus_lineage.json"
+    "corpus_lineage": "versions/ATTICUS_CLAUDE_INIT_v1/corpus_lineage.json",
+    "raw_cells_stub_index": "versions/ATTICUS_CLAUDE_INIT_v1/raw_cells_stub_index.json",
+    "segment_cells_stub_index": "versions/ATTICUS_CLAUDE_INIT_v1/segment_cells_stub_index.json",
+    "claim_cluster_stub_index": "versions/ATTICUS_CLAUDE_INIT_v1/claim_cluster_stub_index.json",
+    "attachment_contract": "versions/ATTICUS_CLAUDE_INIT_v1/attachment_contract.json"
   }
 }
