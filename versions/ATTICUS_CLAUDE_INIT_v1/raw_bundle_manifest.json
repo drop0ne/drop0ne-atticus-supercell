@@ -1,0 +1,22 @@
+{
+  "schema": "atticus.supercell.raw_bundle_manifest.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "source_bundle": {
+    "source_archive_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+    "source_archive_label": "atticus_cells_20260302_PASS7_FULL.tar.gz",
+    "ingest_mode": "raw_preserved_hybrid",
+    "raw_file_count": 348,
+    "payload_status": "externally_preserved_locally_encoded"
+  },
+  "preservation": {
+    "raw_payload_mutation": false,
+    "authoritative_source_reference": true,
+    "repo_embedding_status": "partial_metadata_only",
+    "note": "The full raw payload was deterministically encoded locally but not bulk-ingested into the repository due connector bulk-write limits."
+  },
+  "artifacts": {
+    "local_bundle_name": "ATTICUS_SUPERCELL_IMPORT_BUNDLE.tar.gz",
+    "raw_cell_stream": "atticus_supercell_cells.ndjson",
+    "manifest_type": "deterministic_inventory"
+  }
+}
