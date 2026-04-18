@@ -1,16 +1,16 @@
 {
   "schema": "atticus.supercell.promotion_summary.v1",
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
-  "status": "promoted_on_import_branch",
+  "status": "merged_to_main",
   "summary": {
     "identity": "Atticus Claude-Initiated Framework v1",
     "selector_key": "atticus_claude_init_v1",
-    "current_state": "promoted_selectable_release",
-    "package_readiness": "promoted_pending_manual_merge_and_runtime_enablement",
+    "current_state": "merged_to_main",
+    "package_readiness": "landed_on_main_pending_runtime_enablement",
     "origin_lock": "Claude",
     "raw_preservation": "maintained",
     "bulk_raw_attachment": "deferred_non_blocking"
   },
   "blocking_items": [],
-  "notes": "Promotion summary for ATTICUS_CLAUDE_INIT_v1 after operator-approved promotion on the import branch. Remaining actions are manual merge and runtime enablement outside this workflow."
+  "notes": "Promotion summary for ATTICUS_CLAUDE_INIT_v1 after merge to main via PR #11. Remaining work is runtime enablement and optional raw corpus internalization outside this normalization patch."
 }
