@@ -1,0 +1,35 @@
+{
+  "schema": "atticus.supercell.segment_map.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "segmentation_status": "bootstrap_projection",
+  "strategy": {
+    "mode": "planned_additive_segmentation",
+    "raw_mutation": false,
+    "canonicality": "segments_are_derived_not_authoritative"
+  },
+  "segment_classes": [
+    {
+      "class": "governance_spec",
+      "examples": ["AMAS", "authority_model", "operator_primacy", "canonical_root"]
+    },
+    {
+      "class": "reasoning_stack",
+      "examples": ["W_Stack", "ATFP", "AVM", "SAFEGUARD"]
+    },
+    {
+      "class": "runtime_contract",
+      "examples": ["activation", "selection", "overlay", "loader"]
+    },
+    {
+      "class": "lineage_provenance",
+      "examples": ["Claude_origin", "source_archive", "ingest_mode", "partial_extraction_scope"]
+    }
+  ],
+  "planned_pipeline": [
+    "raw_file_to_segment_projection",
+    "segment_to_claim_projection",
+    "claim_to_cluster_projection",
+    "cluster_to_supercell_attachment"
+  ],
+  "notes": "This map establishes the segmentation contract for future projection of the preserved raw Claude-init corpus into higher-order Atticus cells."
+}
