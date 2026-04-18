@@ -1,0 +1,22 @@
+{
+  "schema": "atticus.supercell.selection_resolver.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "resolver": {
+    "selector_key": "atticus_claude_init_v1",
+    "selection_priority": 100,
+    "default": false,
+    "resolution_chain": [
+      "supercell/selection_registry.json",
+      "versions/index.json",
+      "versions/ATTICUS_CLAUDE_INIT_v1/version.json"
+    ],
+    "fallback_behavior": "fail_closed_if_mismatch"
+  },
+  "resolution_rules": {
+    "selector_key_must_match": true,
+    "version_id_must_match": true,
+    "canonical_cell_must_exist": true,
+    "origin_lock": "Claude"
+  },
+  "notes": "Resolver contract for locating ATTICUS_CLAUDE_INIT_v1 from stable repo-level selection structures."
+}
