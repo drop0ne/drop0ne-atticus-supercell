@@ -80,6 +80,11 @@ Role:
 - provides short worked examples for each supported handoff mode
 - shows when to use packet-first direct handoff, compact cold-start handoff, and full control-plane handoff
 
+### `CURRENT_STATE/HANDOFF_AUDIT_CHECKLIST.md`
+Role:
+- short recurring audit pass specifically for handoff surfaces
+- helps verify packet, quickstart, handoff modes, handoff examples, and navigation stay aligned after repo changes
+
 ### `CURRENT_STATE/HYDRATOR_PROFILE.md`
 Role:
 - default hydrator behavior contract
