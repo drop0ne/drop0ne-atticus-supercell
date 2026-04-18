@@ -1,0 +1,8 @@
+{
+  "rules": [
+    {"id":"PF-001","condition":"single_root","on_fail":"hard_fail"},
+    {"id":"PF-002","condition":"single_ledger","on_fail":"hard_fail"},
+    {"id":"PF-003","condition":"binding_present","on_fail":"hard_fail"},
+    {"id":"PF-004","condition":"ledger_valid","on_fail":"hard_fail"}
+  ]
+}
