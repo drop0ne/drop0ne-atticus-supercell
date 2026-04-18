@@ -67,7 +67,31 @@
       "path": "versions/ATTICUS_CLAUDE_INIT_v1/corpus_lineage.json",
       "type": "atticus.supercell.corpus_lineage",
       "authority": "derived_provenance"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/raw_cells_stub_index",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_cells_stub_index.json",
+      "type": "atticus.supercell.raw_cells_stub_index",
+      "authority": "derived_internalization_plan"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/segment_cells_stub_index",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/segment_cells_stub_index.json",
+      "type": "atticus.supercell.segment_cells_stub_index",
+      "authority": "derived_internalization_plan"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/claim_cluster_stub_index",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/claim_cluster_stub_index.json",
+      "type": "atticus.supercell.claim_cluster_stub_index",
+      "authority": "derived_internalization_plan"
+    },
+    {
+      "id": "atticus://version/ATTICUS_CLAUDE_INIT_v1/attachment_contract",
+      "path": "versions/ATTICUS_CLAUDE_INIT_v1/attachment_contract.json",
+      "type": "atticus.supercell.attachment_contract",
+      "authority": "derived_internalization_plan"
     }
   ],
-  "notes": "Index of canonical and derived cells for ATTICUS_CLAUDE_INIT_v1. Raw source bundle remains externally preserved while corpus projection artifacts are now indexed for loader discovery."
+  "notes": "Index of canonical, derived, corpus projection, and internalization-plan cells for ATTICUS_CLAUDE_INIT_v1. Raw source bundle remains externally preserved while attachment contracts and stub indexes formalize future internal cell population."
 }
