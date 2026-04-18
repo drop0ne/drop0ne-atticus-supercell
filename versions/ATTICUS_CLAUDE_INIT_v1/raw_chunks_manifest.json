@@ -1,0 +1,34 @@
+{
+  "schema": "atticus.supercell.raw_chunks_manifest.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "phase": "1A_raw_corpus_ingress",
+  "status": "landing_path_prepared",
+  "source": {
+    "archive_label": "atticus_cells_20260302_PASS7_FULL.tar.gz",
+    "source_archive_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+    "raw_file_count": 348,
+    "encoded_bundle_label": "ATTICUS_SUPERCELL_IMPORT_BUNDLE.tar.gz"
+  },
+  "chunking": {
+    "mode": "chunked_repo_ingest",
+    "chunk_path_prefix": "imports/ATTICUS_PASS7_2026_04_18/chunks/",
+    "chunk_manifest_authoritative_for_ingress": true,
+    "chunks_embedded": false,
+    "chunks_count": null,
+    "chunk_size_strategy": "determine_at_ingest_time",
+    "ordering": "deterministic"
+  },
+  "integrity": {
+    "raw_payload_mutation": false,
+    "append_only": true,
+    "canonical_artifact_mutation": false,
+    "lineage_must_match_source_sha": true
+  },
+  "planned_outputs": [
+    "imports/ATTICUS_PASS7_2026_04_18/chunks/README.md",
+    "imports/ATTICUS_PASS7_2026_04_18/chunks/chunk_0001.*",
+    "imports/ATTICUS_PASS7_2026_04_18/chunks/chunk_0002.*",
+    "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json (normalized after ingress)"
+  ],
+  "notes": "This manifest prepares the repo-side landing path for the preserved ATTICUS raw bundle. It does not claim chunk payloads are embedded yet."
+}
