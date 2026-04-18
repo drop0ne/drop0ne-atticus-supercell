@@ -147,6 +147,11 @@ Role:
 - defines update discipline for future control-plane changes
 - identifies which files move together, what should remain append-only, and what requires a new receipt
 
+### `CURRENT_STATE/UPDATE_PLAYBOOK.md`
+Role:
+- short worked maintenance scenarios for common governance/control-plane changes
+- shows practical update order for receipts, baselines, drift resolution, and dependent surfaces
+
 ---
 
 ## Source-canon surfaces
