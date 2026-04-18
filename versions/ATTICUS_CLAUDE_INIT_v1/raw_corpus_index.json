@@ -3,12 +3,17 @@
   "version_id": "ATTICUS_CLAUDE_INIT_v1",
   "corpus": {
     "source_bundle_sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
-    "index_scope": "metadata_projection_with_partial_chunked_payload",
+    "index_scope": "metadata_projection_with_partial_chunked_payload_and_full_uploaded_archive_registration",
     "indexed_units": [
       {
         "unit_id": "raw_bundle_manifest",
         "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_bundle_manifest.json",
         "unit_type": "bundle_manifest"
+      },
+      {
+        "unit_id": "raw_archive_set_manifest",
+        "path": "versions/ATTICUS_CLAUDE_INIT_v1/raw_archive_set_manifest.json",
+        "unit_type": "archive_set_registration"
       },
       {
         "unit_id": "raw_ingress_plan",
@@ -37,6 +42,7 @@
       }
     ],
     "planned_units": [
+      "full_repo_embedded_archive_payload",
       "repo_backed_chunk_payload",
       "raw_file_cells",
       "segment_cells",
@@ -45,7 +51,7 @@
     ]
   },
   "loader_notes": {
-    "current_mode": "index_metadata_plus_partial_chunked_payload",
+    "current_mode": "index_metadata_plus_partial_chunked_payload_plus_uploaded_archive_registration",
     "future_mode": "full_raw_cell_attachment",
     "selection_ready": true
   }
