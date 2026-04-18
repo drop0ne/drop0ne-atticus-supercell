@@ -1,0 +1,71 @@
+{
+  "schema": "atticus.supercell.raw_archive_set_manifest.v1",
+  "version_id": "ATTICUS_CLAUDE_INIT_v1",
+  "archive_set": {
+    "purpose": "full uploaded ATTICUS v6.4.1 Claude source archive set registration",
+    "aggregate_sha256": "709e880cbb3663051951b12e75c3c3370d2fe0d9ada423f5c891563ba9caefc6",
+    "archive_count": 7,
+    "total_bytes": 399020,
+    "registered_from_uploaded_files": true,
+    "repo_embedded_payload": false
+  },
+  "archives": [
+    {
+      "upload_id": "file-UbyMPoHbZhWL551d5vkxM3",
+      "filename": "atticus_cells_20260302_PASS7_01_foundation.tar(2).gz",
+      "sha256": "45d9a89ba908f96c374dd631c22f2ce01f25934f383d9dec7211ed13040c713d",
+      "size_bytes": 42897,
+      "base64_length": 57196,
+      "role": "foundation"
+    },
+    {
+      "upload_id": "file-AZMvCZHuwXoGdWEfFebCaq",
+      "filename": "atticus_cells_20260302_PASS7_02_governance.tar(2).gz",
+      "sha256": "705d04b674c44d087c1e09e9b8aa4468ea5077128f2a623321d540f808c1c068",
+      "size_bytes": 58214,
+      "base64_length": 77620,
+      "role": "governance"
+    },
+    {
+      "upload_id": "file-KmzvCfbgrUKybFFRjbdCcU",
+      "filename": "atticus_cells_20260302_PASS7_03_runtime.tar(2).gz",
+      "sha256": "3d1f9f3a77fe14b6e6e5336e000220885d40fa59c378258ae6755339b5f4bad0",
+      "size_bytes": 42561,
+      "base64_length": 56748,
+      "role": "runtime"
+    },
+    {
+      "upload_id": "file-Ld1RYpPjr6iJWzHSwVBaqC",
+      "filename": "atticus_cells_20260302_PASS7_04_commands.tar(2).gz",
+      "sha256": "aed9dfe4ee8c24af1e6ff9fa7ee6f886573ddb09a887377c9f977ac0194df06e",
+      "size_bytes": 9988,
+      "base64_length": 13320,
+      "role": "commands"
+    },
+    {
+      "upload_id": "file-BL7ZXooGa3AAPtBGCc2jDs",
+      "filename": "atticus_cells_20260302_PASS7_05_ledgers_invest.tar(2).gz",
+      "sha256": "48b2d91f0af1b1a4e1346cd6fcf7e25d5f811518afb68c55812991fb85e9a503",
+      "size_bytes": 39107,
+      "base64_length": 52144,
+      "role": "ledgers_invest"
+    },
+    {
+      "upload_id": "file-EDxbeLUegsvwJdeUcu9aaS",
+      "filename": "atticus_cells_20260302_PASS7_06_overlays_bundles.tar(2).gz",
+      "sha256": "748ae598c88ea4f45bc9bc0376915bd4ee8c7b0a0932088643cd479f2a5b5cc4",
+      "size_bytes": 12025,
+      "base64_length": 16036,
+      "role": "overlays_bundles"
+    },
+    {
+      "upload_id": "file-61uTmvmuL37pW7w3Lhp82z",
+      "filename": "atticus_cells_20260302_PASS7_FULL.tar(3).gz",
+      "sha256": "9e411ccd4b445b33b7854115669afae786fbcfc78a2850750f435a9940f90357",
+      "size_bytes": 194228,
+      "base64_length": 258972,
+      "role": "full_bundle"
+    }
+  ],
+  "notes": "This manifest registers the full uploaded ATTICUS v6.4.1 Claude archive set in repo metadata. Binary archive payloads are registered by hash and upload identity here; direct repo embedding of every archive payload remains a separate follow-on action."
+}
