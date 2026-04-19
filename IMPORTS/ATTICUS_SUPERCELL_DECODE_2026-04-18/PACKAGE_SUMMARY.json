@@ -1,0 +1,40 @@
+{
+  "packages": [
+    {
+      "package_variant": "base",
+      "root_dir": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-03",
+      "file_count": 153,
+      "cell_count": 24,
+      "core_docs_present": [
+        "README.md",
+        "START_HERE_OPERATOR.txt"
+      ]
+    },
+    {
+      "package_variant": "repaired",
+      "root_dir": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-03",
+      "file_count": 190,
+      "cell_count": 24,
+      "core_docs_present": [
+        "README.md",
+        "START_HERE_OPERATOR.txt",
+        "ACTIVATION_PROFILE.json",
+        "entrypoint.json",
+        "hydration_profile.json"
+      ]
+    },
+    {
+      "package_variant": "seed",
+      "root_dir": "ATTICUS_SUPERCELL_SEED_FROM_CURRENT_CELL_2026-04-04",
+      "file_count": 26,
+      "cell_count": 1,
+      "core_docs_present": [
+        "README.md",
+        "START_HERE_OPERATOR.txt",
+        "ACTIVATION_PROFILE.json",
+        "entrypoint.json",
+        "hydration_profile.json"
+      ]
+    }
+  ]
+}
