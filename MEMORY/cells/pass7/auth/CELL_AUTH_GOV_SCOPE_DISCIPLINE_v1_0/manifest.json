@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:0cc6df7fbb32f8e136cdcef43c6ac899d2ebf496d43d07cb93c8954d371f7ebb",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "spec",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "scope_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
