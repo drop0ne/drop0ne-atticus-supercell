@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_RUNTIME_COG_HCII_v1_2",
+  "version": "1.2",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:cd25bb6a41234fb978bf33ea49cde6ac39b3f7b2887b9f39523de3a1d3809253",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "runtime",
+  "layer": "RUNTIME",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "hcii_v1_2_runtime"
+  ],
+  "depends_on": [
+    "CELL_RUNTIME_COG_HCII_v1_1"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
