@@ -1,0 +1,240 @@
+{
+  "decode_schema": "atticus.supercell.decoded_cell_structured_index.v1",
+  "decoded_cell_count": 26,
+  "cells": [
+    {
+      "cell_key": "legacy_063548efe042",
+      "origin_dir": "2026-04-03_063548efe042",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 10,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "7546407d7cd3a816700eb368813d166c82b8ed67a7579b6030f2642ebb4a943a",
+      "origin_dir": "2026-04-03_7546407d7cd3",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 20,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "090fae218db305924e0f904467f8e89ec3b0906ff4330a8237eb0105fb72ac7a",
+      "origin_dir": "2026-04-04_090fae218db3",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 26,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "0fd218390d17a9d94793913a5b00e98ce8705d9a58fec1bc35f3f837bc21e9f1",
+      "origin_dir": "2026-04-04_0fd218390d17",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 5,
+      "has_transcript": false,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "215b760f44795631726f4c73cb0eaf8357aba6d035a504453b7e7cebd1f5335e",
+      "origin_dir": "2026-04-04_215b760f4479",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 19,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "2456441d90dbf1b5e3c0819b850b1123d24fa0222128e02c2c9bb5b8f93eb24e",
+      "origin_dir": "2026-04-04_2456441d90db",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 19,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "2a22b1397ceb7744c671438b3f567e4de394511e2e9830e4af6346840706739e",
+      "origin_dir": "2026-04-04_2a22b1397ceb",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 19,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "3500ae16dc9dbde4777e0ba54464ec9ec08cd79c7fbb72a5de8d504567f78a8a",
+      "origin_dir": "2026-04-04_3500ae16dc9d",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 25,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "3b5e88a96bc92ce62f3fd64d1eaf0e9d366a55b06d759e54334f1530b24fb5ac",
+      "origin_dir": "2026-04-04_3b5e88a96bc9",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 14,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "412705f5bb93100a671f5d571c801b4bdd25e4e6431c54e44c95bba0f975d82f",
+      "origin_dir": "2026-04-04_412705f5bb93",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 27,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "55a40fca0602fd9e1979a985dffcf569ceba4052b0edcb50f61dec5266028972",
+      "origin_dir": "2026-04-04_55a40fca0602",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 21,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "79b304e35bcaf6ebedc96217f89be0c52edc525d5ad4fb148a4e4338bea9b928",
+      "origin_dir": "2026-04-04_79b304e35bca",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 25,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "90fbc4fbd63e7c82944d9ca9faaf248e52798cdbae15be1e2d8478640dad3e6a",
+      "origin_dir": "2026-04-04_90fbc4fbd63e",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 22,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "992b6db084b7b47bf7b14e6e1f8056f8ea58ab963507e8d0e667197d42d01a4b",
+      "origin_dir": "2026-04-04_992b6db084b7",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 42,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "adc67e16abb2c94cb4d6a078c215bac4dae284eacc5aa59b6f87dc7e6dc09dbe",
+      "origin_dir": "2026-04-04_adc67e16abb2",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 28,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "d3f5b2a6b21830e63c2fedd67d7adf6fd362d42353466ba2909008f41f4fee68",
+      "origin_dir": "2026-04-04_d3f5b2a6b218",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 30,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "e35d16789d27ffb42ab6d00e06c0101b9cc7da4e5ac542a2d9ef1686be374e27",
+      "origin_dir": "2026-04-04_e35d16789d27",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 34,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "e61a6c5669c321b4750dc05d39dece7b7c13d767bb19c8f634802d4dc4f1272b",
+      "origin_dir": "2026-04-04_e61a6c5669c3",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 26,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "e639b7c423c2ff148deaa90301d3b1f07a96e861591acd8de57978452da486dc",
+      "origin_dir": "2026-04-04_e639b7c423c2",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 27,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "e93a27ab1373d45357ea8a706e8fe3a3ad8e238cdb1c12200fd2ce17267380e0",
+      "origin_dir": "2026-04-04_e93a27ab1373",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 26,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "ee597441d921afebb4c58b3b02e93001f6ddcb6bd5fd167961c8c594bfb7f83a",
+      "origin_dir": "2026-04-04_ee597441d921",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 25,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "f297de2faebfd1579cb244d4bd5b11350ab581fcb4fddd9b24d076cb0dc9ac70",
+      "origin_dir": "2026-04-04_f297de2faebf",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 27,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "f3d36e5369ae1a6f5ec6829963f1ab7b8bac4049bfb14d206f3d55a5332b0076",
+      "origin_dir": "2026-04-04_f3d36e5369ae",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 27,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "f5ebecf3233fb3e18945d837a7907694500485771d1802610e1fb8ff431f9f4d",
+      "origin_dir": "2026-04-04_f5ebecf3233f",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 24,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "fdda164f9de876f9b73db8e33dcb27c3bd028cde1978ac4ffb8d2ba1f6677da6",
+      "origin_dir": "2026-04-04_fdda164f9de8",
+      "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+      "file_count": 29,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    },
+    {
+      "cell_key": "1ff8d0567971bd854141edb832a092e02ac70bc9a9c1b5559d6bae4dae32815c",
+      "origin_dir": "2026-04-04_1ff8d0567971",
+      "source_package": "ATTICUS_SUPERCELL_SEED_FROM_CURRENT_CELL_2026-04-04.zip",
+      "file_count": 21,
+      "has_transcript": true,
+      "has_narrative": true,
+      "has_receipt": true
+    }
+  ]
+}
