@@ -1,0 +1,22 @@
+{
+  "cell_id": "CELL_CMD_COG_AVM_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:8e15e18b328af15177f15bb13873a7d7a60983192d95b726d593f1a7955cd372",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "command",
+  "layer": "CMD",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "cmd_avm"
+  ],
+  "depends_on": [
+    "CELL_RUNTIME_COG_AVM_CORE_v1_0",
+    "CELL_RUNTIME_COG_AVM_ROUTING_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
