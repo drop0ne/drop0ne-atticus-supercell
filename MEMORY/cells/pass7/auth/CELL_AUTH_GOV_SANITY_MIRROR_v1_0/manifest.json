@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_GOV_SANITY_MIRROR_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:fd09e97ef272520764f6e17856a535193650e8e420014a743c372417be510b95",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "protocol",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "sanity_mirror_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_GOV_FACTUALITY_RULES_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
