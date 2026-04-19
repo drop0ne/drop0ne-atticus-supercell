@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_RUNTIME_ALERT_RVC_GATE_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:2ee4a540f9a180ea1f90f7eb2404f5341cd599a0a4c3a65504c3cea3a7e34deb",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "runtime",
+  "layer": "RUNTIME",
+  "authority_level": "canonical",
+  "load_tier": "tier1",
+  "exports": [
+    "rvc_gate_runtime"
+  ],
+  "depends_on": [
+    "CELL_AUTH_GOV_RED_FLAG_RVC_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
