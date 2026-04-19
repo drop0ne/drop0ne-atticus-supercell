@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_REGISTRY_CORE_DEPGRAPH_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:dbe791b59ba579faa8ca3208d72ed7a08f38c20af955907f3821ad6b43d3277a",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "registry",
+  "layer": "REGISTRY",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "dependency_graph"
+  ],
+  "depends_on": [
+    "CELL_REGISTRY_CORE_MASTER_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
