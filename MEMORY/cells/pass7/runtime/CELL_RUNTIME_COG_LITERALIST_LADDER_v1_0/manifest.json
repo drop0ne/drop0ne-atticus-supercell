@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_RUNTIME_COG_LITERALIST_LADDER_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:0ae676002cae8d352166dd910de5d095587605f76ef1ae6afed9607b96d7ce3a",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "runtime",
+  "layer": "RUNTIME",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "literalist_ladder_runtime"
+  ],
+  "depends_on": [
+    "CELL_RUNTIME_COG_AVM_CORE_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
