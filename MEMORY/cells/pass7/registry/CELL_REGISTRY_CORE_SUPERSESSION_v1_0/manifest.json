@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_REGISTRY_CORE_SUPERSESSION_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:dd9b572f27317ee54b2057c52feba2a95419933d461c2604364a8629b833ad76",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "registry",
+  "layer": "REGISTRY",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "supersession_map"
+  ],
+  "depends_on": [
+    "CELL_REGISTRY_CORE_MASTER_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
