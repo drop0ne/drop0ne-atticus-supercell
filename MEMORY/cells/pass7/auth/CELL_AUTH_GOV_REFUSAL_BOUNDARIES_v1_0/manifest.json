@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_GOV_REFUSAL_BOUNDARIES_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:281e80a2d8a2a26a5673bbffb9e31846ed5b6864d8ca7db8ce2bbadf8e165bc1",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "spec",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "refusal_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
