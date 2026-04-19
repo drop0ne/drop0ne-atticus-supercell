@@ -1,0 +1,23 @@
+{
+  "cell_id": "CELL_AUTH_MEM_SSP_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:b2c08489d1ef219a71671f86e90ef84f308d937a24eb4ebc8f716b55b56790d5",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "protocol",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "session_state_packet_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_AMAS_v1_1",
+    "CELL_AUTH_MEM_MIP_v1_0",
+    "CELL_AUTH_MEM_MAEP_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
