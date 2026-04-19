@@ -1,0 +1,25 @@
+{
+  "cell_id": "CELL_BUNDLE_FORENSICS_STANDARD_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:49a5c452e6078a725a5cfcb469b738867767052ac1bda9eba243b3de73c7d321",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "bundle",
+  "layer": "BUNDLE",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "bundle_forensics_standard"
+  ],
+  "depends_on": [
+    "CELL_BUNDLE_ANALYSIS_STANDARD_v1_0",
+    "CELL_SCHEMA_CASEFILE_MASTER_v1_0",
+    "CELL_AUTH_INVEST_CCFLP_v1_1",
+    "CELL_AUTH_INVEST_CCFLP_DIL_v1_0",
+    "CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
