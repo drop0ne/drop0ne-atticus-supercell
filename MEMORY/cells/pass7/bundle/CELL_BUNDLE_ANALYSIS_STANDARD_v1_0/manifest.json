@@ -1,0 +1,25 @@
+{
+  "cell_id": "CELL_BUNDLE_ANALYSIS_STANDARD_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:1aec7cbe1a0e110c22d3df938bae0b81c4ad5a2a6924f5b8d54b259caaf762f3",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "bundle",
+  "layer": "BUNDLE",
+  "authority_level": "canonical",
+  "load_tier": "tier1",
+  "exports": [
+    "bundle_analysis_standard"
+  ],
+  "depends_on": [
+    "CELL_BUNDLE_BOOT_MINIMAL_v1_0",
+    "CELL_RUNTIME_COG_WSTACK_v1_0",
+    "CELL_RUNTIME_COG_LINK_LAYER_v1_0",
+    "CELL_AUTH_GOV_FRESHNESS_VALIDATION_v1_0",
+    "CELL_LEDGER_TRUST_TSL_CORE_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
