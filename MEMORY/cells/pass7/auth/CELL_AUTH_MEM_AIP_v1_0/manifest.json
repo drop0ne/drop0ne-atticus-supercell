@@ -1,0 +1,25 @@
+{
+  "cell_id": "CELL_AUTH_MEM_AIP_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:466c6494d171e597384d60b751be1e90ee81ed1d6ec7b21e8cbd09776ad5fbd2",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "protocol",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "artifact_instantiation_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_AMAS_v1_1",
+    "CELL_AUTH_MEM_MAP_v1_0",
+    "CELL_AUTH_MEM_ERP_v1_0",
+    "CELL_AUTH_MEM_NCS_v1_0",
+    "CELL_AUTH_MEM_IBP_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
