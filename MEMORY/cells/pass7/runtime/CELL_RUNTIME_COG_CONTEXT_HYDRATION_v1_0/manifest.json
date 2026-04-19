@@ -1,0 +1,22 @@
+{
+  "cell_id": "CELL_RUNTIME_COG_CONTEXT_HYDRATION_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:4dd47de8dd295990bdc5ebad80a81e1ee961b1e0f6f2e798f60437e0c006b4fd",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "runtime",
+  "layer": "RUNTIME",
+  "authority_level": "canonical",
+  "load_tier": "tier1",
+  "exports": [
+    "context_hydration_runtime"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_ERP_v1_0",
+    "CELL_SCHEMA_CORE_REHYDRATION_HEADER_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
