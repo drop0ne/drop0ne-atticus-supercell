@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_OVERLAY_MODE_STATUS_REPORT_STYLE_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:b5e1cf11c49144ebec75bc3fe31d081aea400c3124375e8cc3aa3886f891afd6",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "overlay",
+  "layer": "OVERLAY",
+  "authority_level": "canonical",
+  "load_tier": "tier3",
+  "exports": [
+    "status_report_style"
+  ],
+  "depends_on": [
+    "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
