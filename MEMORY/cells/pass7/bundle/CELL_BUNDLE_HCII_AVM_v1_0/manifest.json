@@ -1,0 +1,26 @@
+{
+  "cell_id": "CELL_BUNDLE_HCII_AVM_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:59cdb64b77b47a45790c1bba6b75709f98e2291a2d27bef00f152f2868743cfe",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "bundle",
+  "layer": "BUNDLE",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "bundle_hcii_avm"
+  ],
+  "depends_on": [
+    "CELL_BUNDLE_ANALYSIS_STANDARD_v1_0",
+    "CELL_RUNTIME_COG_HCII_v1_1",
+    "CELL_RUNTIME_COG_HCII_v1_2",
+    "CELL_RUNTIME_COG_AVM_CORE_v1_0",
+    "CELL_RUNTIME_COG_AVM_ROUTING_v1_0",
+    "CELL_RUNTIME_COG_LITERALIST_LADDER_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
