@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_RUNTIME_COG_LINK_LAYER_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:1b87f0636ca3a71f2e7faa74e9923d47a986b52520d2b9857ef696f041482e33",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "runtime",
+  "layer": "RUNTIME",
+  "authority_level": "canonical",
+  "load_tier": "tier1",
+  "exports": [
+    "link_layer_runtime"
+  ],
+  "depends_on": [
+    "CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
