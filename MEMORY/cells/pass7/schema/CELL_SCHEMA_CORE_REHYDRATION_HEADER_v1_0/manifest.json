@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_SCHEMA_CORE_REHYDRATION_HEADER_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:1c39c8fe09351d8574029932cd2fb3d401dd6ddb8173c8f89be26e1ee759bceb",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "schema",
+  "layer": "SCHEMA",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "rehydration_header_schema"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_ERP_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
