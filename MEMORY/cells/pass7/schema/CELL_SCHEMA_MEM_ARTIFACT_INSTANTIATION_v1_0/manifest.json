@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_SCHEMA_MEM_ARTIFACT_INSTANTIATION_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:fb8f35bebddce8c0637e72de278cded685464c6a8782a22a81ab1778edd4ec37",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "schema",
+  "layer": "SCHEMA",
+  "authority_level": "canonical",
+  "load_tier": "tier1",
+  "exports": [
+    "artifact_instantiation_schema"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_AIP_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
