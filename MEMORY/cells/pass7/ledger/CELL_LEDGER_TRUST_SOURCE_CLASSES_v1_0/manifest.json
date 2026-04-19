@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_LEDGER_TRUST_SOURCE_CLASSES_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:540e5e7b48a0e3f67574cf742e2b5721594d87373eb7bee1e0a53cdcbb761686",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "ledger",
+  "layer": "LEDGER",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "source_classes"
+  ],
+  "depends_on": [
+    "CELL_LEDGER_TRUST_TSL_CORE_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
