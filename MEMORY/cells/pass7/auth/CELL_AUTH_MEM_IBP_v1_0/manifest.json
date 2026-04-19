@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_MEM_IBP_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:a1ab6513335e9098247bd382a95f61c83c1eb168805667551a59d08523212834",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "protocol",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "inference_boundary_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_AMAS_v1_1"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
