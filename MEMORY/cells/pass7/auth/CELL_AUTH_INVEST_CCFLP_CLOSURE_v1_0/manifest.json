@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_INVEST_CCFLP_CLOSURE_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:ed24f76ad0d7f0b087cd9c7d2729ed4b8857bbc823fd913b01c852eba019819d",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "protocol",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "ccflp_closure_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_INVEST_CCFLP_v1_1"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
