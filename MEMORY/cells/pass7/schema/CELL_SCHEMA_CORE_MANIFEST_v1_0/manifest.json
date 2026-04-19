@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_SCHEMA_CORE_MANIFEST_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:d18ae9d26786e1557b30d8cf41a349173c4d95e802d5ab00a73829e000784e1d",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "schema",
+  "layer": "SCHEMA",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "manifest_schema"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_AMAS_v1_1"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
