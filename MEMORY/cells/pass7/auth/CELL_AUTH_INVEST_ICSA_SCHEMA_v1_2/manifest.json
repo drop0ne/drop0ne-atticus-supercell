@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_INVEST_ICSA_SCHEMA_v1_2",
+  "version": "1.2",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:4f4cc00b03457f141275102b026e6943b2d717be9143b62bc5b62bffb2c62b80",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "spec",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "icsa_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_GOV_FACTUALITY_RULES_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
