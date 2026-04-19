@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_SCHEMA_CASEFILE_MASTER_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:aae5c219b8e68dc4f25b197d033c5b90b24b68eaedd9a97428e1b47d043bd326",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "schema",
+  "layer": "SCHEMA",
+  "authority_level": "canonical",
+  "load_tier": "tier1",
+  "exports": [
+    "casefile_master_schema"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_AMAS_v1_1"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
