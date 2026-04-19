@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:1c2573c3bbd21f981758956173e06b72ac5d8d76a982d179d3b3a17eae206cdd",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "spec",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "safeguard_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_AMAS_v1_1"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
