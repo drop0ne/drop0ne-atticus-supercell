@@ -1,0 +1,61 @@
+{
+  "decode_schema": "atticus.supercell.decoded_cell_summary.v1",
+  "cell_key": "7546407d7cd3a816700eb368813d166c82b8ed67a7579b6030f2642ebb4a943a",
+  "legacy_cell": false,
+  "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+  "root_dir": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-03",
+  "origin_dir": "2026-04-03_7546407d7cd3",
+  "cell_hash": "7546407d7cd3a816700eb368813d166c82b8ed67a7579b6030f2642ebb4a943a",
+  "cell_id": "sha256:7546407d7cd3a816700eb368813d166c82b8ed67a7579b6030f2642ebb4a943a",
+  "chat_date": "2026-04-03",
+  "created_at": "2026-04-04T02:06:04Z",
+  "profile": "ATTICUS chat memory cell",
+  "scope": "Visible current chat only, plus uploaded package and patch directive files inspected in-session.",
+  "package_append_mode": "append-only",
+  "truth_boundary": "No inaccessible chats, hidden transcripts, connectors, or platform history were claimed as newly verified.",
+  "file_count": 20,
+  "internal_file_index": [
+    "memory_cell/README.md",
+    "memory_cell/cell_manifest.json",
+    "memory_cell/derived/chat_command_registry.json",
+    "memory_cell/derived/chat_turn_index.json",
+    "memory_cell/derived/session_source_classes.json",
+    "memory_cell/narrative_summary.md",
+    "memory_cell/provenance_notes.md",
+    "memory_cell/raw/ATTICUS_SUPERCELL_ASSIMILATION_PATCH_v1_1.md",
+    "memory_cell/raw/ATTICUS_SUPERCELL_ASSIMILATION_PATCH_v1_1.sha256",
+    "memory_cell/raw/ATTICUS_SUPERCELL_ASSIMILATION_PATCH_v1_1.txt",
+    "memory_cell/raw/current_chat_transcript_reconstruction.json",
+    "memory_cell/raw/current_chat_transcript_reconstruction.md",
+    "memory_cell/raw/parent_assimilation_chain.jsonl",
+    "memory_cell/raw/parent_cell_index.json",
+    "memory_cell/raw/parent_package_sha256.txt",
+    "memory_cell/raw/parent_package_tree.txt",
+    "memory_cell/raw/parent_supercell_package_manifest.json",
+    "memory_cell/receipts/assimilation_receipt.json",
+    "memory_cell/seal_receipt.json",
+    "memory_cell/source_inventory.json"
+  ],
+  "selected_surfaces": [
+    "memory_cell/README.md",
+    "memory_cell/narrative_summary.md",
+    "memory_cell/provenance_notes.md",
+    "memory_cell/raw/current_chat_transcript_reconstruction.md",
+    "memory_cell/raw/current_chat_transcript_reconstruction.json",
+    "memory_cell/source_inventory.json",
+    "memory_cell/cell_manifest.json",
+    "memory_cell/seal_receipt.json",
+    "memory_cell/receipts/assimilation_receipt.json"
+  ],
+  "assimilation_receipt": {
+    "event_type": null,
+    "timestamp": null,
+    "result": null
+  },
+  "excerpts": {
+    "inner_readme_md": "ATTICUS memory cell archive.\nThis archive captures one append-only chat-scoped assimilation event from the active session.\nCanonical cell identity is assigned externally as the SHA-256 of the final memory_cell.tar.gz bytes.\n",
+    "inner_narrative_summary_md": "# Narrative Summary\n\n## Session scope\nThis memory cell captures the visible current chat in which the user requested the assistant’s behavioral-analyst mindset, requested a reusable command to enable that mode in future chats, and then issued an ATTICUS supercell assimilation directive to append this chat into the uploaded canonical package.\n\n## What occurred in this chat\n1. The user asked for the assistant’s mindset in behavioral analyst mode.\n2. The assistant responded with a structured behavioral-analyst operating model covering mission, evidence discipline, analytic pipeline, structured analytic techniques, source grading, uncertainty calibration, debiasing, pattern/network analysis, trauma-informed interviewing, deliverable templates, self-audit checks, and ethical guardrails.\n3. The user then asked for a command they could post in a future chat to enable that mode of thinking.\n4. The assistant produced a one-line activation command, a fuller system-style command block, and a disable command.\n5. The user uploaded an ATTICUS supercell assimilation package and accompanying v1.1 patch directive files, then ordered an append-only package update that treats the uploaded package as ",
+    "inner_provenance_notes_md": "# Provenance Notes\n\n## Directly accessed source material\n- The visible user/assistant turns in the active chat.\n- The uploaded append-only package zip inspected locally after extraction.\n- The uploaded v1.1 patch directive files and detached hash file.\n- Existing package manifests, ledgers, and protocol documents already preserved inside the uploaded package.\n\n## Recalled persistent memory\n- None was newly assimilated into this cell as an authoritative source.\n- Earlier package artifacts may reference memory-derived or search-derived material from prior sessions. Those references are preserved as historical package content only.\n\n## Inferred structure\n- The current chat was reconstructed from visible context-window turns and organized into transcript/index files.\n- The BAU mode command registry in `derived/chat_command_registry.json` was extracted from assistant output in this chat.\n\n## Unresolved gaps\n- Unknown: any historical chats not surfaced in this current session.\n- Unknown: any platform or connector content not explicitly opened in this session.\n- Unknown: any detached package-export hash value inside package artifacts, because embedding the final zip hash inside the zip wo",
+    "inner_transcript_md": "# Current Chat Transcript Reconstruction\n\nNote: this is a source-derived reconstruction from the visible current-chat context, not a platform raw export.\n\n## Turn 1 — User\nBring in everything you have on your mindset in behavioral analyst mode\n\n## Turn 2 — Assistant\n01. **BLUF — Behavioral-Analyst Mindset (My Operating System)**\n02. I work as a multidisciplinary, trauma‑informed, falsification‑driven analyst that forms multiple hypotheses in parallel, weighs each against graded evidence, documents uncertainty explicitly, and iteratively updates judgments as new facts arrive—while minimizing harm to people involved.\n03. **Core Mission & Humanitarian Lens**\n04. Protect people first; do no additional harm.\n05. Prioritize truth, transparency (where lawful), and reproducibility.\n06. Seek explanations that account for behavior without stigmatizing identity, culture, or circumstance.\n07. Center victims/survivors and vulnerable communities; incorporate trauma‑informed practices.\n08. **Operating Principles**\n09. Evidence before inference; inference before speculation; speculation labeled clearly.\n10. Falsify preferred hypotheses (“disprove first”) before accepting them.\n11. Maintain a livin"
+  }
+}
