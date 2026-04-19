@@ -1,0 +1,22 @@
+{
+  "cell_id": "CELL_RUNTIME_COG_AVM_ROUTING_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:4c7f0e6e5f5d753328a4e88b303342207b1533feb675fb072a036774fc78f19e",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "runtime",
+  "layer": "RUNTIME",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "avm_routing_runtime"
+  ],
+  "depends_on": [
+    "CELL_RUNTIME_COG_AVM_CORE_v1_0",
+    "CELL_RUNTIME_ALERT_RED_FLAG_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
