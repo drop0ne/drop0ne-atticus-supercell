@@ -1,0 +1,48 @@
+{
+  "decode_schema": "atticus.supercell.decoded_cell_summary.v1",
+  "cell_key": "legacy_063548efe042",
+  "legacy_cell": true,
+  "source_package": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-04_REPAIRED_v1_2_append22r2_autoload(1).zip",
+  "root_dir": "ATTICUS_SUPERCELL_ASSIMILATION_PACKAGE_2026-04-03",
+  "origin_dir": "2026-04-03_063548efe042",
+  "cell_hash": null,
+  "cell_id": null,
+  "chat_date": "2026-04-03",
+  "created_at": "2026-04-04T01:00:00+00:00",
+  "profile": "ATTICUS chat memory cell",
+  "scope": "Current chat only, plus attached supercell package inspected in-session.",
+  "package_append_mode": "append-only",
+  "truth_boundary": "No inaccessible chats, memories, files, or platform history were claimed.",
+  "file_count": 10,
+  "internal_file_index": [
+    "memory_cell/README.md",
+    "memory_cell/casefiles/CELL_NARRATIVE.md",
+    "memory_cell/derived/artifact_registry.json",
+    "memory_cell/derived/mode_registry.json",
+    "memory_cell/manifests/cell_manifest.json",
+    "memory_cell/manifests/seal_receipt.json",
+    "memory_cell/raw/current_chat_capture.json",
+    "memory_cell/raw/current_chat_capture.md",
+    "memory_cell/raw/source_capture_inventory.json",
+    "memory_cell/receipts/assimilation_receipt.json"
+  ],
+  "selected_surfaces": [
+    "memory_cell/README.md",
+    "memory_cell/casefiles/CELL_NARRATIVE.md",
+    "memory_cell/raw/current_chat_capture.md",
+    "memory_cell/raw/current_chat_capture.json",
+    "memory_cell/manifests/cell_manifest.json",
+    "memory_cell/manifests/seal_receipt.json",
+    "memory_cell/receipts/assimilation_receipt.json"
+  ],
+  "assimilation_receipt": {
+    "event_type": "append_chat_memory_cell",
+    "timestamp": "2026-04-04T01:00:00+00:00",
+    "result": "One new append-only memory cell created for this chat."
+  },
+  "excerpts": {
+    "inner_readme_md": "# Memory Cell — Impact Analyst / HIE / Supercell Assimilation Chat\n\nThis memory cell captures the accessible contents of the current chat only.\n\n## Scope\n- Current chat transcript visible in-session\n- Attached supercell assimilation package inspected in-session\n\n## Exclusions / Unknowns\n- No inaccessible historical chats, hidden platform metadata, or unsurfaced memories were claimed or assimilated.\n- Exact historical provenance outside the attached package and this chat remains unknown unless already preserved in-package.\n\n## Canonical Cell ID Rule\nThe canonical cell ID for this memory cell is assigned externally as the SHA-256 of the final `memory_cell.tar.gz` bytes after the archive is sealed.\nBecause that value is self-referential, it is not embedded as the authoritative archive hash inside the cell contents.\n",
+    "inner_case_narrative_md": "# CELL_NARRATIVE\n\n## Summary\nThis chat created and refined an “Impact Analyst OS” reasoning mode and then extended it with a “Human Impact Extension (HIE)” overlay.\nThe user then instructed the assistant to generate the HIE artifact sequence (47.1–47.5), approved the downstream execution pack (52.1–52.5), requested a drop-in activation command for the mode, uploaded an ATTICUS supercell assimilation package, and finally issued an operator directive to append the current chat as a new memory cell.\n\n## What was materially added in this chat\n1. A formalized impact-analysis reasoning mode centered on evidence, causality, equity, safety, legality, governance, monitoring, and delivery artifacts.\n2. A formalized human-impact extension layer with the Human Impact Score (HIS), Safety Gate logic, rights-based/trauma-informed framing, and cross-disciplinary review structure.\n3. A five-part HIE artifact suite:\n   - Mojave Energy pilot human-impact brief\n   - PWACSA + drone safeguards matrix\n   - HIS calculator/normalization logic\n   - Subsidy-phase-out human-impact risk register\n   - SMB access/equity dashboard specification\n4. A role-based execution pack that converted approval items into a s",
+    "inner_transcript_md": "# Current Chat Capture\n\nCaptured at: 2026-04-04T01:00:00+00:00\n\n## Turn 1 — user\n\nBring in everything you have on your mindset in impact analyst mode\n\n## Turn 2 — assistant\n\nImpact Analyst Mode — Operating System (Mindset Playbook).\nMission: maximize net positive impact for people, society, and ecosystems under uncertainty; protect against harm, rights violations, and irreversible loss; prioritize the user's initiatives while maintaining universal rigor.\nFirst principles: evidence over opinion; causality before correlation; precaution with proportionality; transparency around assumptions, confidence, and trade-offs; equity lens; iteration; lawful and ethical analysis.\nEthical guardrails: no assistance that meaningfully increases risk of physical harm or illegal activity; privacy-preserving, auditable controls; human dignity, consent, explainability, and redress; environmental stewardship.\nImpact dimensions: people, economic, social, technological, environmental, legal, ethical, political/governance.\nCore metrics examples: lives saved, DALYs/QALYs, LCOE, SAIDI/SAIFI, HHI, tCO2e, audit coverage, benefit share by vulnerable groups.\nForensic workflow: intake, baseline, counterfactual, "
+  }
+}
