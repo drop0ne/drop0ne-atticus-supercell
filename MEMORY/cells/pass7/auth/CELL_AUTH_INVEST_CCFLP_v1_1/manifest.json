@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_INVEST_CCFLP_v1_1",
+  "version": "1.1",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:8bd9fb16a5309263e2a742d1c2ae8e889e0b6999f6423d2a278ddadfb4a4f715",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "spec",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "ccflp_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_GOV_SAFEGUARD_CORE_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
