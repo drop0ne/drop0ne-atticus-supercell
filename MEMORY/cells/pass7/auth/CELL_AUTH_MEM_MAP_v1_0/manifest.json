@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_MEM_MAP_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:e0565398f84cd49bea9b7a5372e4850b5db0c1be3c9f00ab6788fef4c0f783e6",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "protocol",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier0",
+  "exports": [
+    "memory_append_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_MEM_AMAS_v1_1"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
