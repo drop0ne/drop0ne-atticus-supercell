@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_RUNTIME_ALERT_BOUNDED_NEXT_STEP_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:345a2411634cc22ce80080d048fe21e46788566b2ffaeb66bfe2f4f2f602012f",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "runtime",
+  "layer": "RUNTIME",
+  "authority_level": "canonical",
+  "load_tier": "tier1",
+  "exports": [
+    "bounded_next_step_runtime"
+  ],
+  "depends_on": [
+    "CELL_AUTH_GOV_SCOPE_DISCIPLINE_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
