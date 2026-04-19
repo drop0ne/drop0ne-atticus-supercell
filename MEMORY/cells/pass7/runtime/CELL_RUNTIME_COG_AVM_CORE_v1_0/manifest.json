@@ -1,0 +1,22 @@
+{
+  "cell_id": "CELL_RUNTIME_COG_AVM_CORE_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:7c87709c257dab0f82c216d1364f2b04bd58f31f2358e5f71ea27da95a3010b5",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "runtime",
+  "layer": "RUNTIME",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "avm_core_runtime"
+  ],
+  "depends_on": [
+    "CELL_RUNTIME_COG_WSTACK_v1_0",
+    "CELL_RUNTIME_COG_LINK_LAYER_v1_0"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
