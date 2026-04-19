@@ -1,0 +1,21 @@
+{
+  "cell_id": "CELL_AUTH_INVEST_CCFLP_DIL_v1_0",
+  "version": "1.0",
+  "created_at": "2026-03-02T00:00:00-06:00",
+  "hash": "SHA-256:151c47a7bd5f2e8fa27f1aecd63be006c9caaee5ffec44c5defa9b21b1225d7a",
+  "scope": "sealed",
+  "author": "operator",
+  "integrity": "verified",
+  "cell_kind": "protocol",
+  "layer": "AUTH",
+  "authority_level": "canonical",
+  "load_tier": "tier2",
+  "exports": [
+    "dil_rules"
+  ],
+  "depends_on": [
+    "CELL_AUTH_INVEST_CCFLP_v1_1"
+  ],
+  "conflicts_with": [],
+  "supersedes": []
+}
