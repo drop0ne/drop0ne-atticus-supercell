@@ -1,0 +1,35 @@
+{
+  "cell_id": "ATTICUS_HYPE_CAPABILITY_LAYER_v1",
+  "domain": "atticus",
+  "project": "global",
+  "title": "ATTICUS Hype-Capability-Control upgrade baseline",
+  "content": "ATTICUS has a new deterministic Hype-Capability-Control detection layer intended to classify AI and tech claims into HYPE, CAPABILITY, CONTROL, or UNKNOWN. The layer is positioned after ATFP signal refinement and before W-Stack reasoning, and is designed to separate narrative inflation from real technical performance and gatekeeping dynamics. The upgrade includes a compact scoring model using evidence strength, environment realism, access restriction, fear narrative, and incentive pressure. A starter 20-row calibration dataset was created from a video transcript analyzing frontier-model hype narratives, with artifact-ready JSONL, CSV, and JSON schema forms. Recommended implementation path is a lightweight Python module with auditability and later balanced expansion using counterexamples from official claims and third-party validation.",
+  "context_summary": "Introduces a deterministic Hype-Capability-Control layer plus seed calibration dataset for ATTICUS narrative-vs-capability analysis.",
+  "context_scope": "global",
+  "context_tags": [
+    "atticus",
+    "signal-refinement",
+    "hype-detection",
+    "capability-analysis",
+    "control-dynamics",
+    "calibration-dataset"
+  ],
+  "source_repo": "drop0ne/drop0ne-atticus-supercell",
+  "source_ref": "main",
+  "source_branch": "main",
+  "baseline_app_version": null,
+  "baseline_framework_version": "ATTICUS v6.4.x additive upgrade",
+  "parent_cell_id": "ATTICUS_CURRENT_WORKING_BASELINE_v1",
+  "created_at": "2026-04-20",
+  "updated_at": null,
+  "provenance": {
+    "origin": "chat_session_upgrade",
+    "source_context": [
+      "YouTube transcript analysis",
+      "ATTICUS calibration design",
+      "seed dataset generation"
+    ]
+  },
+  "context_fingerprint": "atticus-hype-capability-layer-v1",
+  "receipt_hash": null
+}
