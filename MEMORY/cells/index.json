@@ -14,6 +14,10 @@
       "path": "MEMORY/cells/atticus/ATTICUS_CURRENT_WORKING_BASELINE_v1.json"
     },
     {
+      "cell_id": "ATTICUS_HYPE_CAPABILITY_LAYER_v1",
+      "path": "MEMORY/cells/atticus/ATTICUS_HYPE_CAPABILITY_LAYER_v1.json"
+    },
+    {
       "cell_id": "ATTICUS_SESSION_CONTINUITY_RUNNER_AUDIT_DETAIL_2026-04-17",
       "path": "MEMORY/cells/atticus/ATTICUS_SESSION_CONTINUITY_RUNNER_AUDIT_DETAIL_2026-04-17.json"
     },
